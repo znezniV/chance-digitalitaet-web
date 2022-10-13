@@ -11,15 +11,33 @@
 use craft\config\GeneralConfig;
 use craft\helpers\App;
 
+$isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
+$isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
+
 return GeneralConfig::create()
-    // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
-    ->defaultWeekStartDay(1)
-    // Prevent generated URLs from including "index.php"
     ->omitScriptNameInUrls()
-    // Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-    ->devMode(App::env('DEV_MODE') ?? false)
-    // Allow administrative changes
-    ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
-    // Disallow robots
-    ->disallowRobots(App::env('DISALLOW_ROBOTS') ?? false)
+    ->defaultWeekStartDay(1)
+    ->allowUpdates(false)
+    ->timezone('Europe/Zurich')
+    ->enableGql(false)
+    ->defaultCpLanguage('de-CH')
+    ->convertFilenamesToAscii()
+    ->limitAutoSlugsToAscii()
+    ->sendPoweredByHeader(false)
+    ->runQueueAutomatically($isDev)
+    ->disallowRobots(!$isProd)
+
+    ->cacheDuration(false)
+    ->maxUploadFileSize(67108864) // 64MB
+    ->transformGifs(false)
+    ->userSessionDuration($isDev ? false : 3600 * 4) // 4 Hours
+
+    // ->allowedFileExtensions(['json', 'jpg', 'jpeg', 'png', 'gif', 'pdf', 'zip'])
+    // ->extraAllowedFileExtensions(['json'])
+
+    ->aliases([
+        '@web' => App::env('PRIMARY_SITE_URL'),
+        '@webroot' => dirname(__DIR__).'/web',
+        // '@publicUrl' => App::env('APP_URL'),
+    ])
 ;
