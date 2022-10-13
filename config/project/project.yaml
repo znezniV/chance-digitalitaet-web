@@ -43,7 +43,7 @@ system:
   live: true
   name: 'Craft Starter'
   schemaVersion: 4.0.0.9
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Zurich
 users:
   allowPublicRegistration: false
   defaultGroup: null
