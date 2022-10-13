@@ -1,13 +1,34 @@
-dateModified: 1665650783
+dateModified: 1665652246
 email:
   fromEmail: accounts@noordermeer.ch
   fromName: 'Craft Starter'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common
-    e6d6312f-5bfe-4933-80d2-be986487da24: 'Craft Starter'
-    fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter'
+    c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
+    e6d6312f-5bfe-4933-80d2-be986487da24: 'Craft Starter' # Craft Starter
+    fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter' # Craft Starter
+plugins:
+  blitz-recommendations:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.0
+  craft-ray:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  dashboard-begone:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true

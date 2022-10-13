@@ -1,30 +1,48 @@
 {
-  "require": {
-    "craftcms/cms": "^4.2.7",
-    "vlucas/phpdotenv": "^5.4.0"
-  },
-  "require-dev": {
-    "yiisoft/yii2-shell": "^2.0.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "modules\\": "modules/"
-    }
-  },
-  "config": {
-    "allow-plugins": {
-      "craftcms/plugin-installer": true,
-      "yiisoft/yii2-composer": true
+    "require": {
+        "craftcms/cms": "^4.2.7",
+        "craftcms/postmark": "^3.0",
+        "craftcms/redactor": "^3.0",
+        "doublesecretagency/craft-cpbodyclasses": "^2.3",
+        "doublesecretagency/craft-cpcss": "^2.5",
+        "nystudio107/craft-emptycoalesce": "^4.0",
+        "nystudio107/craft-minify": "^1.2",
+        "nystudio107/craft-vite": "^4.0",
+        "percipioglobal/craft-colour-swatches": "4.2.0.1",
+        "putyourlightson/craft-blitz-recommendations": "^2.1",
+        "putyourlightson/craft-dashboard-begone": "^2.0",
+        "spacecatninja/imager-x": "^4.1",
+        "spatie/craft-ray": "^2.0",
+        "verbb/cp-nav": "^4.0",
+        "verbb/expanded-singles": "^2.0",
+        "verbb/super-table": "^3.0",
+        "vlucas/phpdotenv": "^5.4.0",
+        "webhubworks/craft-ohdear": "^4.0",
+        "yiisoft/yii2-redis": "^2.0"
     },
-    "sort-packages": true,
-    "optimize-autoloader": true,
-    "platform": {
-      "php": "8.0.2"
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "yiisoft/yii2-shell": "^2.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\": "modules/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
+        },
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+        ]
     }
-  },
-  "scripts": {
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
-    ]
-  }
 }
