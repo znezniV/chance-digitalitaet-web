@@ -6,7 +6,7 @@
         "doublesecretagency/craft-cpbodyclasses": "^2.3",
         "doublesecretagency/craft-cpcss": "^2.5",
         "nystudio107/craft-emptycoalesce": "^4.0",
-        "nystudio107/craft-minify": "^1.2",
+        "nystudio107/craft-minify": "^4.0.0-beta.2",
         "nystudio107/craft-vite": "^4.0",
         "percipioglobal/craft-colour-swatches": "4.2.0.1",
         "putyourlightson/craft-blitz-recommendations": "^2.1",
@@ -42,7 +42,19 @@
     },
     "scripts": {
         "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "storage:link": [
+            "ln -s ../storage/app/public web/storage",
+            "ln -s ../storage/imager web/imager"
+        ],
+        "post-deploy-cmd": [
+            "@php craft migrate/all --interactive=0",
+            "@php craft project-config/apply",
+            "@php craft invalidate-tags/all"
+        ],
+        "post-deploy-to-production-cmd": [
+            "@post-deploy-cmd"
         ]
     }
 }

@@ -1,8 +1,13 @@
-dateModified: 1665652246
+dateModified: 1665653002
 email:
-  fromEmail: accounts@noordermeer.ch
+  fromEmail: $MAIL_FROM
   fromName: 'Craft Starter'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: null
+  transportSettings:
+    messageStream: ''
+    token: $POSTMARK_TOKEN
+  transportType: craftcms\postmark\Adapter
 meta:
   __names__:
     c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
@@ -18,6 +23,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   dashboard-begone:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  minify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

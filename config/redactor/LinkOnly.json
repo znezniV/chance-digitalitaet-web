@@ -1,0 +1,9 @@
+{
+    "buttons": ["link"],
+    "formatting": ["p"],
+    "shortcuts": false,
+    "pasteBlockTags": [],
+    "pasteInlineTags": ["a"],
+    "pasteLinkTarget": "_self",
+    "pasteImages": false
+}

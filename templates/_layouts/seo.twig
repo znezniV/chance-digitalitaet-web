@@ -1,0 +1,30 @@
+{% set seo = craft.globalSets()
+    .handle('seo')
+    .with(['shareImage'])
+    .one()
+%}
+
+{% set pageTitle = entry is defined and entry.section.handle is not same as 'home' ? entry ~ ' | ' ~ siteName : siteName %}
+{% set pageUrl = siteUrl ~ craft.app.request.pathInfo %}
+{% set metaDescription = seo.metaDescription %}
+{% set shareImage = seo.shareImage|length ? seo.shareImage.one() : null %}
+{% set shareImageUrl = shareImage ? siteUrl|trim('/') ~ craft.imagerx.transformImage(shareImage, 'shareImage')|first : null %}
+
+{# Primary Meta Tags #}
+<title>{{ pageTitle }}</title>
+<meta name="title" content="{{ pageTitle }}">
+<meta name="description" content="{{ metaDescription }}">
+
+{# Open Graph / Facebook #}
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ pageUrl }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ metaDescription }}">
+<meta property="og:image" content="{{ shareImageUrl }}">
+
+{# Twitter #}
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ pageUrl }}">
+<meta property="twitter:title" content="{{ pageTitle }}">
+<meta property="twitter:description" content="{{ metaDescription }}">
+<meta property="twitter:image" content="{{ shareImageUrl }}">
