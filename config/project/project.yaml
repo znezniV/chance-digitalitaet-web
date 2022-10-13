@@ -1,0 +1,22 @@
+dateModified: 1665650783
+email:
+  fromEmail: accounts@noordermeer.ch
+  fromName: 'Craft Starter'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common
+    e6d6312f-5bfe-4933-80d2-be986487da24: 'Craft Starter'
+    fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter'
+system:
+  edition: solo
+  live: true
+  name: 'Craft Starter'
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
