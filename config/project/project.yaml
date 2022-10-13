@@ -1,4 +1,4 @@
-dateModified: 1665653002
+dateModified: 1665653221
 email:
   fromEmail: $MAIL_FROM
   fromName: 'Craft Starter'
@@ -18,6 +18,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.1.0
+  cp-css:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      additionalCss: ''
+      cacheBusting: true
+      cssFile: '@web/assets/cp.css'
   craft-ray:
     edition: standard
     enabled: true
@@ -39,7 +47,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'Craft Starter'
   schemaVersion: 4.0.0.9

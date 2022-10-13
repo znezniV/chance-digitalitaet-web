@@ -1,0 +1,33 @@
+/* Login Styles */
+body.login {
+    background: #fff;
+    color: #000;
+}
+
+body.login #login-logo {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+body.login #poweredby {
+    display: none;
+}
+
+body.login #login-form {
+    margin-top: 4rem;
+}
+
+body.login #login-form input,
+body.login #login-form .passwordwrapper,
+body.login #login-form button {
+    border-radius: 0 !important;
+}
+
+body.login #login-form .btn.submit {
+    background: #000 !important;
+}
+
+#ohdear-app .lightswitch-field {
+    display: none;
+}
