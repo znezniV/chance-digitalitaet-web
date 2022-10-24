@@ -3,3 +3,6 @@
 /vendor
 .DS_Store
 /node_modules
+/web/storage
+/web/dist
+/web/imager
