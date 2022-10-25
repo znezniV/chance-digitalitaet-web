@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'GT America';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+            local('GT America Regular'), local('GTAmerica-Regular'),
+            url('../fonts/GT-America-Standard-Regular.woff2') format('woff2');
+    }
+}
+
+@layer components {
+
+}
+
+.turbo-progress-bar {
+
+}
+

@@ -1,4 +1,19 @@
-dateModified: 1666582625
+dateModified: 1666707170
+elementSources:
+  craft\elements\Entry:
+    -
+      disabled: true
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: singles
+      type: native
 email:
   fromEmail: $MAIL_FROM
   fromName: 'Craft Starter'
@@ -8,9 +23,24 @@ email:
     messageStream: ''
     token: $POSTMARK_TOKEN
   transportType: craftcms\postmark\Adapter
+fs:
+  transforms:
+    hasUrls: true
+    name: 'Craft Transforms'
+    settings:
+      path: '@storage/app/public/craft-transforms'
+    type: craft\fs\Local
+    url: '@web/storage/craft-transforms'
 meta:
   __names__:
+    3dc0e775-2e8d-40ef-a552-c1a675a59d80: 'Share Image' # Share Image
+    4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
+    3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
+    57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
+    b23ca107-96dc-4de7-9910-d43cb4e97208: 'Global SEO' # Global SEO
+    bfe046fa-2f8c-4bd6-8502-924a0171cc1a: 'Global SEO' # Global SEO
     c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
+    ca240dbb-2270-468b-a5aa-d4dbc0fc7d91: SEO # SEO
     e6d6312f-5bfe-4933-80d2-be986487da24: 'Craft Starter' # Craft Starter
     fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter' # Craft Starter
 plugins:
@@ -35,6 +65,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   environment-label:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  field-manager:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

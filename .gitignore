@@ -2,6 +2,7 @@
 /.idea
 /vendor
 .DS_Store
+/config/license.key
 /node_modules
 /web/storage
 /web/dist

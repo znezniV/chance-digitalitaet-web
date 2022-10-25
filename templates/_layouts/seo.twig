@@ -1,5 +1,5 @@
-{% set seo = craft.globalSets()
-    .handle('seo')
+{% set seo = craft.entries()
+    .section('globalSeo')
     .with(['shareImage'])
     .one()
 %}

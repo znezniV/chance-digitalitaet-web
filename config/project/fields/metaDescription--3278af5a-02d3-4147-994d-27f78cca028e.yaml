@@ -1,0 +1,19 @@
+columnSuffix: sjzbpzxs
+contentColumnType: string(660)
+fieldGroup: ca240dbb-2270-468b-a5aa-d4dbc0fc7d91 # SEO
+handle: metaDescription
+instructions: null
+name: 'Meta Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 165
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

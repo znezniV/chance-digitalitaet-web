@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: home
+name: Home
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  e6d6312f-5bfe-4933-80d2-be986487da24: # Craft Starter
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/home.twig
+    uriFormat: __home__
+type: single

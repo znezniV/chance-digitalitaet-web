@@ -5,7 +5,7 @@ export default defineConfig(({command}) => ({
     base: command === 'serve' ? '' : '/dist/',
     build: {
         manifest: true,
-        // sourcemap: true,
+        sourcemap: true,
         outDir: './web/dist/',
         rollupOptions: {
             input: {

@@ -1,0 +1,43 @@
+fieldLayouts:
+  69951824-5773-4c92-976f-55602f3b5903:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0fe320c4-e458-4614-9c77-8553f350aff4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6d11e13c-42b8-4b2d-8bc6-cb3f67c8168c
+        userCondition: null
+handle: globalSeo
+hasTitleField: false
+name: 'Global SEO'
+section: b23ca107-96dc-4de7-9910-d43cb4e97208 # Global SEO
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

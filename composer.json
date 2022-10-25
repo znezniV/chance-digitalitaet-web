@@ -16,6 +16,7 @@
         "topshelfcraft/environment-label": "^4.0",
         "verbb/cp-nav": "^4.0",
         "verbb/expanded-singles": "^2.0",
+        "verbb/field-manager": "^3.0",
         "verbb/super-table": "^3.0",
         "vlucas/phpdotenv": "^5.4.0",
         "webhubworks/craft-ohdear": "^4.0",
@@ -42,8 +43,10 @@
         }
     },
     "scripts": {
-        "post-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        "project-setup": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@storage:link",
+            "@php craft setup/welcome"
         ],
         "storage:link": [
             "ln -s ../storage/app/public web/storage",
