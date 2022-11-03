@@ -4,7 +4,8 @@
     .one()
 %}
 
-{% set pageTitle = entry is defined and entry.section.handle is not same as 'home' ? entry ~ ' | ' ~ siteName : siteName %}
+{% set titleSeparator = ' | ' %}
+{% set pageTitle = entry is defined and entry.section.handle is not same as 'home' ? entry ~ titleSeparator ~ siteName : siteName %}
 {% set pageUrl = siteUrl ~ craft.app.request.pathInfo %}
 {% set metaDescription = seo.metaDescription %}
 {% set shareImage = seo.shareImage|length ? seo.shareImage.one() : null %}

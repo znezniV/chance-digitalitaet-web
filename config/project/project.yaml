@@ -1,4 +1,4 @@
-dateModified: 1666707170
+dateModified: 1666933515
 elementSources:
   craft\elements\Entry:
     -
@@ -64,7 +64,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  empty-coalesce:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   environment-label:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -72,6 +80,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  imager-x:
+    edition: lite
+    enabled: true
+    licenseKey: JW4G3BB6LK67W52JERN55N83
+    schemaVersion: 4.0.0
   minify:
     edition: standard
     enabled: true
@@ -80,6 +93,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.1
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
   vite:
     edition: standard
     enabled: true

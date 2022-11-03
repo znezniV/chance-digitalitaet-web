@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
-const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     content: [
@@ -16,15 +15,16 @@ module.exports = {
             spacing: {
                 em: '1em',
             },
-            colors: {
-            },
+            colors: {},
             fontSize: {
+                base: [
+                    'clamp(1rem, 0.909rem + 0.45vw, 1.25rem)',
+                    {
+                        letterSpacing: '0em',
+                        lineHeight: '1.2',
+                    },
+                ],
             },
         },
     },
-    plugins: [
-        plugin(function ({ addVariant }) {
-            addVariant('supports-hover', '@media (hover: hover)')
-        }),
-    ],
 }

@@ -9,8 +9,12 @@
         font-weight: 400;
         font-display: swap;
         src:
-            local('GT America Regular'), local('GTAmerica-Regular'),
+            local('GT America Regular'),
             url('../fonts/GT-America-Standard-Regular.woff2') format('woff2');
+    }
+
+    img {
+        text-indent: -9999px;
     }
 }
 
@@ -18,7 +22,24 @@
 
 }
 
+@layer utilities {
+
+    .typo-h1 {
+        @apply font-bold;
+    }
+
+}
+
 .turbo-progress-bar {
 
+}
+
+.noScrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+.noScrollBar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 

@@ -2,10 +2,8 @@
 
 use craft\helpers\App;
 
-$isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
-
 return [
-    'transformer' => $isProd ? 'imgix' : 'craft',
+    'transformer' => App::env('IMAGER_TRANSFORMER') === 'imgix' ? 'imgix' : 'craft',
 
     'fillTransforms' => true,
     'allowUpscale' => false,
