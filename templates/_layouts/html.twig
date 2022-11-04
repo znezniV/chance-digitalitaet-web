@@ -34,7 +34,7 @@
     <meta name="theme-color" content="#ffffff">
     {{ block('meta') ?? null }}
 
-    {% include '_layouts/seo.twig' %}
+    {% include '_helpers/seo.twig' %}
 
     {{ craft.vite.script('src/js/app.js', false, [], {"data-turbo-track":"reload"}) }}
 

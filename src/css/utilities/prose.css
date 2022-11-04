@@ -1,0 +1,11 @@
+.prose p {
+    @apply font-normal text-base;
+}
+
+.prose h3 {
+    @apply font-bold text-base;
+}
+
+.prose a {
+    @apply underline;
+}

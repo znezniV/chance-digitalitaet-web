@@ -1,45 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "./base/base.css";
+@import "./base/fonts.css";
+@import "./base/turbo.css";
 
-@layer base {
-    @font-face {
-        font-family: 'GT America';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src:
-            local('GT America Regular'),
-            url('../fonts/GT-America-Standard-Regular.woff2') format('woff2');
-    }
+@import "tailwindcss/components";
+/*@import "./components/component.css";*/
 
-    img {
-        text-indent: -9999px;
-    }
-}
-
-@layer components {
-
-}
-
-@layer utilities {
-
-    .typo-h1 {
-        @apply font-bold;
-    }
-
-}
-
-.turbo-progress-bar {
-
-}
-
-.noScrollBar::-webkit-scrollbar {
-    display: none;
-}
-
-.noScrollBar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
+@import "tailwindcss/utilities";
+@import "./utilities/typo.css";
+@import "./utilities/prose.css";
+@import "./utilities/noScrollBar.css";
+@import "./utilities/lazysizes.css";
