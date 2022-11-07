@@ -32,6 +32,12 @@ return GeneralConfig::create()
     ->transformGifs(false)
     ->userSessionDuration($isDev ? false : 3600 * 4) // 4 Hours
 
+    // ->imageEditorRatios([
+    //     'Ohne Einschränkung' => 'none',
+    //     'Original' => 'original',
+    //     'Custom Ratio' => 1.8,
+    // ])
+
     // ->allowedFileExtensions(['json', 'jpg', 'jpeg', 'png', 'gif', 'pdf', 'zip'])
     // ->extraAllowedFileExtensions(['json'])
 

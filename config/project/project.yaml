@@ -1,19 +1,59 @@
-dateModified: 1666933515
+dateModified: 1667795694
 elementSources:
   craft\elements\Entry:
     -
+      defaultSort:
+        - postDate
+        - desc
       disabled: true
       key: '*'
       tableAttributes:
         - section
+        - link
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: 'single:4a8d2762-9460-4882-a033-0e12f54d164b' # Home
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: ''
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: 'single:b23ca107-96dc-4de7-9910-d43cb4e97208' # SEO
+      tableAttributes:
         - postDate
         - expiryDate
         - author
         - link
       type: native
     -
-      key: singles
-      type: native
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\SectionConditionRule
+            operator: in
+            uid: 1bf35e37-0494-423d-8628-e4de241dd0d7
+            values:
+              - b23ca107-96dc-4de7-9910-d43cb4e97208 # SEO
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:f9b3f327-f1bd-4b4d-818a-83513e85fd56'
+      label: 'Globale Inhalte'
+      tableAttributes: '-'
+      type: custom
 email:
   fromEmail: $MAIL_FROM
   fromName: 'Craft Starter'
@@ -33,12 +73,13 @@ fs:
     url: '@web/storage/craft-transforms'
 meta:
   __names__:
+    1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
     3dc0e775-2e8d-40ef-a552-c1a675a59d80: 'Share Image' # Share Image
     4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
     3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
-    b23ca107-96dc-4de7-9910-d43cb4e97208: 'Global SEO' # Global SEO
-    bfe046fa-2f8c-4bd6-8502-924a0171cc1a: 'Global SEO' # Global SEO
+    b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
+    bfe046fa-2f8c-4bd6-8502-924a0171cc1a: SEO # SEO
     c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
     ca240dbb-2270-468b-a5aa-d4dbc0fc7d91: SEO # SEO
     e6d6312f-5bfe-4933-80d2-be986487da24: 'Craft Starter' # Craft Starter
@@ -107,9 +148,3 @@ system:
   name: 'Craft Starter'
   schemaVersion: 4.0.0.9
   timeZone: Europe/Zurich
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  requireEmailVerification: true

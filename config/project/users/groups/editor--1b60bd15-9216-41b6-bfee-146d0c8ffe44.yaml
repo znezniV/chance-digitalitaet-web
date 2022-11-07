@@ -1,0 +1,23 @@
+description: ''
+handle: editor
+name: Editor
+permissions:
+  - accesscp
+  - administrateusers
+  - 'assignusergroup:1b60bd15-9216-41b6-bfee-146d0c8ffe44' # Editor
+  - assignuserpermissions
+  - 'deletepeerentrydrafts:4a8d2762-9460-4882-a033-0e12f54d164b' # Home
+  - 'deletepeerentrydrafts:b23ca107-96dc-4de7-9910-d43cb4e97208' # SEO
+  - deleteusers
+  - editusers
+  - impersonateusers
+  - moderateusers
+  - registerusers
+  - 'saveentries:4a8d2762-9460-4882-a033-0e12f54d164b' # Home
+  - 'saveentries:b23ca107-96dc-4de7-9910-d43cb4e97208' # SEO
+  - 'savepeerentrydrafts:4a8d2762-9460-4882-a033-0e12f54d164b' # Home
+  - 'savepeerentrydrafts:b23ca107-96dc-4de7-9910-d43cb4e97208' # SEO
+  - 'viewentries:4a8d2762-9460-4882-a033-0e12f54d164b' # Home
+  - 'viewentries:b23ca107-96dc-4de7-9910-d43cb4e97208' # SEO
+  - 'viewpeerentrydrafts:4a8d2762-9460-4882-a033-0e12f54d164b' # Home
+  - 'viewpeerentrydrafts:b23ca107-96dc-4de7-9910-d43cb4e97208' # SEO
