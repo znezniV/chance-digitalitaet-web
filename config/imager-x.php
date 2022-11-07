@@ -12,6 +12,7 @@ return [
     'webpQuality' => 85,
     'avifQuality' => 85,
 
+    'imagerUrl' => rtrim(App::env('PRIMARY_SITE_URL'), '/') . '/imager/',
     'imgixApiKey' => App::env('IMGIX_API_KEY'),
     'imgixConfig' => [
         'default' => [
