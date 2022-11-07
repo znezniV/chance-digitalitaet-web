@@ -1,8 +1,10 @@
-:root {
-    --grid: 0.625rem;
-}
+@layer base {
+    :root {
+        --grid: 0.625rem;
+    }
 
-img {
-    text-indent: -9999px;
-    color: transparent;
+    img {
+        text-indent: -9999px;
+        color: transparent;
+    }
 }

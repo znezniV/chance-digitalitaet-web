@@ -1,10 +1,11 @@
+@layer utilities {
+    .noScrollBar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
 
-.noScrollBar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-}
-
-.noScrollBar::-webkit-scrollbar {
-    display: none;
+    .noScrollBar::-webkit-scrollbar {
+        display: none;
+    }
 }
