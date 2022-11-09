@@ -8,7 +8,7 @@
 {% set pageUrl = siteUrl|trim('/') ~ '/' ~ craft.app.request.pathInfo %}
 
 {# Page Title #}
-{% set titleSeparator = ' | ' %}
+{% set titleSeparator = '|' %}
 {% set pageTitle = siteName %}
 
 {# Meta Description #}
@@ -22,30 +22,33 @@
 
     {# Page Title #}
     {% if entry.section.handle is not same as 'home' %}
-        {% set pageTitle = entry ~ titleSeparator ~ siteName %}
+        {% set pageTitle = "#{entry} #{titleSeparator} #{siteName}" %}
     {% endif %}
 
-    {# Meta Description #}
-{#    {% set metaDescription = entry.leadText ?? metaDescription %}#}
+    {# Section Specific #}
+{#    {% if entry.section.handle in ['projects'] %}#}
+{#        {% set metaDescription = entry.leadText ?? metaDescription %}#}
 
-    {# Share image #}
-{#    {% set shareImage = entry.projectImage[0] ?? shareImage %}#}
+{#        {% set shareImage = entry.projectImage[0] ?? shareImage %}#}
+{#    {% endif %}#}
 
 {% else %}
+
+    {# Set page title for routes without entries #}
 
 {#    {% set pageTitles = {#}
 {#        'projekte': 'Projekte',#}
 {#    } %}#}
 
 {#    {% if craft.app.request.pathInfo in pageTitles|keys %}#}
-{#        {% set pageTitle = pageTitles[craft.app.request.segments|first] ~ titleSeparator ~ siteName %}#}
+{#        {% set pageTitle = "#{pageTitles[craft.app.request.segments|first]} #{titleSeparator} #{siteName}" %}#}
 {#    {% endif %}#}
 
 {% endif %}
 
 {# Prepare values #}
 {% set metaDescription = metaDescription
-    |striptags|replace({"\n": "", "\r": "", "\t": ""})|trim
+    |striptags|replace({"\n": " ", "\r": " ", "\t": " "})|trim
     |truncate(165)
 %}
 {% set shareImageUrl = shareImage

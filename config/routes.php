@@ -19,5 +19,5 @@
  */
 
 return [
-
+    // 'projekte' => ['template' => '_pages/projects'],
 ];

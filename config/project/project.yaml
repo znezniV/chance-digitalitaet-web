@@ -1,4 +1,4 @@
-dateModified: 1667795694
+dateModified: 1667896257
 elementSources:
   craft\elements\Entry:
     -
@@ -64,6 +64,13 @@ email:
     token: $POSTMARK_TOKEN
   transportType: craftcms\postmark\Adapter
 fs:
+  about:
+    hasUrls: false
+    name: About
+    settings:
+      path: '@storage/app/public/imgix-7a47f915-f68d-44fb-a731-1cb4c386a483/about'
+    type: craft\fs\Local
+    url: null
   transforms:
     hasUrls: true
     name: 'Craft Transforms'
@@ -122,7 +129,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   imager-x:
-    edition: lite
+    edition: pro
     enabled: true
     licenseKey: JW4G3BB6LK67W52JERN55N83
     schemaVersion: 4.0.0

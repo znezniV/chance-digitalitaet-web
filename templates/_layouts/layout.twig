@@ -2,6 +2,12 @@
 
 {% block page %}
 
-    {{ block('main') }}
+    <main>
+        {{ block('main') }}
+    </main>
+
+    {% cache globally using key 'footer' %}
+        {% include '_components/footer.twig' %}
+    {% endcache %}
 
 {% endblock %}

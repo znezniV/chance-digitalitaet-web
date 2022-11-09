@@ -13,6 +13,7 @@
         "putyourlightson/craft-dashboard-begone": "^2.0",
         "spacecatninja/imager-x": "^4.1",
         "spatie/craft-ray": "^2.0",
+        "spicyweb/craft-embedded-assets": "^3.1",
         "topshelfcraft/environment-label": "^4.0",
         "verbb/cp-nav": "^4.0",
         "verbb/expanded-singles": "^2.0",
