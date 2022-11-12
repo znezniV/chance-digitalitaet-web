@@ -1,6 +1,7 @@
 {% if image %}
 
-    {% set fallbackColor = '#DFDFDF' %}
+    {% set fallbackColor = fallbackColor ??? '#DFDFDF' %}
+    {% set loadTransition = loadTransition ?? 'blur-up' %}
 
     {% set classes = classes ?? '' %}
     {% if image.hasFocalPoint %}
@@ -20,7 +21,7 @@
             'data-src': transformedImage.url,
             style: imgStyles,
             alt: image.alt ??? image.title ??? '',
-            class: 'lazyload ' ~ classes,
+            class: "lazyload #{classes}",
         }) }}
 
     {% else %}
@@ -54,7 +55,7 @@
             'data-sizes': 'auto',
             'data-srcset': transformedImage | srcset,
             alt: image.alt ??? image.title ??? '',
-            class: 'lazyload blur-up ' ~ classes,
+            class: "lazyload #{loadTransition} #{classes}",
         }) }}
 
         {% if responsiveTransforms | length %}
