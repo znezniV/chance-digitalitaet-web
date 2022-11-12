@@ -1,48 +1,65 @@
 {% if image %}
 
-    {% set transform = transform ??? 'fullscreen' %}
-    {% set responsiveTransforms = responsiveTransforms ?? [] %}
+    {% set fallbackColor = '#DFDFDF' %}
 
-    {% if responsiveTransforms | length %}
-        <picture>
-
-        {% for size, transform in responsiveTransforms %}
-            {% set responsiveTransformedImage = craft.imager.transformImage(image, transform) %}
-            <source
-                data-srcset="{{ responsiveTransformedImage | srcset }}"
-                media="(min-width: {{ size }}px)"
-            />
-        {% endfor %}
-
-    {% endif %}
-
-    {% set transformedImage = craft.imager.transformImage(image, transform) %}
-    {% set fallbackImage = transformedImage | last %}
-    {% set placeholder = craft.imager.placeholder({
-        color: '#DFDFDF',
-        width: fallbackImage.width,
-        height: fallbackImage.height,
-    }) %}
-
-    {% set imgStyles = '' %}
+    {% set classes = classes ?? '' %}
     {% if image.hasFocalPoint %}
         {% set x = image.focalPoint | first * 100 ~ '%' %}
         {% set y = image.focalPoint | last * 100 ~ '%' %}
         {% set imgStyles = 'object-position: ' ~ [x, y]|join(' ') %}
     {% endif %}
+    {% set imgStyles = styles ??? imgStyles ?? '' %}
 
-    {{ tag('img', {
-        src: fallbackImage,
-        srcset: placeholder,
-        style: imgStyles,
-        'data-sizes': 'auto',
-        'data-srcset': transformedImage | srcset,
-        alt: image.alt ??? image.title ??? '',
-        class: 'lazyload blur-up ' ~ classes ?? '',
-    }) }}
+    {% if image.extension == 'svg' %}
 
-    {% if responsiveTransforms | length %}
-        </picture>
+        {% set transformedImage = craft.imager.imgixEnabled
+            ? craft.imager.transformImage(image, 'svg')
+            : image %}
+
+        {{ tag('img', {
+            'data-src': transformedImage.url,
+            style: imgStyles,
+            alt: image.alt ??? image.title ??? '',
+            class: 'lazyload ' ~ classes,
+        }) }}
+
+    {% else %}
+
+        {% set responsiveTransforms = responsiveTransforms ?? [] %}
+        {% if responsiveTransforms | length %}
+            <picture>
+
+            {% for size, transform in responsiveTransforms %}
+                {% set responsiveTransformedImage = craft.imager.transformImage(image, transform) %}
+                <source
+                    data-srcset="{{ responsiveTransformedImage | srcset }}"
+                    media="(min-width: {{ size }}px)"
+                />
+            {% endfor %}
+
+        {% endif %}
+
+        {% set transformedImage = craft.imager.transformImage(image, transform) %}
+        {% set fallbackImage = transformedImage | last %}
+        {% set placeholder = craft.imager.placeholder({
+            color: fallbackColor,
+            width: fallbackImage.width,
+            height: fallbackImage.height,
+        }) %}
+
+        {{ tag('img', {
+            src: fallbackImage,
+            srcset: placeholder,
+            style: imgStyles,
+            'data-sizes': 'auto',
+            'data-srcset': transformedImage | srcset,
+            alt: image.alt ??? image.title ??? '',
+            class: 'lazyload blur-up ' ~ classes,
+        }) }}
+
+        {% if responsiveTransforms | length %}
+            </picture>
+        {% endif %}
+
     {% endif %}
-
 {% endif %}

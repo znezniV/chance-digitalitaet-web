@@ -1,4 +1,4 @@
-dateModified: 1667896257
+dateModified: 1668052448
 elementSources:
   craft\elements\Entry:
     -
@@ -56,9 +56,9 @@ elementSources:
       type: custom
 email:
   fromEmail: $MAIL_FROM
-  fromName: 'Craft Starter'
+  fromName: 'Craft CMS'
   replyToEmail: null
-  template: null
+  template: ''
   transportSettings:
     messageStream: ''
     token: $POSTMARK_TOKEN

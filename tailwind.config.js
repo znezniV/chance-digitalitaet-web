@@ -11,6 +11,15 @@ module.exports = {
         fontFamily: {
             sans: [...defaultTheme.fontFamily.sans],
         },
+        fontSize: {
+            base: [
+                'clamp(1rem, 0.909rem + 0.45vw, 1.25rem)',
+                {
+                    letterSpacing: '0em',
+                    lineHeight: '1.2',
+                },
+            ],
+        },
         extend: {
             screens: {
                 xs: '390px',
@@ -19,15 +28,9 @@ module.exports = {
                 em: '1em',
             },
             colors: {},
-            fontSize: {
-                base: [
-                    'clamp(1rem, 0.909rem + 0.45vw, 1.25rem)',
-                    {
-                        letterSpacing: '0em',
-                        lineHeight: '1.2',
-                    },
-                ],
-            },
         },
+    },
+    future: {
+        hoverOnlyWhenSupported: true,
     },
 }

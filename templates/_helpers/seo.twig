@@ -51,10 +51,13 @@
     |striptags|replace({"\n": " ", "\r": " ", "\t": " "})|trim
     |truncate(165)
 %}
-{% set shareImageUrl = shareImage
-    ? craft.imagerx.transformImage(shareImage, 'shareImage') | first
-    : null
-%}
+
+{% if shareImage %}
+    {% set shareImageUrl = shareImage.extension == 'svg' and not craft.imager.imgixEnabled
+        ? shareImage.url
+        : craft.imagerx.transformImage(shareImage, 'shareImage') | first
+    %}
+{% endif %}
 
 {# Primary Meta Tags #}
 <title>{{ pageTitle }}</title>
@@ -66,11 +69,11 @@
 <meta property="og:url" content="{{ pageUrl }}">
 <meta property="og:title" content="{{ pageTitle }}">
 <meta property="og:description" content="{{ metaDescription }}">
-<meta property="og:image" content="{{ shareImageUrl }}">
+<meta property="og:image" content="{{ shareImageUrl ?? '' }}">
 
 {# Twitter #}
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{ pageUrl }}">
 <meta property="twitter:title" content="{{ pageTitle }}">
 <meta property="twitter:description" content="{{ metaDescription }}">
-<meta property="twitter:image" content="{{ shareImageUrl }}">
+<meta property="twitter:image" content="{{ shareImageUrl ?? '' }}">

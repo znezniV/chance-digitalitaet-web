@@ -48,13 +48,12 @@
     {% if craft.app.config.env == 'production' and not currentUser %}
         <script defer data-api="/api/event" data-domain="craft-starter.test" src="/js/script.js"></script>
     {% endif %}
-
-    {% include '_helpers/devmode.twig' %}
 </head>
 <body class="ltr antialiased">
 
     {{ block('page') }}
 
+    {% include '_helpers/devmode.twig' %}
 </body>
 </html>
 {% endminify %}
