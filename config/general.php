@@ -42,8 +42,8 @@ return GeneralConfig::create()
     // ->extraAllowedFileExtensions(['json'])
 
     ->aliases([
-        // '@web' => App::env('PRIMARY_SITE_URL'),
-        // '@webroot' => dirname(__DIR__).'/web',
+        '@web' => App::env('PRIMARY_SITE_URL'),
+        '@webroot' => dirname(__DIR__).'/web',
         // '@publicUrl' => App::env('PRIMARY_SITE_URL'),
     ])
 ;

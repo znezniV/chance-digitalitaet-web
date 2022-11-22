@@ -12,5 +12,5 @@ return [
     'suffixText' => null,
     'labelColor' => $isLocal ? '#00d0ff' : '#f3b737',
     'textColor' => '#000000',
-    'targetSelector' => '#global-header:before',
+    'targetSelector' => '#global-sidebar:after',
 ];

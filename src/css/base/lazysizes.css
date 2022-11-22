@@ -1,0 +1,8 @@
+.fade-in.lazyload,
+.fade-in.lazyloading {
+    @apply opacity-0;
+}
+
+.fade-in.lazyloaded {
+    @apply opacity-100 transition-opacity duration-300;
+}

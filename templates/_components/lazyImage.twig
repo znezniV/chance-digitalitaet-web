@@ -1,15 +1,16 @@
 {% if image %}
 
-    {% set fallbackColor = fallbackColor ??? '#DFDFDF' %}
-    {% set loadTransition = loadTransition ?? 'blur-up' %}
+    {% set backgroundClass = backgroundClass ??? 'bg-[#DFDFDF]' %}
+    {% set loadTransition = loadTransition ?? 'fade-in' %}
 
-    {% set classes = classes ?? '' %}
     {% if image.hasFocalPoint %}
         {% set x = image.focalPoint | first * 100 ~ '%' %}
         {% set y = image.focalPoint | last * 100 ~ '%' %}
-        {% set imgStyles = 'object-position: ' ~ [x, y]|join(' ') %}
+        {% set imgageStyles = 'object-position: ' ~ [x, y]|join(' ') %}
     {% endif %}
-    {% set imgStyles = styles ??? imgStyles ?? '' %}
+    {% set imgageStyles = styles ??? imgageStyles ?? '' %}
+    {% set classes = classes ?? '' %}
+    {% set imageClasses = imageClasses ?? '' %}
 
     {% if image.extension == 'svg' %}
 
@@ -19,48 +20,54 @@
 
         {{ tag('img', {
             'data-src': transformedImage.url,
-            style: imgStyles,
+            width: image.width,
+            height: image.height,
+            style: imgageStyles,
             alt: image.alt ??? image.title ??? '',
             class: "lazyload #{classes}",
         }) }}
 
     {% else %}
 
-        {% set responsiveTransforms = responsiveTransforms ?? [] %}
-        {% if responsiveTransforms | length %}
-            <picture>
+        <div class="{{ backgroundClass }} {{ classes }}">
 
-            {% for size, transform in responsiveTransforms %}
-                {% set responsiveTransformedImage = craft.imager.transformImage(image, transform) %}
-                <source
-                    data-srcset="{{ responsiveTransformedImage | srcset }}"
-                    media="(min-width: {{ size }}px)"
-                />
-            {% endfor %}
+            {% set responsiveTransforms = responsiveTransforms ?? [] %}
+            {% if responsiveTransforms | length %}
+                <picture>
 
-        {% endif %}
+                {% for size, transform in responsiveTransforms %}
+                    {% set responsiveTransformedImage = craft.imager.transformImage(image, transform) %}
+                    <source
+                        data-srcset="{{ responsiveTransformedImage | srcset }}"
+                        media="(min-width: {{ size }}px)"
+                    />
+                {% endfor %}
 
-        {% set transformedImage = craft.imager.transformImage(image, transform) %}
-        {% set fallbackImage = transformedImage | last %}
-        {% set placeholder = craft.imager.placeholder({
-            color: fallbackColor,
-            width: fallbackImage.width,
-            height: fallbackImage.height,
-        }) %}
+            {% endif %}
 
-        {{ tag('img', {
-            src: fallbackImage,
-            srcset: placeholder,
-            style: imgStyles,
-            'data-sizes': 'auto',
-            'data-srcset': transformedImage | srcset,
-            alt: image.alt ??? image.title ??? '',
-            class: "lazyload #{loadTransition} #{classes}",
-        }) }}
+            {% set transformedImage = craft.imager.transformImage(image, transform) %}
+            {% set fallbackImage = transformedImage | last %}
+            {% set placeholder = craft.imager.placeholder({
+                color: 'transparent',
+                width: fallbackImage.width,
+                height: fallbackImage.height,
+            }) %}
 
-        {% if responsiveTransforms | length %}
-            </picture>
-        {% endif %}
+            {{ tag('img', {
+                src: fallbackImage,
+                srcset: placeholder,
+                style: imageStyles,
+                'data-sizes': 'auto',
+                'data-srcset': transformedImage | srcset,
+                alt: image.alt ??? image.title ??? '',
+                class: "lazyload #{loadTransition} #{imageClasses}",
+            }) }}
+
+            {% if responsiveTransforms | length %}
+                </picture>
+            {% endif %}
+
+        </div>
 
     {% endif %}
 {% endif %}

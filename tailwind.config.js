@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     content: [
-        './templates/**/*.{twig,html}',
+        './templates/**/*.{twig,html,svg}',
         './src/**/*.{vue,js,ts,jsx,tsx,svg}',
         './config/colour-swatches.php',
     ],

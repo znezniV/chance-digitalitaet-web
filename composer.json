@@ -1,5 +1,6 @@
 {
     "require": {
+        "clubstudioltd/craft-inline-svg": "^2.0",
         "craftcms/cms": "^4.2.7",
         "craftcms/postmark": "^3.0",
         "craftcms/redactor": "^3.0",
@@ -45,13 +46,18 @@
     },
     "scripts": {
         "project-setup": [
+            "@composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@storage:link",
+            "@storage:link-dev",
             "@php craft setup/welcome"
         ],
         "storage:link": [
             "ln -s ../storage/app/public web/storage",
             "ln -s ../storage/imager web/imager"
+        ],
+        "storage:link-dev": [
+            "ln -s ../src web/src"
         ],
         "post-deploy-cmd": [
             "@php craft migrate/all --interactive=0",
