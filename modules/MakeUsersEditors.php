@@ -3,13 +3,11 @@ namespace modules;
 
 use Craft;
 use craft\controllers\UsersController;
-use craft\elements\User;
-use craft\events\ElementEvent;
 use craft\events\UserEvent;
-use craft\services\Elements;
 use yii\base\Event;
+use yii\base\Module;
 
-class MakeUsersEditors extends \yii\base\Module
+class MakeUsersEditors extends Module
 {
     public function init()
     {
@@ -20,7 +18,10 @@ class MakeUsersEditors extends \yii\base\Module
             UsersController::class,
             UsersController::EVENT_AFTER_ASSIGN_GROUPS_AND_PERMISSIONS,
             static function(UserEvent $event) {
-                Craft::$app->getUsers()->assignUserToGroups($event->user->id, [1]);
+                $editorGroupId = Craft::$app->getUserGroups()->getGroupByHandle('editor')->id ?? null;
+                if ($editorGroupId) {
+                    Craft::$app->getUsers()->assignUserToGroups($event->user->id, [$editorGroupId]);
+                }
             }
         );
     }

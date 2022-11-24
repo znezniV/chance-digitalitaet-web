@@ -7,7 +7,7 @@ return [
     // such as @webroot. (https://docs.craftcms.com/v3/config/#aliases)
 
     'paths' => [
-        '@root/src/icons',
+        '@root/src/svg',
     ],
 
     // Specify any CSS classes that you want to add to all SVGs included in

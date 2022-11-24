@@ -43,13 +43,14 @@
 
     <style>
         [x-cloak] { display: none !important; }
+        /*html { visibility: hidden; }*/
     </style>
 
     {% if craft.app.config.env == 'production' and not currentUser %}
         <script defer data-api="/api/event" data-domain="craft-starter.test" src="/js/script.js"></script>
     {% endif %}
 </head>
-<body class="ltr antialiased">
+<body class="ltr antialiased min-h-screen flex flex-col">
 
     {{ block('page') }}
 

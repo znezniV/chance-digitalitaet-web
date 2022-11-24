@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6af6fc282aac58a79341bff264205d5f",
+    "content-hash": "bfdf3c93e1cfc0b7757b80734fada326",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1811,6 +1811,60 @@
                 "source": "https://github.com/doublesecretagency/craft-cpcss/tree/2.5.0"
             },
             "time": "2022-04-02T20:54:42+00:00"
+        },
+        {
+            "name": "doublesecretagency/craft-spoon",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doublesecretagency/craft-spoon.git",
+                "reference": "db7e23bb88f9aa45da2117c3d6d84eba947ba076"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doublesecretagency/craft-spoon/zipball/db7e23bb88f9aa45da2117c3d6d84eba947ba076",
+                "reference": "db7e23bb88f9aa45da2117c3d6d84eba947ba076",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Spoon",
+                "handle": "spoon",
+                "class": "doublesecretagency\\spoon\\Spoon"
+            },
+            "autoload": {
+                "psr-4": {
+                    "doublesecretagency\\spoon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Double Secret Agency",
+                    "homepage": "https://plugins.doublesecretagency.com"
+                }
+            ],
+            "description": "Bend your Matrix fields with block groups & tabs.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "matrix",
+                "spoon"
+            ],
+            "support": {
+                "docs": "https://github.com/doublesecretagency/craft-spoon/blob/master/README.md",
+                "issues": "https://github.com/doublesecretagency/craft-spoon/issues",
+                "source": "https://github.com/doublesecretagency/craft-spoon/tree/4.0.2"
+            },
+            "time": "2022-10-12T23:02:05+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -6551,6 +6605,69 @@
             "time": "2022-11-02T10:43:32+00:00"
         },
         {
+            "name": "spicyweb/craft-neo",
+            "version": "3.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spicywebau/craft-neo.git",
+                "reference": "2a7794614f2d0b902a47ae7cc495f655d2363a14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/2a7794614f2d0b902a47ae7cc495f655d2363a14",
+                "reference": "2a7794614f2d0b902a47ae7cc495f655d2363a14",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "neo",
+                "name": "Neo",
+                "schemaVersion": "3.5.2",
+                "class": "benf\\neo\\Plugin",
+                "changelogUrl": "https://github.com/spicywebau/craft-neo/blob/3.x/CHANGELOG.md",
+                "downloadUrl": "https://github.com/spicywebau/craft-neo/archive/refs/tags/3.5.2.zip"
+            },
+            "autoload": {
+                "psr-4": {
+                    "benf\\neo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Spicy Web",
+                    "homepage": "https://github.com/spicywebau"
+                }
+            ],
+            "description": "A Matrix-like field type that uses existing fields",
+            "keywords": [
+                "Neo",
+                "cms",
+                "craftcms",
+                "field",
+                "matrix",
+                "plugin"
+            ],
+            "support": {
+                "docs": "https://github.com/spicywebau/craft-neo/blob/3.5.2/README.md",
+                "issues": "https://github.com/spicywebau/craft-neo/issues",
+                "rss": "https://github.com/spicywebau/craft-neo/commits/3.x.atom",
+                "source": "https://github.com/spicywebau/craft-neo"
+            },
+            "time": "2022-11-10T14:02:43+00:00"
+        },
+        {
             "name": "ssnepenthe/color-utils",
             "version": "0.4.2",
             "source": {
@@ -9529,6 +9646,70 @@
                 }
             ],
             "time": "2022-10-12T23:16:23+00:00"
+        },
+        {
+            "name": "verbb/smith",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/smith.git",
+                "reference": "0d24c48d37b49de7a591c556cafb1eb3f5f2cfe4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/smith/zipball/0d24c48d37b49de7a591c556cafb1eb3f5f2cfe4",
+                "reference": "0d24c48d37b49de7a591c556cafb1eb3f5f2cfe4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2",
+                "verbb/base": "^2.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Smith",
+                "handle": "smith",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/smith/craft-4/CHANGELOG.md",
+                "class": "verbb\\smith\\Smith"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\smith\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                }
+            ],
+            "description": "Add copy, paste and clone functionality to Matrix blocks.",
+            "keywords": [
+                "Craft",
+                "Smith",
+                "cms",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/verbb/smith",
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/smith/issues?state=open",
+                "rss": "https://github.com/verbb/smith/commits/v2.atom",
+                "source": "https://github.com/verbb/smith"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/verbb",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-06-03T02:00:59+00:00"
         },
         {
             "name": "verbb/super-table",
