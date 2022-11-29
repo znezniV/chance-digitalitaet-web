@@ -1,9 +1,12 @@
 {
     "buttons": ["link"],
-    "formatting": ["p"],
+    "formatting": ["p", "h2", "h3"],
+    "toolbarFixed": true,
     "shortcuts": false,
     "pasteBlockTags": [],
     "pasteInlineTags": ["a"],
     "pasteLinkTarget": "_self",
-    "pasteImages": false
+    "pasteImages": false,
+    "toolbar": true,
+    "air": false
 }

@@ -3,8 +3,10 @@
     "formatting": ["p", "h2"],
     "toolbarFixed": true,
     "shortcuts": false,
-    "pasteBlockTags": ["p", "h2"],
-    "pasteInlineTags": ["a", "i", "em"],
+    "pasteBlockTags": ["p", "h2", "ul", "ol", "li"],
+    "pasteInlineTags": ["a", "i", "em", "br", "sup"],
     "pasteLinkTarget": "_self",
-    "pasteImages": false
+    "pasteImages": false,
+    "toolbar": true,
+    "air": false
 }

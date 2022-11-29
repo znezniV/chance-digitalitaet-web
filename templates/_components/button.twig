@@ -1,0 +1,8 @@
+{% if url and title %}
+    <a
+        class="button whitespace-nowrap {{ classes ?? '' }}"
+        href="{{ url }}"
+    >
+        {{ title }}
+    </a>
+{% endif %}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfdf3c93e1cfc0b7757b80734fada326",
+    "content-hash": "0b86734e4092ff8914bdba16d68ed861",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5843,6 +5843,95 @@
             "time": "2020-07-16T12:34:01+00:00"
         },
         {
+            "name": "sebastianlenz/craft-utils",
+            "version": "3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastian-lenz/craft-utils.git",
+                "reference": "3665b66968ccedb7105eb70c3c0ddaf9dc478db7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/3665b66968ccedb7105eb70c3c0ddaf9dc478db7",
+                "reference": "3665b66968ccedb7105eb70c3c0ddaf9dc478db7",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "lenz\\craft\\utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A collection of utility classes for Craft CMS development",
+            "support": {
+                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.5"
+            },
+            "time": "2022-11-02T14:57:28+00:00"
+        },
+        {
+            "name": "sebastianlenz/linkfield",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
+                "reference": "0648b7f8a8f970b029ab20b9a2e7805756f0e97c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/0648b7f8a8f970b029ab20b9a2e7805756f0e97c",
+                "reference": "0648b7f8a8f970b029ab20b9a2e7805756f0e97c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-beta",
+                "php": "^8.0",
+                "sebastianlenz/craft-utils": "^3.0.2"
+            },
+            "require-dev": {
+                "craftcms/feed-me": "^5.0-dev",
+                "craftcms/phpstan": "dev-main",
+                "phpstan/phpstan": "^1.5",
+                "phpunit/phpunit": "^7.5 || ^8.0",
+                "verbb/super-table": "^3.0.0-beta"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "typedlinkfield",
+                "name": "Typed link field",
+                "developer": "Sebastian Lenz",
+                "developerUrl": "https://github.com/sebastian-lenz/"
+            },
+            "autoload": {
+                "psr-4": {
+                    "lenz\\linkfield\\": "src/"
+                },
+                "classmap": [
+                    "legacy"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Craft field type for selecting links",
+            "support": {
+                "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
+                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.4"
+            },
+            "time": "2022-08-18T08:23:15+00:00"
+        },
+        {
             "name": "seld/cli-prompt",
             "version": "1.0.4",
             "source": {
@@ -6603,69 +6692,6 @@
                 "source": "https://github.com/spicywebau/craft-embedded-assets"
             },
             "time": "2022-11-02T10:43:32+00:00"
-        },
-        {
-            "name": "spicyweb/craft-neo",
-            "version": "3.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spicywebau/craft-neo.git",
-                "reference": "2a7794614f2d0b902a47ae7cc495f655d2363a14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/2a7794614f2d0b902a47ae7cc495f655d2363a14",
-                "reference": "2a7794614f2d0b902a47ae7cc495f655d2363a14",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0.2"
-            },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/rector": "dev-main"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "handle": "neo",
-                "name": "Neo",
-                "schemaVersion": "3.5.2",
-                "class": "benf\\neo\\Plugin",
-                "changelogUrl": "https://github.com/spicywebau/craft-neo/blob/3.x/CHANGELOG.md",
-                "downloadUrl": "https://github.com/spicywebau/craft-neo/archive/refs/tags/3.5.2.zip"
-            },
-            "autoload": {
-                "psr-4": {
-                    "benf\\neo\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Spicy Web",
-                    "homepage": "https://github.com/spicywebau"
-                }
-            ],
-            "description": "A Matrix-like field type that uses existing fields",
-            "keywords": [
-                "Neo",
-                "cms",
-                "craftcms",
-                "field",
-                "matrix",
-                "plugin"
-            ],
-            "support": {
-                "docs": "https://github.com/spicywebau/craft-neo/blob/3.5.2/README.md",
-                "issues": "https://github.com/spicywebau/craft-neo/issues",
-                "rss": "https://github.com/spicywebau/craft-neo/commits/3.x.atom",
-                "source": "https://github.com/spicywebau/craft-neo"
-            },
-            "time": "2022-11-10T14:02:43+00:00"
         },
         {
             "name": "ssnepenthe/color-utils",

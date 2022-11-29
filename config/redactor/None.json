@@ -1,3 +1,12 @@
 {
-  	"toolbar": false
+    "buttons": ["formatting", "lists"],
+    "formatting": ["p", "h2", "h3"],
+    "toolbarFixed": true,
+    "shortcuts": false,
+    "pasteBlockTags": [],
+    "pasteInlineTags": [],
+    "pasteLinkTarget": "_self",
+    "pasteImages": false,
+    "toolbar": false,
+    "air": false
 }
