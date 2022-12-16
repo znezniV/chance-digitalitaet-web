@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
     content: [
@@ -32,6 +33,11 @@ module.exports = {
             colors: {},
         },
     },
+    plugins: [
+        plugin(function ({ addVariant }) {
+            addVariant('any-hover', '@media(any-hover:hover)')
+        }),
+    ],
     future: {
         hoverOnlyWhenSupported: true,
     },

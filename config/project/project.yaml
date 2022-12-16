@@ -1,4 +1,4 @@
-dateModified: 1669109440
+dateModified: 1670386552
 elementSources:
   craft\elements\Entry:
     -
@@ -88,7 +88,7 @@ meta:
     b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
     bfe046fa-2f8c-4bd6-8502-924a0171cc1a: SEO # SEO
     c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
-    c475d313-1872-49dd-b290-85ab508126b2: 'Site Name'
+    c475d313-1872-49dd-b290-85ab508126b2: 'Site Name' # Site Name
     ca240dbb-2270-468b-a5aa-d4dbc0fc7d91: SEO # SEO
     e6d6312f-5bfe-4933-80d2-be986487da24: 'Craft Starter' # Craft Starter
     fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter' # Craft Starter
@@ -135,6 +135,10 @@ plugins:
     licenseKey: JW4G3BB6LK67W52JERN55N83
     schemaVersion: 4.0.0
   minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  nocache:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

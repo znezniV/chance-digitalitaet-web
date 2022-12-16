@@ -1,6 +1,6 @@
 {% if image %}
 
-    {% set backgroundClass = backgroundClass ??? 'bg-[#DFDFDF]' %}
+    {% set backgroundClass = backgroundClass ?? 'bg-[#DFDFDF]' %}
     {% set loadTransition = loadTransition ?? 'fade-in' %}
 
     {% if image.hasFocalPoint %}
@@ -24,7 +24,7 @@
             height: image.height,
             style: imgageStyles,
             alt: image.alt ??? image.title ??? '',
-            class: "lazyload #{classes}",
+            class: "lazyload #{classes} #{imageClasses}",
         }) }}
 
     {% else %}

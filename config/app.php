@@ -41,5 +41,9 @@ return [
                 'database' => App::env('REDIS_CRAFT_DB') ?: 1,
             ],
         ],
+        'queue' => [
+            'class' => craft\queue\Queue::class,
+            'ttr' => 5 * 60,
+        ],
     ]
 ];

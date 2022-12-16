@@ -1,0 +1,25 @@
+{% if craft.app.config.env == 'dev' and craft.app.config.general.devMode %}
+    <div class="z-[999] fixed bottom-0 left-0 p-6 w-8 h-8 bg-white border flex justify-center items-center opacity-75">
+        <div class="block xs:hidden">
+            MINI
+        </div>
+        <div class="max-xs:hidden block sm:hidden">
+            XS
+        </div>
+        <div class="max-sm:hidden block md:hidden">
+            SM
+        </div>
+        <div class="max-md:hidden block lg:hidden">
+            MD
+        </div>
+        <div class="max-lg:hidden block xl:hidden">
+            LG
+        </div>
+        <div class="max-xl:hidden block 2xl:hidden">
+            XL
+        </div>
+        <div class="max-2xl:hidden block">
+            2XL
+        </div>
+    </div>
+{% endif %}

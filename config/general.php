@@ -18,6 +18,8 @@ return GeneralConfig::create()
     ->omitScriptNameInUrls()
     ->defaultWeekStartDay(1)
     ->allowUpdates(false)
+    ->devMode(App::env('CRAFT_DEV_MODE') ?? false)
+    ->allowAdminChanges(App::env('CRAFT_ALLOW_ADMIN_CHANGES') ?? false)
     ->timezone('Europe/Zurich')
     ->enableGql(false)
     ->defaultCpLanguage('de-CH')
@@ -26,7 +28,7 @@ return GeneralConfig::create()
     ->sendPoweredByHeader(false)
     ->runQueueAutomatically($isDev)
     ->disallowRobots(!$isProd)
-
+    ->defaultSearchTermOptions(['subLeft' => true])
     ->cacheDuration(false)
     ->maxUploadFileSize(67108864) // 64MB
     ->transformGifs(false)
@@ -37,9 +39,6 @@ return GeneralConfig::create()
     //     'Original' => 'original',
     //     'Custom Ratio' => 1.8,
     // ])
-
-    // ->allowedFileExtensions(['json', 'jpg', 'jpeg', 'png', 'gif', 'pdf', 'zip'])
-    // ->extraAllowedFileExtensions(['json'])
 
     ->aliases([
         '@web' => App::env('PRIMARY_SITE_URL'),

@@ -7,8 +7,7 @@
           |  O        \___/  |
         ~^~^~^~^~^~^~^~^~^~^~^~^~
 
-        Made with ♡ in Zurich, Switzerland.
-        Joris Noordermeer (Code)  ▷ noordermeer.ch
+    ~^~^~ Joris Noordermeer (Code) > noordermeer.ch
 
 -->
 {% minify %}
@@ -21,7 +20,7 @@
     <meta name="turbo-cache-control" content="no-preview">
 
     {% if craft.app.config.env != 'production' %}
-        <meta name="robots" content="noindex">
+        <meta name="robots" content="noindex, nofollow">
     {% endif %}
 
 {#    <link rel="apple-touch-icon" sizes="180x180" href="/assets/meta/apple-touch-icon.png">#}
@@ -54,6 +53,7 @@
 
     {{ block('page') }}
 
+    {% include '_helpers/breakpoint.twig' %}
     {% include '_helpers/devmode.twig' %}
 </body>
 </html>

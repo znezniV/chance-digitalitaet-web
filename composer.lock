@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b86734e4092ff8914bdba16d68ed861",
+    "content-hash": "fc18c81fc2a01495422b55513251539d",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -3072,6 +3072,64 @@
             "time": "2021-03-25T15:10:34+00:00"
         },
         {
+            "name": "internetztube/craft-slug-equals-title",
+            "version": "2.0.0-beta.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/internetztube/craft-slug-equals-title.git",
+                "reference": "fc2df7af49511ceb33779617e7aba97b5bfa0a7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/internetztube/craft-slug-equals-title/zipball/fc2df7af49511ceb33779617e7aba97b5bfa0a7a",
+                "reference": "fc2df7af49511ceb33779617e7aba97b5bfa0a7a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-alpha",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Slug Equals Title",
+                "handle": "slug-equals-title",
+                "changelogUrl": "https://raw.githubusercontent.com/internetztube/craft-slug-equals-title/master/CHANGELOG.md",
+                "class": "internetztube\\slugEqualsTitle\\SlugEqualsTitle"
+            },
+            "autoload": {
+                "psr-4": {
+                    "internetztube\\slugEqualsTitle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frederic Köberl",
+                    "homepage": "https://frederickoeberl.com"
+                }
+            ],
+            "description": "This plugin makes sure that the slug is always the same as the title.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "slug equals title"
+            ],
+            "support": {
+                "docs": "https://github.com/internetztube/slug-equals-title/blob/master/README.md",
+                "issues": "https://github.com/internetztube/slug-equals-title/issues",
+                "source": "https://github.com/internetztube/craft-slug-equals-title/tree/2.0.0-beta.1"
+            },
+            "time": "2022-04-02T19:20:27+00:00"
+        },
+        {
             "name": "intervention/httpauth",
             "version": "3.0.3",
             "source": {
@@ -4409,6 +4467,58 @@
                 "source": "https://github.com/ohdearapp/ohdear-php-sdk/tree/3.4.4"
             },
             "time": "2022-06-21T17:36:24+00:00"
+        },
+        {
+            "name": "oofbar/craft-twig-toolbox",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oof-bar/craft-twig-toolbox.git",
+                "reference": "f8d54bfb7e8c88d702671f1e89172b3da372897a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oof-bar/craft-twig-toolbox/zipball/f8d54bfb7e8c88d702671f1e89172b3da372897a",
+                "reference": "f8d54bfb7e8c88d702671f1e89172b3da372897a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Twig Toolbox",
+                "handle": "twig-toolbox",
+                "class": "oofbar\\twigtoolbox\\TwigToolbox"
+            },
+            "autoload": {
+                "psr-4": {
+                    "oofbar\\twigtoolbox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "oof. Studio",
+                    "homepage": "https://oof.studio"
+                }
+            ],
+            "description": "Create your own Twig helpers.",
+            "keywords": [
+                "craftcms",
+                "plugin",
+                "twig"
+            ],
+            "support": {
+                "docs": "https://github.com/oof-bar/craft-twig-toolbox/blob/main/README.md",
+                "email": "hello@oof.studio",
+                "issues": "https://github.com/oof-bar/craft-twig-toolbox/issues?state=open",
+                "source": "https://github.com/oof-bar/craft-twig-toolbox"
+            },
+            "time": "2022-11-09T18:21:58+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -9301,6 +9411,64 @@
             "time": "2022-07-28T19:31:08+00:00"
         },
         {
+            "name": "ttempleton/craft-nocache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ttempleton/craft-nocache.git",
+                "reference": "e1c3473bcb2e0ec518de1a6e5fd06d429fe53078"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ttempleton/craft-nocache/zipball/e1c3473bcb2e0ec518de1a6e5fd06d429fe53078",
+                "reference": "e1c3473bcb2e0ec518de1a6e5fd06d429fe53078",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "nocache",
+                "name": "No-Cache",
+                "class": "ttempleton\\nocache\\Plugin",
+                "changelogUrl": "https://github.com/ttempleton/craft-nocache/blob/master/CHANGELOG.md",
+                "downloadUrl": "https://github.com/ttempleton/craft-nocache/archive/refs/tags/3.0.0.zip"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ttempleton\\nocache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Templeton",
+                    "homepage": "https://github.com/ttempleton"
+                }
+            ],
+            "description": "A Twig extension to escape caching inside cache blocks",
+            "keywords": [
+                "cms",
+                "craftcms",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/ttempleton/craft-nocache/issues",
+                "rss": "https://github.com/ttempleton/craft-nocache/commits/master.atom",
+                "source": "https://github.com/ttempleton/craft-nocache"
+            },
+            "time": "2022-05-05T03:22:21+00:00"
+        },
+        {
             "name": "tubalmartin/cssmin",
             "version": "v4.1.1",
             "source": {
@@ -9432,6 +9600,67 @@
                 }
             ],
             "time": "2022-09-28T08:42:51+00:00"
+        },
+        {
+            "name": "vaersaagod/matrixmate",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vaersaagod/matrixmate.git",
+                "reference": "b772643ae56f908987b380b78cc8407df153f884"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vaersaagod/matrixmate/zipball/b772643ae56f908987b380b78cc8407df153f884",
+                "reference": "b772643ae56f908987b380b78cc8407df153f884",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "MatrixMate",
+                "handle": "matrixmate",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/vaersaagod/matrixmate/master/CHANGELOG.md",
+                "class": "vaersaagod\\matrixmate\\MatrixMate"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vaersaagod\\matrixmate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Værsågod",
+                    "homepage": "https://vaersaagod.no"
+                }
+            ],
+            "description": "Welding Matrix into shape, mate!",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "matrixmate"
+            ],
+            "support": {
+                "docs": "https://github.com/vaersaagod/matrixmate/blob/master/README.md",
+                "issues": "https://github.com/vaersaagod/matrixmate/issues",
+                "source": "https://github.com/vaersaagod/matrixmate/tree/v2.1.2"
+            },
+            "time": "2022-11-10T16:55:04+00:00"
         },
         {
             "name": "verbb/base",
@@ -12011,6 +12240,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "internetztube/craft-slug-equals-title": 10,
         "nystudio107/craft-minify": 10,
         "roave/security-advisories": 20
     },
