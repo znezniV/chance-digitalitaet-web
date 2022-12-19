@@ -7,7 +7,7 @@ composer project-setup
 ## Deploy to Server
 
 ```
-php craft project-config/rebuild 
+php craft project-config/rebuild
 ```
 
 ```

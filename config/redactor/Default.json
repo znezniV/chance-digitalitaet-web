@@ -1,5 +1,12 @@
 {
-    "buttons": ["formatting", "italic", "link", "unorderedlist", "bold", "html"],
+    "buttons": [
+        "formatting",
+        "italic",
+        "link",
+        "unorderedlist",
+        "bold",
+        "html"
+    ],
     "formatting": ["p", "h2"],
     "toolbarFixed": true,
     "shortcuts": false,

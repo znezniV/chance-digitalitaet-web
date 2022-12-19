@@ -5,7 +5,7 @@ export default () => ({
     init() {
         this.onResize();
         this.$watch('isMobile', () => {
-            if(!this.isMobile && this.open) {
+            if (!this.isMobile && this.open) {
                 this.open = false;
             }
         });
@@ -18,4 +18,4 @@ export default () => ({
     onResize() {
         this.isMobile = window.innerWidth < 640;
     },
-})
+});

@@ -33,12 +33,41 @@ module.exports = {
             colors: {},
         },
     },
+    corePlugins: {
+        container: false,
+        aspectRatio: false,
+    },
     plugins: [
         plugin(function ({ addVariant }) {
-            addVariant('any-hover', '@media(any-hover:hover)')
+            addVariant('any-hover', '@media(any-hover:hover)');
         }),
+        // aspect-ratio polyfill for safari 14 - https://www.viget.com/articles/adding-safari-14-support-to-tailwinds-aspect-ratio/
+        ({ matchUtilities, theme }) => {
+            matchUtilities(
+                {
+                    aspect: (value) => ({
+                        '@supports (aspect-ratio: 1 / 1)': {
+                            aspectRatio: value,
+                        },
+                        '@supports not (aspect-ratio: 1 / 1)': {
+                            '&::before': {
+                                content: '""',
+                                float: 'left',
+                                paddingTop: `calc(100% / (${value}))`,
+                            },
+                            '&::after': {
+                                clear: 'left',
+                                content: '""',
+                                display: 'block',
+                            },
+                        },
+                    }),
+                },
+                { values: theme('aspectRatio') },
+            );
+        },
     ],
     future: {
         hoverOnlyWhenSupported: true,
     },
-}
+};

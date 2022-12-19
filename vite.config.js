@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 // import restart from 'vite-plugin-restart';
 
-export default defineConfig(({command}) => ({
+export default defineConfig(({ command }) => ({
     base: command === 'serve' ? '' : '/dist/',
     build: {
         manifest: true,
