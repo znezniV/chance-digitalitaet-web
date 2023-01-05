@@ -1,6 +1,6 @@
 {% if image %}
 
-    {% set backgroundClass = backgroundClass ?? 'bg-[#DFDFDF]' %}
+    {% set backgroundColor = backgroundColor ?? (image.dominantColor ??? '#a8a8a8') %}
     {% set loadTransition = loadTransition ?? 'fade-in' %}
 
     {% if image.hasFocalPoint %}
@@ -29,7 +29,7 @@
 
     {% else %}
 
-        <div class="{{ backgroundClass }} {{ classes }}">
+        <div class="{{ classes }}" style="background-color: {{ backgroundColor }};">
 
             {% set responsiveTransforms = responsiveTransforms ?? [] %}
             {% if responsiveTransforms | length %}

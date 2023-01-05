@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
-handle: default
+enabled: true
+handle: de
 hasUrls: true
-language: en-US
-name: 'Craft Starter'
+language: de
+name: German
 primary: true
 siteGroup: fe794aba-5bf0-44ef-a823-0fc9cc8fb93e # Craft Starter
 sortOrder: 1

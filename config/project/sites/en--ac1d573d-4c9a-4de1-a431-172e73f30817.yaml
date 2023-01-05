@@ -1,0 +1,9 @@
+baseUrl: '@web/en'
+enabled: '1'
+handle: en
+hasUrls: true
+language: en
+name: English
+primary: false
+siteGroup: fe794aba-5bf0-44ef-a823-0fc9cc8fb93e # Craft Starter
+sortOrder: 2

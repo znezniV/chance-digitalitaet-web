@@ -16,7 +16,7 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
-  e6d6312f-5bfe-4933-80d2-be986487da24: # Craft Starter
+  e6d6312f-5bfe-4933-80d2-be986487da24: # German
     enabledByDefault: true
     hasUrls: true
     template: _pages/home.twig

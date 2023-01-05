@@ -1,6 +1,6 @@
 import '../css/tailwind.css';
-// import '@hotwired/turbo';
-// import 'alpine-turbo-drive-adapter';
+
+// import htmx.org
 // import 'lazysizes';
 
 // import Alpine from 'alpinejs';

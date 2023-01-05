@@ -1,0 +1,20 @@
+columnSuffix: dkpnvqyq
+contentColumnType: text
+fieldGroup: 51397ab5-d808-46bf-9838-74f0956f9fa1 # Assets
+handle: dominantColor
+instructions: null
+name: 'Dominant Color'
+searchable: false
+settings:
+  allowSelect: false
+  columnType: text
+  decimals: 0
+  displayType: hidden
+  fieldTwig: '{{ craft.imager.getDominantColor(element) }}'
+  parseBeforeSave: false
+  parseOnMove: false
+  showField: false
+  textareaRows: 5
+translationKeyFormat: null
+translationMethod: none
+type: besteadfast\preparsefield\fields\PreparseFieldType

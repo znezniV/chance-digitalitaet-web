@@ -1,4 +1,4 @@
-dateModified: 1670386552
+dateModified: 1672902931
 elementSources:
   craft\elements\Entry:
     -
@@ -83,14 +83,17 @@ meta:
     1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
     3dc0e775-2e8d-40ef-a552-c1a675a59d80: 'Share Image' # Share Image
     4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
+    6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color'
     3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
+    51397ab5-d808-46bf-9838-74f0956f9fa1: Assets # Assets
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
+    ac1d573d-4c9a-4de1-a431-172e73f30817: English # English
     b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
     bfe046fa-2f8c-4bd6-8502-924a0171cc1a: SEO # SEO
     c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
     c475d313-1872-49dd-b290-85ab508126b2: 'Site Name' # Site Name
     ca240dbb-2270-468b-a5aa-d4dbc0fc7d91: SEO # SEO
-    e6d6312f-5bfe-4933-80d2-be986487da24: 'Craft Starter' # Craft Starter
+    e6d6312f-5bfe-4933-80d2-be986487da24: German # German
     fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter' # Craft Starter
 plugins:
   blitz-recommendations:
@@ -105,6 +108,10 @@ plugins:
       additionalCss: ''
       cacheBusting: true
       cssFile: '@web/assets/cp.css'
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   craft-ray:
     edition: standard
     enabled: true
@@ -146,6 +153,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.1
+  preparse-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.5
   redactor:
     edition: standard
     enabled: true

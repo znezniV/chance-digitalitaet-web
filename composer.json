@@ -1,5 +1,6 @@
 {
     "require": {
+        "besteadfast/craft-preparse-field": "^2.0",
         "clubstudioltd/craft-inline-svg": "^2.0",
         "craftcms/cms": "^4.2.7",
         "craftcms/postmark": "^3.0",
@@ -8,6 +9,7 @@
         "doublesecretagency/craft-cpcss": "^2.5",
         "doublesecretagency/craft-spoon": "^4.0",
         "internetztube/craft-slug-equals-title": "2.0.0-beta.1",
+        "mmikkel/cp-field-inspect": "^1.4",
         "nystudio107/craft-emptycoalesce": "^4.0",
         "nystudio107/craft-minify": "^4.0.0-beta.2",
         "nystudio107/craft-vite": "^4.0",
@@ -32,6 +34,7 @@
         "yiisoft/yii2-redis": "^2.0"
     },
     "require-dev": {
+        "nystudio107/craft-autocomplete": "^1.11",
         "roave/security-advisories": "dev-latest",
         "yiisoft/yii2-shell": "^2.0.3"
     },
