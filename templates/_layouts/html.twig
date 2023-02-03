@@ -38,7 +38,8 @@
         {% include '_helpers/seo.twig' %}
     {% endcache %}
 
-    {{ craft.vite.script('src/js/app.js', false, [], {"data-turbo-track":"reload"}) }}
+    {{ craft.vite.script('src/js/app.js') }}
+    <link rel="stylesheet" href="{{ craft.vite.asset('src/css/app.css') }}">
 
     <style>
         [x-cloak] { display: none !important; }
@@ -46,7 +47,7 @@
     </style>
 
     {% if craft.app.config.env == 'production' and not currentUser %}
-        <script defer data-api="/api/event" data-domain="craft-starter.test" src="/js/script.js"></script>
+        <script defer data-api="/api/event" data-domain="{{ craft.app.request.hostName }}" src="/js/script.js"></script>
     {% endif %}
 </head>
 <body class="ltr antialiased min-h-screen flex flex-col">

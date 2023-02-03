@@ -20,6 +20,7 @@ return GeneralConfig::create()
     ->allowUpdates(false)
     ->devMode(App::env('CRAFT_DEV_MODE') ?? false)
     ->allowAdminChanges(App::env('CRAFT_ALLOW_ADMIN_CHANGES') ?? false)
+    ->enableTemplateCaching(App::env('CRAFT_ENABLE_TEMPLATE_CACHING') ?? false)
     ->timezone('Europe/Zurich')
     ->enableGql(false)
     ->defaultCpLanguage('de-CH')
@@ -32,6 +33,7 @@ return GeneralConfig::create()
     ->cacheDuration(false)
     ->maxUploadFileSize(67108864) // 64MB
     ->transformGifs(false)
+    ->errorTemplatePrefix('_errors/')
     ->userSessionDuration($isDev ? false : 3600 * 4) // 4 Hours
 
     // ->imageEditorRatios([

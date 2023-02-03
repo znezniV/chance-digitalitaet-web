@@ -4,47 +4,27 @@
     .one()
 %}
 
-{# Page url#}
+{# Defaults #}
 {% set pageUrl = siteUrl|trim('/') ~ '/' ~ craft.app.request.pathInfo %}
-
-{# Page Title #}
 {% set titleSeparator = '|' %}
 {% set pageTitle = siteName %}
-
-{# Meta Description #}
 {% set metaDescription = seo.metaDescription %}
-
-{# Share image #}
 {% set shareImage = seo.shareImage[0] ?? null %}
+{% set pageType = 'website' %}
 
-{# Adjust depending on current page #}
-{% if entry is defined %}
 
-    {# Page Title #}
-    {% if entry.section.handle is not same as 'home' %}
-        {% set pageTitle = "#{entry} #{titleSeparator} #{siteName}" %}
-    {% endif %}
+{# Page Title #}
+{% if entry.section.handle is not same as 'home' %}
+    {% set pageTitle = "#{entry} #{titleSeparator} #{siteName}" %}
+{% endif %}
 
-    {# Section Specific #}
+{# Section Specific #}
 {#    {% if entry.section.handle in ['projects'] %}#}
 {#        {% set metaDescription = entry.leadText ?? metaDescription %}#}
 
 {#        {% set shareImage = entry.projectImage[0] ?? shareImage %}#}
 {#    {% endif %}#}
 
-{% else %}
-
-    {# Set page title for routes without entries #}
-
-{#    {% set pageTitles = {#}
-{#        'projekte': 'Projekte',#}
-{#    } %}#}
-
-{#    {% if craft.app.request.pathInfo in pageTitles|keys %}#}
-{#        {% set pageTitle = "#{pageTitles[craft.app.request.segments|first]} #{titleSeparator} #{siteName}" %}#}
-{#    {% endif %}#}
-
-{% endif %}
 
 {# Prepare values #}
 {% set metaDescription = metaDescription
@@ -54,8 +34,7 @@
 
 {% if shareImage %}
     {% set shareImageUrl = shareImage.extension == 'svg' and not craft.imager.imgixEnabled
-        ? shareImage.url
-        : craft.imagerx.transformImage(shareImage, 'shareImage') | first
+        ? shareImage.url : craft.imagerx.transformImage(shareImage, 'shareImage')|first
     %}
 {% endif %}
 
@@ -63,13 +42,16 @@
 <title>{{ pageTitle }}</title>
 <meta name="title" content="{{ pageTitle }}">
 <meta name="description" content="{{ metaDescription }}">
+<link rel="canonical" href="{{ pageUrl }}">
 
 {# Open Graph / Facebook #}
-<meta property="og:type" content="website">
+<meta property="og:type" content="{{ pageType }}">
 <meta property="og:url" content="{{ pageUrl }}">
 <meta property="og:title" content="{{ pageTitle }}">
 <meta property="og:description" content="{{ metaDescription }}">
 <meta property="og:image" content="{{ shareImageUrl ?? '' }}">
+<meta property="og:site_name" content="{{ siteName }}">
+<meta property="og:locale" content="{{ craft.app.language|replace({'-': '_'}) }}" />
 
 {# Twitter #}
 <meta property="twitter:card" content="summary_large_image">
@@ -77,3 +59,7 @@
 <meta property="twitter:title" content="{{ pageTitle }}">
 <meta property="twitter:description" content="{{ metaDescription }}">
 <meta property="twitter:image" content="{{ shareImageUrl ?? '' }}">
+
+{#<link rel="alternate" hreflang="en" href="{{ siteSwitcher('', entry ?? null) }}" />#}
+{#<link rel="alternate" hreflang="de" href="{{ siteSwitcher('', entry ?? null) }}" />#}
+{#<link rel="alternate" hreflang="x-default" href="{{ siteSwitcher('', entry ?? null) }}"/>#}

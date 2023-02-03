@@ -4,8 +4,8 @@
     {% set loadTransition = loadTransition ?? 'fade-in' %}
 
     {% if image.hasFocalPoint %}
-        {% set x = image.focalPoint | first * 100 ~ '%' %}
-        {% set y = image.focalPoint | last * 100 ~ '%' %}
+        {% set x = image.focalPoint|first * 100 ~ '%' %}
+        {% set y = image.focalPoint|last * 100 ~ '%' %}
         {% set imgageStyles = 'object-position: ' ~ [x, y]|join(' ') %}
     {% endif %}
     {% set imgageStyles = styles ??? imgageStyles ?? '' %}
@@ -32,13 +32,13 @@
         <div class="{{ classes }}" style="background-color: {{ backgroundColor }};">
 
             {% set responsiveTransforms = responsiveTransforms ?? [] %}
-            {% if responsiveTransforms | length %}
+            {% if responsiveTransforms|length %}
                 <picture>
 
                 {% for size, transform in responsiveTransforms %}
                     {% set responsiveTransformedImage = craft.imager.transformImage(image, transform) %}
                     <source
-                        data-srcset="{{ responsiveTransformedImage | srcset }}"
+                        data-srcset="{{ responsiveTransformedImage|srcset }}"
                         media="(min-width: {{ size }}px)"
                     />
                 {% endfor %}
@@ -46,7 +46,7 @@
             {% endif %}
 
             {% set transformedImage = craft.imager.transformImage(image, transform) %}
-            {% set fallbackImage = transformedImage | last %}
+            {% set fallbackImage = transformedImage|last %}
             {% set placeholder = craft.imager.placeholder({
                 color: 'transparent',
                 width: fallbackImage.width,
@@ -58,12 +58,12 @@
                 srcset: placeholder,
                 style: imageStyles,
                 'data-sizes': 'auto',
-                'data-srcset': transformedImage | srcset,
+                'data-srcset': transformedImage|srcset,
                 alt: image.alt ??? image.title ??? '',
                 class: "lazyload #{loadTransition} #{imageClasses}",
             }) }}
 
-            {% if responsiveTransforms | length %}
+            {% if responsiveTransforms|length %}
                 </picture>
             {% endif %}
 
