@@ -31,7 +31,7 @@ return [
     'healthCheckSecret' => App::env('OH_DEAR_HEALTH_CHECK_SECRET'),
     'healthChecks' => [
         // Check::availableUpdates()->warnWhenTotalAvailableUpdatesIsAtLeast(5),
-         Check::serverRequirements(),
+        Check::serverRequirements(),
         Check::devMode(),
         Check::usedDiskSpace(),
         Check::failedJobs(),

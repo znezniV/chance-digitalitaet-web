@@ -35,6 +35,7 @@ return GeneralConfig::create()
     ->transformGifs(false)
     ->errorTemplatePrefix('_errors/')
     ->userSessionDuration($isDev ? false : 3600 * 4) // 4 Hours
+    ->maxSlugIncrement(9999)
 
     // ->imageEditorRatios([
     //     'Ohne Einschränkung' => 'none',
