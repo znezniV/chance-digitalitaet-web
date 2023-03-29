@@ -1,5 +1,3 @@
-import '../css/tailwind.css';
-
 // import htmx.org
 // import 'lazysizes';
 
@@ -20,3 +18,9 @@ import '../css/tailwind.css';
 // });
 //
 // Alpine.start();
+
+// document.body.addEventListener('htmx:timeout', function(evt) {
+//     if(evt.detail.requestConfig.boosted || false) {
+//         window.location = evt.detail.requestConfig.path;
+//     }
+// });
