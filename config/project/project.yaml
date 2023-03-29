@@ -1,4 +1,4 @@
-dateModified: 1672902931
+dateModified: 1680064450
 elementSources:
   craft\elements\Entry:
     -
@@ -83,7 +83,7 @@ meta:
     1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
     3dc0e775-2e8d-40ef-a552-c1a675a59d80: 'Share Image' # Share Image
     4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
-    6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color'
+    6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color' # Dominant Color
     3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
     51397ab5-d808-46bf-9838-74f0956f9fa1: Assets # Assets
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
@@ -141,6 +141,10 @@ plugins:
     enabled: true
     licenseKey: JW4G3BB6LK67W52JERN55N83
     schemaVersion: 4.0.0
+  imager-x-imageboss-transformer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   minify:
     edition: standard
     enabled: true

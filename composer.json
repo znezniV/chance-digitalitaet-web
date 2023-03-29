@@ -1,4 +1,5 @@
 {
+    "type": "project",
     "require": {
         "besteadfast/craft-preparse-field": "^2.0.2",
         "clubstudioltd/craft-inline-svg": "^2.0",
@@ -19,6 +20,7 @@
         "putyourlightson/craft-dashboard-begone": "^2.0",
         "sebastianlenz/linkfield": "^2.1.5",
         "spacecatninja/imager-x": "^4.1.12",
+        "spacecatninja/imager-x-imageboss-transformer": "dev-local-paths",
         "spatie/craft-ray": "^2.0",
         "spicyweb/craft-embedded-assets": "^3.1.3",
         "topshelfcraft/environment-label": "^4.0.2",
@@ -51,7 +53,7 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "platform": {
-            "php": "8.1"
+            "php": "8.2"
         }
     },
     "scripts": {
@@ -77,5 +79,11 @@
         "post-deploy-to-production-cmd": [
             "@post-deploy-cmd"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:jorisnoo/craft-imager-x-imageboss-transformer.git"
+        }
+    ]
 }
