@@ -7,7 +7,7 @@ return [
             ['width' => 2400],
         ],
         'defaults' => [
-            'format' => 'webp',
+            'fillInterval' => 200,
         ],
     ],
 
@@ -15,6 +15,8 @@ return [
         'transforms' => [
             ['width' => 1200, 'height' => 630],
         ],
+        'defaults' => [
+            'format' => 'jpg',
+        ],
     ],
-    'svg' => [],
 ];

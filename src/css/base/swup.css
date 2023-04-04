@@ -1,0 +1,11 @@
+.swup-progress-bar {
+    @apply bg-black;
+}
+
+.swup-transition-main {
+    @apply transition-opacity duration-[400ms] ease-out opacity-100;
+}
+
+html.is-animating .swup-transition-main {
+    @apply opacity-0;
+}

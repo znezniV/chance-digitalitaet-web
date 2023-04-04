@@ -44,8 +44,11 @@ return GeneralConfig::create()
     // ])
 
     ->aliases([
-        '@web' => App::env('PRIMARY_SITE_URL'),
+        '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
         '@webroot' => dirname(__DIR__).'/web',
-        // '@publicUrl' => App::env('PRIMARY_SITE_URL'),
-    ])
-;
+
+        '@assetBaseUrl' => '@web/storage',
+        '@assetBasePath' => '@storage/app/public',
+        '@imagerBaseUrl' => '@assetBaseUrl/13b6ecc1-ecb4-4427-be4c-c114890bfb98',
+        '@imagerBasePath' => '@assetBasePath/13b6ecc1-ecb4-4427-be4c-c114890bfb98',
+    ]);

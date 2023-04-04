@@ -36,7 +36,6 @@
 
     {{ craft.vite.script('src/js/app.js') }}
     <link rel="stylesheet" href="{{ craft.vite.asset('src/css/app.css') }}">
-    <meta name="htmx-config" content='{"timeout":"1000"}'>
 
     <style>
         [x-cloak] { display: none !important; }
@@ -47,9 +46,11 @@
         <script defer data-api="/api/event" data-domain="{{ craft.app.request.hostName }}" src="/js/script.js"></script>
     {% endif %}
 </head>
-<body class="ltr antialiased" hx-boost="true" hx-swap="innerHTML swap:200ms settle:200ms">
+<body class="ltr antialiased">
 
-    {{ block('page') }}
+    <div id="swup">
+        {{ block('page') }}
+    </div>
 
     {% include '_helpers/breakpoint.twig' %}
     {% include '_helpers/devmode.twig' %}

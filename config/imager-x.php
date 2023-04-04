@@ -3,7 +3,7 @@
 use craft\helpers\App;
 
 return [
-    'transformer' => App::env('IMAGER_TRANSFORMER') === 'imgix' ? 'imgix' : 'craft',
+    'transformer' => App::env('IMAGER_TRANSFORMER') ?? 'craft',
 
     'fillTransforms' => true,
     'allowUpscale' => false,

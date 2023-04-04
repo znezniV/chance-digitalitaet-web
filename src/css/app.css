@@ -1,7 +1,7 @@
 @import 'tailwindcss/base';
 @import './base/base.css';
 @import './base/fonts.css';
-@import './base/turbo.css';
+@import './base/swup.css';
 @import './base/lazysizes.css';
 
 @import 'tailwindcss/components';
@@ -10,4 +10,3 @@
 @import 'tailwindcss/utilities';
 @import './utilities/typo.css';
 @import './utilities/prose.css';
-@import './utilities/noScrollBar.css';

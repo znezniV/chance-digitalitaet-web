@@ -1,4 +1,5 @@
 export default () => ({
+    swiper: null,
     open: false,
     isMobile: false,
 
@@ -9,6 +10,12 @@ export default () => ({
                 this.open = false;
             }
         });
+    },
+
+    destroy() {
+        if (this.swiper) {
+            this.swiper.destroy();
+        }
     },
 
     toggleMenu() {
