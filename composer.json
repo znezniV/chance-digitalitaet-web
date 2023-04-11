@@ -10,6 +10,7 @@
         "doublesecretagency/craft-cpcss": "^2.6",
         "doublesecretagency/craft-spoon": "^4.0.4",
         "internetztube/craft-slug-equals-title": "2.0.0-beta.1",
+        "jorisnoo/craft-modules": "dev-main",
         "mmikkel/cp-field-inspect": "^1.4.4",
         "nystudio107/craft-emptycoalesce": "^4.0",
         "nystudio107/craft-minify": "^4.0.0-beta.2",
@@ -68,9 +69,6 @@
             "ln -s ../storage/app/public web/storage",
             "ln -s ../storage/imager web/imager"
         ],
-        "storage:link-dev": [
-            "ln -s ../src web/src"
-        ],
         "post-deploy-cmd": [
             "@php craft migrate/all --interactive=0",
             "@php craft project-config/apply",
@@ -84,6 +82,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:jorisnoo/craft-imager-x-imageboss-transformer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:jorisnoo/craft-modules.git"
         }
     ]
 }

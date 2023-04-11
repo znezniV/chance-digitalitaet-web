@@ -7,4 +7,5 @@
 /web/storage
 /web/dist
 /web/imager
+/web/src
 .hosts.yml

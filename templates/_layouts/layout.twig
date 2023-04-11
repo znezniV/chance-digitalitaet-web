@@ -2,12 +2,14 @@
 
 {% block page %}
 
-    <main class="swup-transition-main">
-        {{ block('main') }}
-    </main>
+    <div id="swup">
+        <main class="swup-transition-main">
+            {{ block('main') }}
+        </main>
 
-    {% cache globally using key 'footer' %}
-        {% include '_components/footer.twig' %}
-    {% endcache %}
+        {% cache globally using key 'footer' %}
+            {% include '_components/footer.twig' %}
+        {% endcache %}
+    </div>
 
 {% endblock %}

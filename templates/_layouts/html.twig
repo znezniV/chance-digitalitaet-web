@@ -14,9 +14,11 @@
 <html lang="{{ craft.app.language[0:2] }}">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="origin-when-cross-origin" />
+    <link rel="preconnect" href="https://img.imageboss.me/">
 
     {% if craft.app.config.env != 'production' %}
         <meta name="robots" content="noindex, nofollow">
@@ -48,9 +50,7 @@
 </head>
 <body class="ltr antialiased">
 
-    <div id="swup">
-        {{ block('page') }}
-    </div>
+    {{ block('page') }}
 
     {% include '_helpers/breakpoint.twig' %}
     {% include '_helpers/devmode.twig' %}

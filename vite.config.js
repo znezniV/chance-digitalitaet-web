@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-// import restart from 'vite-plugin-restart';
 
 export default defineConfig(({ command }) => ({
     base: command === 'serve' ? '' : '/dist/',
@@ -14,13 +13,4 @@ export default defineConfig(({ command }) => ({
             },
         },
     },
-    plugins: [
-        // restart({
-        //     reload: [
-        //         './templates/**/*',
-        //         './modules/**/*',
-        //         './web/assets/**/*',
-        //     ],
-        // }),
-    ],
 }));

@@ -1,19 +1,20 @@
 import Swup from 'swup';
-// import SwupScriptsPlugin from '@swup/scripts-plugin';
 import SwupProgressPlugin from '@swup/progress-plugin';
 import SwupPreloadPlugin from '@swup/preload-plugin';
 import SwupScrollPlugin from '@swup/scroll-plugin';
-import SwupA11yPlugin from '@swup/a11y-plugin';
+// import SwupScriptsPlugin from '@swup/scripts-plugin';
+// import SwupA11yPlugin from '@swup/a11y-plugin';
 
 new Swup({
-    resolveUrl: (url) => {
-        if (url.startsWith('/projekte/')) {
-            return '/projekte';
-        }
-        return url;
-    },
-    containers: ['#swup'],
+    // containers: ['#swup'],
+    // resolveUrl: (url) => {
+    //     if (url.startsWith('/projekte/')) {
+    //         return '/projekte';
+    //     }
+    //     return url;
+    // },
     plugins: [
+        // new SwupA11yPlugin(),
         // new SwupScriptsPlugin({
         //     head: false,
         //     body: true,
@@ -23,6 +24,5 @@ new Swup({
         }),
         new SwupPreloadPlugin(),
         new SwupScrollPlugin(),
-        new SwupA11yPlugin(),
     ],
 });
