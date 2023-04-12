@@ -18,21 +18,20 @@
  */
 
 use craft\helpers\App;
-use jorisnoo\CraftModules\MakeUsersEditors;
-use jorisnoo\CraftModules\SeoPreview;
-use jorisnoo\CraftModules\WarmCache;
 
 return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
     'modules' => [
-        'make-users-editors' => MakeUsersEditors::class,
-        'seo-preview' => SeoPreview::class,
-        'warm-cache' => WarmCache::class,
+        'make-users-editors' => jorisnoo\CraftModules\MakeUsersEditors::class,
+        'seo-preview' => jorisnoo\CraftModules\SeoPreview::class,
+        'warm-cache' => jorisnoo\CraftModules\WarmCache::class,
+//        'sidebar-relations' => jorisnoo\CraftModules\SidebarRelations::class,
     ],
     'bootstrap' => [
         'make-users-editors',
         'seo-preview',
         'warm-cache',
+//        'sidebar-relations',
     ],
     'components' => [
         'redis' => [

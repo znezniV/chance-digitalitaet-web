@@ -1,9 +1,10 @@
 {
     "type": "project",
     "require": {
+        "php": "^8.2",
         "besteadfast/craft-preparse-field": "^2.0.2",
         "clubstudioltd/craft-inline-svg": "^2.0",
-        "craftcms/cms": "^4.4.5",
+        "craftcms/cms": "^4.4.7",
         "craftcms/postmark": "^3.0",
         "craftcms/redactor": "^3.0.4",
         "doublesecretagency/craft-cpbodyclasses": "^2.3",
@@ -23,7 +24,7 @@
         "spacecatninja/imager-x": "^4.1.12",
         "spacecatninja/imager-x-imageboss-transformer": "dev-local-paths",
         "spatie/craft-ray": "^2.0",
-        "spicyweb/craft-embedded-assets": "^3.1.3",
+        "spicyweb/craft-embedded-assets": "^3.1.4",
         "topshelfcraft/environment-label": "^4.0.2",
         "ttempleton/craft-nocache": "^3.0",
         "vaersaagod/matrixmate": "^2.1.2",
@@ -52,17 +53,13 @@
             "yiisoft/yii2-composer": true
         },
         "sort-packages": true,
-        "optimize-autoloader": true,
-        "platform": {
-            "php": "8.2"
-        }
+        "optimize-autoloader": true
     },
     "scripts": {
         "project-setup": [
             "@composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@storage:link",
-            "@storage:link-dev",
             "@php craft setup/welcome"
         ],
         "storage:link": [
