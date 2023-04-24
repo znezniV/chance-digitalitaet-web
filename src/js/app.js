@@ -1,8 +1,6 @@
 import './bootstrap.js';
 // import './swup.js'
 
-import 'lazysizes';
-
 // import Alpine from 'alpinejs';
 // import focus from '@alpinejs/focus';
 // import collapse from '@alpinejs/collapse';

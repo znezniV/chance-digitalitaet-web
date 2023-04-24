@@ -6,9 +6,9 @@
     {% if image.hasFocalPoint %}
         {% set x = image.focalPoint|first * 100 ~ '%' %}
         {% set y = image.focalPoint|last * 100 ~ '%' %}
-        {% set imgageStyles = 'object-position: ' ~ [x, y]|join(' ') %}
+        {% set imageStyles = 'object-position: ' ~ [x, y]|join(' ') %}
     {% endif %}
-    {% set imgageStyles = styles ??? imgageStyles ?? '' %}
+    {% set imageStyles = styles ??? imageStyles ?? '' %}
     {% set classes = classes ?? '' %}
     {% set imageClasses = imageClasses ?? '' %}
 
@@ -22,9 +22,9 @@
             'data-src': transformedImage.url,
             width: image.width,
             height: image.height,
-            style: imgageStyles,
+            style: imageStyles,
             alt: image.alt ??? image.title ??? '',
-            class: "lazyload #{classes} #{imageClasses}",
+            class: "lazyload w-full #{classes} #{imageClasses}",
         }) }}
 
     {% else %}
@@ -60,7 +60,7 @@
                 'data-sizes': 'auto',
                 'data-srcset': transformedImage|srcset,
                 alt: image.alt ??? image.title ??? '',
-                class: "lazyload #{loadTransition} #{imageClasses}",
+                class: "lazyload w-full #{loadTransition} #{imageClasses}",
             }) }}
 
             {% if responsiveTransforms|length %}

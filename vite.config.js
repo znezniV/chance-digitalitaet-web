@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => ({
         rollupOptions: {
             input: {
                 app: './src/js/app.js',
-                css: './src/css/app.js',
+                css: './src/css/app.css',
             },
         },
     },

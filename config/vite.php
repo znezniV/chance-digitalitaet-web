@@ -8,7 +8,7 @@ return [
     'useDevServer' => $isDev,
     'manifestPath' => '@webroot/dist/manifest.json',
     'devServerPublic' => 'http://localhost:5173/',
-    'serverPublic' => rtrim(App::env('PRIMARY_SITE_URL'), '/') . '/dist/',
+    'serverPublic' => '@web/dist/',
     'errorEntry' => '',
     'cacheKeySuffix' => '',
     'devServerInternal' => 'http://localhost:5173',
@@ -16,5 +16,5 @@ return [
     'includeReactRefreshShim' => false,
     'includeModulePreloadShim' => true,
     'criticalPath' => '@webroot/dist/criticalcss',
-    'criticalSuffix' =>'_critical.min.css',
+    'criticalSuffix' => '_critical.min.css',
 ];

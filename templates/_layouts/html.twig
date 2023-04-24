@@ -14,7 +14,6 @@
 <html lang="{{ craft.app.language[0:2] }}">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="origin-when-cross-origin" />
@@ -24,12 +23,12 @@
         <meta name="robots" content="noindex, nofollow">
     {% endif %}
 
-    {% set favicon = craft.app.config.env == 'production' ? 'icon' : 'icon' %}
-    <link rel="icon" href="/assets/meta/{{ favicon }}.ico" sizes="any">
-    <link rel="icon" type="image/svg+xml" href="/assets/meta/{{ favicon }}.svg">
-    <link rel="manifest" href="/assets/meta/site.webmanifest">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/meta/apple-touch-icon.png">
-    <meta name="theme-color" content="#ffffff">
+{#    {% set favicon = craft.app.config.env == 'production' ? 'icon' : 'icon' %}#}
+{#    <link rel="icon" href="/assets/meta/{{ favicon }}.ico" sizes="any">#}
+{#    <link rel="icon" type="image/svg+xml" href="/assets/meta/{{ favicon }}.svg">#}
+{#    <link rel="manifest" href="/assets/meta/site.webmanifest">#}
+{#    <link rel="apple-touch-icon" sizes="180x180" href="/assets/meta/apple-touch-icon.png">#}
+{#    <meta name="theme-color" content="#ffffff">#}
 {#    {{ block('meta') ?? null }}#}
 
     {% cache %}

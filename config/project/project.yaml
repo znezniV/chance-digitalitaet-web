@@ -1,4 +1,4 @@
-dateModified: 1681206784
+dateModified: 1682309182
 elementSources:
   craft\elements\Entry:
     -
@@ -68,16 +68,16 @@ fs:
     hasUrls: true
     name: About
     settings:
-      path: '@storage/app/public/imgix-7a47f915-f68d-44fb-a731-1cb4c386a483/about'
+      path: '@imagerBasePath/about'
     type: craft\fs\Local
-    url: '@web/storage/imgix-7a47f915-f68d-44fb-a731-1cb4c386a483/about'
+    url: '@imagerBaseUrl/about'
   transforms:
     hasUrls: true
     name: 'Craft Transforms'
     settings:
-      path: '@storage/app/public/craft-transforms'
+      path: '@assetBasePath/craft-transforms'
     type: craft\fs\Local
-    url: '@web/storage/craft-transforms'
+    url: '@assetBaseUrl/craft-transforms'
 meta:
   __names__:
     1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
@@ -139,7 +139,7 @@ plugins:
   imager-x:
     edition: pro
     enabled: true
-    licenseKey: JW4G3BB6LK67W52JERN55N83
+    licenseKey: 1VS4AZMCJQ5AJDZ3ZQ1BQ2NH
     schemaVersion: 4.0.0
   imager-x-imageboss-transformer:
     edition: standard
@@ -173,5 +173,6 @@ system:
   edition: pro
   live: true
   name: 'Craft Starter'
+  retryDuration: null
   schemaVersion: 4.4.0.4
   timeZone: Europe/Zurich
