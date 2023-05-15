@@ -1,5 +1,6 @@
 import './bootstrap.js';
 // import './swup.js'
+// import './htmx.js'
 
 // import Alpine from 'alpinejs';
 // import focus from '@alpinejs/focus';

@@ -1,4 +1,4 @@
-dateModified: 1682309182
+dateModified: 1682586867
 elementSources:
   craft\elements\Entry:
     -
@@ -96,9 +96,13 @@ meta:
     e6d6312f-5bfe-4933-80d2-be986487da24: German # German
     fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter' # Craft Starter
 plugins:
-  blitz-recommendations:
+  assetusage:
     edition: standard
     enabled: true
+    schemaVersion: 2.0.0
+  blitz-recommendations:
+    edition: standard
+    enabled: false
     schemaVersion: 2.1.0
   cp-css:
     edition: standard

@@ -27,7 +27,3 @@ body.login #login-form button {
 body.login #login-form .btn.submit {
     background: #000 !important;
 }
-
-#ohdear-app .lightswitch-field {
-    display: none;
-}

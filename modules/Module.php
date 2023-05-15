@@ -12,7 +12,15 @@ class Module extends BaseModule
         Craft::setAlias('@modules', __DIR__);
         parent::init();
 
-//        ray(Craft::$app->env);
+        // Defer most setup tasks until Craft is fully initialized
+        Craft::$app->onInit(function () {
+            $this->attachEventHandlers();
+        });
+    }
+
+    public function attachEventHandlers(): void
+    {
+        // Override this method in your module class to attach event handlers
     }
 
 }

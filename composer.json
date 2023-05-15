@@ -3,11 +3,12 @@
     "require": {
         "php": "^8.2",
         "besteadfast/craft-preparse-field": "^2.0.2",
+        "born05/craft-assetusage": "^3.1",
+        "carlcs/craft-uielementfields": "^2.0.3",
         "clubstudioltd/craft-inline-svg": "^2.0",
-        "craftcms/cms": "^4.4.7",
+        "craftcms/cms": "^4.4.10.1",
         "craftcms/postmark": "^3.0",
         "craftcms/redactor": "^3.0.4",
-        "doublesecretagency/craft-cpbodyclasses": "^2.3",
         "doublesecretagency/craft-cpcss": "^2.6",
         "internetztube/craft-slug-equals-title": "^2.0.0",
         "jorisnoo/craft-modules": "dev-main",
@@ -20,20 +21,23 @@
         "putyourlightson/craft-blitz-recommendations": "^2.1.1",
         "putyourlightson/craft-dashboard-begone": "^2.0",
         "sebastianlenz/linkfield": "^2.1.5",
-        "spacecatninja/imager-x": "^4.1.12",
+        "spacecatninja/imager-x": "^4.1.13",
         "spacecatninja/imager-x-imageboss-transformer": "dev-local-paths",
         "spatie/craft-ray": "^2.0",
-        "spicyweb/craft-embedded-assets": "^3.1.4",
-        "topshelfcraft/environment-label": "^4.0.2",
+        "spicyweb/craft-embedded-assets": "^3.1.5",
+        "topshelfcraft/environment-label": "^4.0.3",
         "ttempleton/craft-nocache": "^3.0",
-        "vaersaagod/matrixmate": "^2.1.2",
+        "vaersaagod/matrixmate": "^2.1.3",
+        "vaersaagod/redirectmate": "1.0.0-beta.9",
+        "vaersaagod/seomate": "^2.1.1",
         "verbb/cp-nav": "^4.0.10",
+        "verbb/hyper": "^1.1.5",
         "verbb/expanded-singles": "^2.0.1",
         "verbb/field-manager": "^3.0.5",
         "verbb/smith": "^2.0",
         "verbb/super-table": "^3.0.8.1",
         "vlucas/phpdotenv": "^5.5.0",
-        "webhubworks/craft-ohdear": "^4.0.2",
+        "webhubworks/craft-ohdear": "^4.1.0",
         "yiisoft/yii2-redis": "^2.0.18"
     },
     "require-dev": {
@@ -52,7 +56,10 @@
             "yiisoft/yii2-composer": true
         },
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.2"
+        }
     },
     "scripts": {
         "project-setup": [

@@ -2,6 +2,7 @@
 @import './base/base.css';
 @import './base/fonts.css';
 @import './base/swup.css';
+@import './base/htmx.css';
 @import './base/lazysizes.css';
 
 @import 'tailwindcss/components';

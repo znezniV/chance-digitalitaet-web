@@ -11,6 +11,16 @@ return [
         ],
     ],
 
+    'grid' => [
+        'transforms' => [
+            ['width' => 600],
+            ['width' => 1200],
+        ],
+        'defaults' => [
+            'fillInterval' => 150,
+        ],
+    ],
+
     'shareImage' => [
         'transforms' => [
             ['width' => 1200, 'height' => 630],

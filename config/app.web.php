@@ -17,6 +17,9 @@
 
 use craft\helpers\App;
 
+/**
+ * Use Redis as Session cache
+ */
 return [
     'components' => [
         'session' => static function() {

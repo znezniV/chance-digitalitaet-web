@@ -1,0 +1,12 @@
+.htmx-progress-bar {
+    @apply bg-black;
+}
+
+.page-transition-main {
+    @apply transition-opacity duration-200 ease-out opacity-100;
+}
+
+.htmx-swapping .page-transition-main,
+.htmx-settling .page-transition-main {
+    @apply opacity-0;
+}
