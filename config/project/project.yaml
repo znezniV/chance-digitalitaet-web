@@ -1,4 +1,4 @@
-dateModified: 1682586867
+dateModified: 1684134947
 elementSources:
   craft\elements\Entry:
     -
@@ -84,6 +84,7 @@ meta:
     3dc0e775-2e8d-40ef-a552-c1a675a59d80: 'Share Image' # Share Image
     4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
     6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color' # Dominant Color
+    85e7b218-d803-45ff-92b4-7fc6e3454d22: About # About
     3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
     51397ab5-d808-46bf-9838-74f0956f9fa1: Assets # Assets
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home

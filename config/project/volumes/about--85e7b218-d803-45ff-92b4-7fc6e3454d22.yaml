@@ -1,0 +1,78 @@
+fieldLayouts:
+  2e6a30f8-de71-4c45-a7dd-839e1a07a803:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 52436817-f5e1-4c87-890e-f67a0c587d63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6d58ef4a-0a77-4a65-8df8-41f9f7a7483a # Dominant Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a18a453-4ab6-4e90-b621-d9ba5beae78c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 193c9666-46f3-4af0-a64a-8cbb30a4fa5f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fb543452-0e5d-4918-aadd-aa532968d222
+        userCondition: null
+fs: about
+handle: about
+name: About
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: transforms
+transformSubpath: about
