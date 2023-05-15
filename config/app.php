@@ -25,12 +25,14 @@ return [
         'make-users-editors' => jorisnoo\CraftModules\MakeUsersEditors::class,
         'seo-preview' => jorisnoo\CraftModules\SeoPreview::class,
         'warm-cache' => jorisnoo\CraftModules\WarmCache::class,
+//        'locale-redirect' => jorisnoo\CraftModules\LocaleRedirect::class,
 //        'sidebar-relations' => jorisnoo\CraftModules\SidebarRelations::class,
     ],
     'bootstrap' => [
         'make-users-editors',
         'seo-preview',
         'warm-cache',
+//        'locale-redirect',
 //        'sidebar-relations',
     ],
     'components' => [

@@ -32,6 +32,9 @@ you're not using.
 [Imager X](https://imager-x.spacecat.ninja/) is used to generate image transforms.
 `IMAGER_TRANSFORMER` may be set to either `craft`, [`imgix`](https://imgix.com/) or [`imageboss`](https://imageboss.me/).
 
+If you want to obfuscate the location of your assets (eg. when using imgix or imageboss as web proxy),
+set the `@imagerBaseUrl` and `@imagerBasePath` in `config/general.php` and use them in the filesystem settings.
+
 ## Deployment
 <details>
 tbd.
