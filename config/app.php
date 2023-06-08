@@ -24,36 +24,36 @@ return [
     'modules' => [
         'make-users-editors' => jorisnoo\CraftModules\MakeUsersEditors::class,
         'seo-preview' => jorisnoo\CraftModules\SeoPreview::class,
-        'warm-cache' => jorisnoo\CraftModules\WarmCache::class,
+        // 'warm-cache' => jorisnoo\CraftModules\WarmCache::class,
 //        'locale-redirect' => jorisnoo\CraftModules\LocaleRedirect::class,
 //        'sidebar-relations' => jorisnoo\CraftModules\SidebarRelations::class,
     ],
     'bootstrap' => [
         'make-users-editors',
         'seo-preview',
-        'warm-cache',
+        // 'warm-cache',
 //        'locale-redirect',
 //        'sidebar-relations',
     ],
     'components' => [
-        'redis' => [
-            'class' => yii\redis\Connection::class,
-            'hostname' => App::env('REDIS_HOSTNAME') ?: '127.0.0.1',
-            'port' => App::env('REDIS_PORT') ?: 6379,
-            'database' => App::env('REDIS_DEFAULT_DB') ?: 0,
-        ],
-        'cache' => [
-            'class' => yii\redis\Cache::class,
-            'keyPrefix' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
-            'redis' => [
-                'hostname' => App::env('REDIS_HOSTNAME') ?: '127.0.0.1',
-                'port' => App::env('REDIS_PORT') ?: 6379,
-                'database' => App::env('REDIS_CRAFT_DB') ?: 1,
-            ],
-        ],
-        'queue' => [
-            'class' => craft\queue\Queue::class,
-            'ttr' => 5 * 60,
-        ],
+        // 'redis' => [
+        //     'class' => yii\redis\Connection::class,
+        //     'hostname' => App::env('REDIS_HOSTNAME') ?: '127.0.0.1',
+        //     'port' => App::env('REDIS_PORT') ?: 6379,
+        //     'database' => App::env('REDIS_DEFAULT_DB') ?: 0,
+        // ],
+        // 'cache' => [
+        //     'class' => yii\redis\Cache::class,
+        //     'keyPrefix' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
+        //     'redis' => [
+        //         'hostname' => App::env('REDIS_HOSTNAME') ?: '127.0.0.1',
+        //         'port' => App::env('REDIS_PORT') ?: 6379,
+        //         'database' => App::env('REDIS_CRAFT_DB') ?: 1,
+        //     ],
+        // ],
+        // 'queue' => [
+        //     'class' => craft\queue\Queue::class,
+        //     'ttr' => 5 * 60,
+        // ],
     ]
 ];
