@@ -1,0 +1,29 @@
+@mixin button($background-color: $color-green, $color: var(--color-text)) {
+    @include typo-heading-small();
+    display: inline-block;
+    padding: 0.333em 0.77em;
+    margin: 0;
+    overflow: visible;
+    color: $color;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    background: $background-color;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    // Change box model
+    box-sizing: border-box;
+    // Adjust background display
+    background-clip: padding-box;
+
+    &:disabled,
+    &[disabled] {
+        cursor: not-allowed;
+        //color: #555;
+        //border-color: #555;
+    }
+    &:visited {
+        color: var(--color-box);
+    }
+}

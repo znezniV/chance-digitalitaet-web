@@ -1,4 +1,18 @@
 :root {
+    // color
     --color-background: #{$color-white};
+    --color-footer: #{$color-black};
     --color-text: #181818;
+
+    // spacing
+    --spacing-large: 80px;
+    --spacing-medium-big: 68px;
+    --spacing-medium: 48px;
+    --spacing-small: 40px;
+    @include mq($until: tablet) {
+        --spacing-large: 56px;
+        --spacing-medium-big: 32px;
+        --spacing-medium: 25px;
+        --spacing-small: 18px;
+    }
 }

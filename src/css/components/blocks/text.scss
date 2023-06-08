@@ -1,0 +1,12 @@
+.text {
+    @include container($page-container);
+    @include grid();
+
+    &__inner {
+        grid-column: 2 / span 9;
+
+        @include mq($until: desktop) {
+            grid-column: 1 / span 12;
+        }
+    }
+}

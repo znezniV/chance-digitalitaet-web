@@ -1,0 +1,5 @@
+{% if entry.type == 'blog' %}
+    {% include '_pages/index.twig' %}
+{% else %}
+    {% include '_pages/page-default.twig' %}
+{% endif%}

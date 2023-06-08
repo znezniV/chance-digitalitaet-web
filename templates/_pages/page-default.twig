@@ -1,0 +1,11 @@
+{% extends "_layouts/layout.twig" %}
+
+{% block namespace %}blog{% endblock %}
+
+{% block main %}
+
+    {% include "_components/pageHeading" with { heading: entry.title, lead: entry.lead } %}
+    {% include "_components/contentBlocks" %}
+
+{% endblock %}
+

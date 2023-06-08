@@ -18,6 +18,7 @@
 // Mixins
 @import 'mixins/aspect-ratio.scss';
 @import 'mixins/burger.scss';
+@import 'mixins/button.scss';
 @import 'mixins/clearfix.scss';
 @import 'mixins/container.scss';
 @import 'mixins/content-blocks.scss';
@@ -59,4 +60,9 @@
 // @import 'pages/**/*.scss';
 
 // Components
-@import 'components/test.scss';
+@import 'components/footer.scss';
+@import 'components/logo.scss';
+@import 'components/nav.scss';
+@import 'components/pageHeading.scss';
+@import 'components/blocks/colorBlock.scss';
+@import 'components/blocks/text.scss';

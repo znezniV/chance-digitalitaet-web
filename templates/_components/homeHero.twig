@@ -1,0 +1,18 @@
+<div class="homeHero">
+    <div class="homeHero__logo">
+        {% if logo.extension == "svg" %}
+            {{ svg(logo) }}
+        {% endif %}
+    </div>
+    {% if lead is defined and lead|length %}
+        <div class="homeHero__lead">
+            {{ lead }}
+        </div>
+    {% endif %}
+
+    {% if button is defined and button|length %}
+        <a href="{{ entry.buttonHome }}">
+            {{ entry.buttonHome.getCustomText('Zum Eintrag') }}
+        </a>
+    {% endif %}
+</div>

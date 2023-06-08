@@ -1,15 +1,3 @@
-/**
- * -----------------------------------------------------------------------
- * page level styling for typography
- * -----------------------------------------------------------------------
- *
- *
- *
- * @link      https://www.dezentrum.ch
- * @licence   MIT
- * @version   1.0.0
- */
-
 html,
 body {
     font-kerning: normal;
@@ -26,7 +14,7 @@ h6 {
 }
 
 h2 {
-    @include typo-heading-small;
+    @include typo-heading;
 }
 
 h1 {

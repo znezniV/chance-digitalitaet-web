@@ -1,0 +1,73 @@
+.colorBlock {
+    @include container($page-container);
+    @include grid();
+
+    @include mq($until: phablet) {
+        margin: 0 0;
+    }
+
+    &__inner {
+        @include grid(11);
+        grid-column: 2 / span 11;
+        background-color: var(--block-background);
+        color: var(--block-text);
+        padding-bottom: var(--spacing-medium-big);
+        padding-top: var(--spacing-small);
+
+        @include mq($until: phablet) {
+            grid-column: 1/span 12;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
+    &__content {
+        grid-column: 2 / span 9;
+
+        @include mq($until: phablet) {
+            grid-column: 1/span 12;
+        }
+
+        p + p {
+            margin-top: 1em;
+        }
+
+
+    }
+
+    &:nth-child(even) {
+        .colorBlock {
+            &__inner {
+                grid-column: 1 / span 11;
+                @include mq($until: phablet) {
+                    grid-column: 1/span 12;
+                }
+            }
+        }
+    }
+
+    &:nth-child(1n) {
+        .colorBlock {
+            &__inner {
+                --block-background: #{$color-blue};
+                --block-text: #{$color-white};
+            }
+        }
+    }
+    &:nth-child(2n) {
+        .colorBlock {
+            &__inner {
+                --block-background: #{$color-red};
+                --block-text: #{$color-white};
+            }
+        }
+    }
+    &:nth-child(3n) {
+        .colorBlock {
+            &__inner {
+                --block-background: #{$color-green};
+                --block-text: #{$color-black};
+            }
+        }
+    }
+}

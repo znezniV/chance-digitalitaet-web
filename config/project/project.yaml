@@ -1,4 +1,4 @@
-dateModified: 1686225474
+dateModified: 1686250756
 elementSources:
   craft\elements\Entry:
     -
@@ -80,22 +80,43 @@ fs:
     url: '@assetBaseUrl/craft-transforms'
 meta:
   __names__:
+    0f4f23be-0b8a-4ac4-94f0-8f934ce349c8: Home # Home
     1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
+    2b5e4669-d25f-418f-9e87-45105720f1d4: Button # Button
+    2ff8ce56-e1cc-448f-8f64-b75caf2e1106: 'Logo Französisch' # Logo Französisch
+    3a722f01-9577-4609-b667-62e72d7f4ad4: Text # Text
+    3ba3db26-741e-489b-b50d-7be738b2f35f: 'Button Home' # Button Home
     3dc0e775-2e8d-40ef-a552-c1a675a59d80: 'Share Image' # Share Image
+    3f6076cf-bc5d-4907-914e-41369bb3676b: Page # Page
     4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
+    4fb7a10c-8ca0-4b40-bacf-0d021e2a11f3: Global # Global
+    5ce50460-65ec-4a90-ad2e-ea2530dc6f36: Text # Text
     6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color' # Dominant Color
+    07ba58ba-9d1a-4bca-90e6-83bcd333d140: Farbe # Farbe
+    9ca0bdb2-223c-4190-af5d-2da06fd7b81a: Footer # Footer
     85e7b218-d803-45ff-92b4-7fc6e3454d22: About # About
+    95beaae5-ee36-42b5-ba23-79a7af3c6f5f: 'Main Nav' # Main Nav
+    555abebb-6f53-497f-a4c0-36f3340c4885: Lead # Lead
+    2640cf14-838a-4394-b21e-84c409715053: Branding # Branding
     3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
+    4060c4c7-4027-46a0-8ca3-ddb1b0d5000d: Standard # Standard
+    35853a03-a023-42a1-a246-59b04b4a1433: 'Logo Deutsch' # Logo Deutsch
     51397ab5-d808-46bf-9838-74f0956f9fa1: Assets # Assets
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
+    969890a0-f328-43b4-b8f6-8d1d6724eead: 'Content Blocks' # Content Blocks
+    68733552-34d0-4fff-9ec4-f01c7c954ec2: 'Farb Block' # Farb Block
+    a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile
     ac1d573d-4c9a-4de1-a431-172e73f30817: 'Opportunité  Numérique' # Opportunité  Numérique
     b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
+    b942e978-82d9-4bb8-9ebb-bc68a15f73e1: Blog # Blog
+    bdb05953-d641-435c-902f-560ac427d667: Text # Text
     bfe046fa-2f8c-4bd6-8502-924a0171cc1a: SEO # SEO
     c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
     c475d313-1872-49dd-b290-85ab508126b2: 'Site Name' # Site Name
     ca240dbb-2270-468b-a5aa-d4dbc0fc7d91: SEO # SEO
+    e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead
     e6d6312f-5bfe-4933-80d2-be986487da24: 'Chance Digitalität' # Chance Digitalität
-    fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Craft Starter' # Craft Starter
+    fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Chance Digitalität' # Chance Digitalität
 plugins:
   assetusage:
     edition: standard
@@ -154,6 +175,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  navigation:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.7
   nocache:
     edition: standard
     enabled: true
@@ -170,6 +195,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.12
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   vite:
     edition: standard
     enabled: true

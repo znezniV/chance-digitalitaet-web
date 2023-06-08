@@ -1,0 +1,42 @@
+{% set footerNav = craft.navigation.nodes().handle('footer').all() %}
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__contact">
+            <div class="footer__contact-list">
+                {{ seomatic.site.identity.genericName }}
+                {% if seomatic.site.twitterHandle|length %}
+                    <a href="https://twitter.com/@{{ seomatic.site.twitterHandle }}">@{{seomatic.site.twitterHandle}}</a>
+                {% endif %}
+                <br>
+                {{ seomatic.site.identity.genericStreetAddress }}
+                <br>
+                {{ seomatic.site.identity.genericPostalCode }}
+                {{ seomatic.site.identity.genericAddressLocality }}
+            </div>
+            <div class="footer__contact-list">
+
+                {% if seomatic.site.identity.genericEmail|length %}
+                    <a href="mailto:{{ seomatic.site.identity.genericEmail }}">{{seomatic.site.identity.genericEmail}}</a>
+                    <br>
+                {% endif %}
+                {% if seomatic.site.identity.genericTelephone|length %}
+                    <a href="tel:{{ seomatic.site.identity.genericTelephone }}">{{seomatic.site.identity.genericTelephone}}</a>
+                {% endif %}
+
+            </div>
+            <div class="footer__newsletter">
+                <div class="footer__button">{{ "Newsletter"|t }}</div>
+            </div>
+        </div>
+        <div class="footer__nav">
+            <ul class="footer__nav-list">
+                {% nav entry in footerNav %}
+                    <li class="footer__nav-item">
+                        <a href="{{ entry.url }}">{{ entry.title }}</a>
+                    </li>
+                {% endnav %}
+            </ul>
+        </div>
+    </div>
+</footer>

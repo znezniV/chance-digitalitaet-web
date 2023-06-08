@@ -1,5 +1,5 @@
 {% extends "_layouts/layout.twig" %}
 
 {% block main %}
-    home
+    {% include "_components/homeHero" with { logo: branding.logoGerman.one, lead: entry.lead, button: entry.buttonHome } %}
 {% endblock %}

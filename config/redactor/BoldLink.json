@@ -1,0 +1,6 @@
+{
+	"buttons": ["bold","unorderedlist","orderedlist","link"],
+	"plugins":["fullscreen", "counter", "filemanager"],
+	"toolbarFixed": true,
+    "formatting": ["p"]
+}

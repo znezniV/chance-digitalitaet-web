@@ -1,0 +1,270 @@
+field: 969890a0-f328-43b4-b8f6-8d1d6724eead # Content Blocks
+fieldLayouts:
+  672e79ba-ab5b-4cea-8bdc-25f99421812c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a5695d25-1fd0-4a09-97df-a36a83119620 # Kopfzeile
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d9c7e76-8b29-4507-a2ba-b36d2b8bfab2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 555abebb-6f53-497f-a4c0-36f3340c4885 # Lead
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 880b585b-f503-42e5-a992-b49d6b7264af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2b5e4669-d25f-418f-9e87-45105720f1d4 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 514f8bb8-a53a-4eec-a92c-aed7e51302cc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5ce50460-65ec-4a90-ad2e-ea2530dc6f36 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5c4ba1f-0f2f-45ed-bc0d-7e90dc1e873e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07ba58ba-9d1a-4bca-90e6-83bcd333d140 # Farbe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1bac5c59-294a-4d28-a12c-67eace3b1b1c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1d5fa212-fee7-47ee-a60f-8c7691307de4
+        userCondition: null
+fields:
+  2b5e4669-d25f-418f-9e87-45105720f1d4: # Button
+    columnSuffix: gqmpcpel
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: null
+    name: Button
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  5ce50460-65ec-4a90-ad2e-ea2530dc6f36: # Text
+    columnSuffix: htfsplay
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: BoldLink.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  07ba58ba-9d1a-4bca-90e6-83bcd333d140: # Farbe
+    columnSuffix: ynhnpxme
+    contentColumnType: string
+    fieldGroup: null
+    handle: color
+    instructions: null
+    name: Farbe
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Blau
+            -
+              - value
+              - blue
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Rot
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Grün
+            -
+              - value
+              - green
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Weiss
+            -
+              - value
+              - white
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  555abebb-6f53-497f-a4c0-36f3340c4885: # Lead
+    columnSuffix: siklcgnb
+    contentColumnType: text
+    fieldGroup: null
+    handle: lead
+    instructions: null
+    name: Lead
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: BoldLink.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\redactor\Field
+  a5695d25-1fd0-4a09-97df-a36a83119620: # Kopfzeile
+    columnSuffix: qotyykmf
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Kopfzeile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: colorBlock
+name: 'Farb Block'
+sortOrder: 2

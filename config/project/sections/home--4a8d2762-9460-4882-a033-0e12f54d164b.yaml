@@ -16,6 +16,11 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
+  ac1d573d-4c9a-4de1-a431-172e73f30817: # Opportunité  Numérique
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/home.twig
+    uriFormat: __home__
   e6d6312f-5bfe-4933-80d2-be986487da24: # Chance Digitalität
     enabledByDefault: true
     hasUrls: true

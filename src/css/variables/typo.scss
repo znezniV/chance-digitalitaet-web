@@ -24,39 +24,41 @@ $global-font-size: 18px;
 $global-line-height: 23px;
 
 // Font Families
-$font-default: Studio Grotesk, Helvetica, Arial, sans-serif;
-$font-heading: Studio Grotesk, Helvetica, Arial, sans-serif;
+$font-default: "Elza Text", Helvetica, Arial, sans-serif;
+$font-heading: "Adaptive Mono", Helvetica, Arial, sans-serif;
 
 // Example Typography definitions
 @mixin typo-small() {
     font-family: $font-default;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 @mixin typo-body() {
     font-family: $font-default;
+    font-size: 18px;
+    line-height: 1.4;
+    @include mq($until: tablet) {
+        font-size: 16px;
+    }
 }
 
 @mixin typo-heading-small() {
-    // Fluid font size
-
     font-family: $font-heading;
-    letter-spacing: -0.01em;
+    font-size: 24px;
+    line-height: 1.1;
     font-weight: normal;
+    @include mq($until: tablet) {
+        font-size: 20px;
+    }
 }
 
 @mixin typo-heading() {
-    // Fluid font size
-
     font-family: $font-heading;
-    letter-spacing: -0.01em;
+    font-size: 65px;
+    line-height: 1.1;
     font-weight: normal;
+    @include mq($until: tablet) {
+        font-size: 33px;
+    }
 }
-
-@mixin typo-heading-large() {
-    // Fluid font size
-
-    font-family: $font-heading;
-    letter-spacing: -0.01em;
-    font-weight: normal;
-}
-

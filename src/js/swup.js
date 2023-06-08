@@ -6,7 +6,7 @@ import SwupScrollPlugin from '@swup/scroll-plugin';
 // import SwupA11yPlugin from '@swup/a11y-plugin';
 
 new Swup({
-    // containers: ['#swup'],
+    containers: ['#swup'],
     // resolveUrl: (url) => {
     //     if (url.startsWith('/projekte/')) {
     //         return '/projekte';

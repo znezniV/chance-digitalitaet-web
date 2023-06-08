@@ -1,0 +1,29 @@
+<div class="colorBlock">
+    <div class="colorBlock__inner">
+        <div class="colorBlock__content">
+            <h2 class="colorBlock__heading">
+                {{ block.heading }}
+            </h2>
+            {% if block.lead|length %}
+                 <div class="colorBlock__text">
+                    {{ block.lead }}
+                 </div>
+            {% endif %}
+
+            {% if block.button is defined and block.button|length %}
+                <a href="{{ block.button }}">
+                    {{ block.button.getCustomText('Zum Eintrag') }}
+                </a>
+            {% endif %}
+
+            {% if block.text %}
+                <div class="colorBlock__text">
+                    {{ block.text }}
+                </div>
+
+            {% endif %}
+
+
+        </div>
+    </div>
+</div>

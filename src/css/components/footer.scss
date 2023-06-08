@@ -1,0 +1,59 @@
+.footer {
+    background-color: var(--color-footer);
+    color: var(--color-background);
+    margin-top: var(--spacing-large);
+
+    &__inner {
+        @include container($page-container);
+        padding: var(--spacing-medium) var(--spacing-small);
+    }
+
+    &__contact {
+        @include grid();
+    }
+
+    &__contact-list {
+        grid-column: 1 / span 3;
+        @include mq($until: tablet) {
+            grid-column: 1 / span 12;
+        }
+
+        & + & {
+            grid-column: 4 / span 3;
+            @include mq($until: tablet) {
+                grid-column: 1 / span 12;
+            }
+        }
+    }
+
+    &__nav-list {
+        display: flex;
+        list-style: none;
+        margin-top: var(--spacing-medium);
+        @include mq($until: tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__nav-item {
+        @include typo-small();
+        padding: 1em 0;
+        margin-right: 40px;
+    }
+
+    &__newsletter {
+        display: flex;
+        grid-column: 10 / span 3;
+        justify-content: flex-end;
+        align-items: flex-start;
+        @include mq($until: tablet) {
+            grid-row-start: 1;
+            grid-column: 1 / span 12;
+            justify-content: flex-start;
+        }
+    }
+
+    &__button {
+        @include button;
+    }
+}
