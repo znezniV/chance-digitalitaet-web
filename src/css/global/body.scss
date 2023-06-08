@@ -1,0 +1,25 @@
+/**
+ * -----------------------------------------------------------------------
+ * body
+ * -----------------------------------------------------------------------
+ *
+ *
+ *
+ * @link      https://y7k.com
+ * @licence   MIT
+ * @version   1.0.0
+ */
+
+html {
+    background-color: #f1f1f1;
+}
+
+body {
+    @include typo-body();
+    width: 100%;
+    margin-top: -1px;
+    padding-top: 1px;
+    color: #000;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}

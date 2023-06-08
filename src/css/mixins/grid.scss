@@ -1,0 +1,22 @@
+/**
+ * -----------------------------------------------------------------------
+ * grid
+ * -----------------------------------------------------------------------
+ *
+ * mixin for css grid
+ *
+ * @link      https://github.com/znezniV
+ * @licence   MIT
+ * @version   0.0.1
+ */
+
+ @mixin grid($columns: 12, $gutters-horizontal: $grid-gutters) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    @each $breakpoint, $gutter in $gutters-horizontal {
+        @include mq($from: $breakpoint) {
+            column-gap: $gutter;
+            row-gap: $gutter;
+        }
+    }
+}

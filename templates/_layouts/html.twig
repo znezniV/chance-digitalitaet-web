@@ -37,7 +37,7 @@
     {% endcache %}
 
     {{ craft.vite.script('src/js/app.js') }}
-    <link rel="stylesheet" href="{{ craft.vite.asset('src/css/app.css') }}">
+    <link rel="stylesheet" href="{{ craft.vite.asset('src/css/app.scss') }}">
 
     <style>
         [x-cloak] { display: none !important; }
@@ -55,8 +55,8 @@
 
     {{ block('page') }}
 
-    {% include '_helpers/breakpoint.twig' %}
-    {% include '_helpers/devmode.twig' %}
+    {# {% include '_helpers/breakpoint.twig' %} #}
+    {# {% include '_helpers/devmode.twig' %} #}
 </body>
 </html>
 {% endminify %}

@@ -1,0 +1,41 @@
+/**
+ * -----------------------------------------------------------------------
+ * page level styling for typography
+ * -----------------------------------------------------------------------
+ *
+ *
+ *
+ * @link      https://www.dezentrum.ch
+ * @licence   MIT
+ * @version   1.0.0
+ */
+
+html,
+body {
+    font-kerning: normal;
+    font-feature-settings: 'liga' 1, 'kern' 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h2 {
+    @include typo-heading-small;
+}
+
+h1 {
+    @include typo-heading;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    @include typo-body;
+}

@@ -1,0 +1,29 @@
+/**
+ * -----------------------------------------------------------------------
+ * containers
+ * -----------------------------------------------------------------------
+ *
+ * See "mixins/container"
+ *
+ * The container tool defines a responsive container for it's content. Here,
+ * you can set definitions for different containers.
+ *
+ * - For every breakpoint, set a map
+ * - Map can have two properties (either or!)
+ *     - margins: XX[px/vh/%/etc.]   --> Container has fluid width and margins on the side and is centered
+ *     - width: XX[px/vh/%/etc.]     --> Container has fixed width and is centered
+ *
+ * @link      https://y7k.com
+ * @licence   MIT
+ * @version   1.0.0
+ */
+
+$page-container: (
+    phone: (margin: 20px),
+    phone-plus: (margin: 25px),
+    phablet: (margin: 35px),
+    tablet: (margin: 50px),
+    desktop: (margin: 70px),
+    big-desktop: (width: 1400px),
+);
+

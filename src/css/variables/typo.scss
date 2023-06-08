@@ -1,0 +1,62 @@
+/**
+ * -----------------------------------------------------------------------
+ * typo
+ * -----------------------------------------------------------------------
+ *
+ * Place all typography settings in here.
+ * It is best to create a mixin for each typography «look», including font-size, weight etc.
+ *
+ * CAUTION:
+ * - Do not put any content output here. Only Sass Variables, Functions, Mixins, no classes!
+ *
+ * TIPS:
+ * - Avoid spacings like margins and paddings here
+ *
+ *
+ * @link      https://y7k.com
+ * @licence   MIT
+ * @version   1.0.0
+ */
+
+// Base typographical styles and baseline grid. You need to define these values
+// in pixels: we will convert them to more appropriate units.
+$global-font-size: 18px;
+$global-line-height: 23px;
+
+// Font Families
+$font-default: Studio Grotesk, Helvetica, Arial, sans-serif;
+$font-heading: Studio Grotesk, Helvetica, Arial, sans-serif;
+
+// Example Typography definitions
+@mixin typo-small() {
+    font-family: $font-default;
+}
+
+@mixin typo-body() {
+    font-family: $font-default;
+}
+
+@mixin typo-heading-small() {
+    // Fluid font size
+
+    font-family: $font-heading;
+    letter-spacing: -0.01em;
+    font-weight: normal;
+}
+
+@mixin typo-heading() {
+    // Fluid font size
+
+    font-family: $font-heading;
+    letter-spacing: -0.01em;
+    font-weight: normal;
+}
+
+@mixin typo-heading-large() {
+    // Fluid font size
+
+    font-family: $font-heading;
+    letter-spacing: -0.01em;
+    font-weight: normal;
+}
+

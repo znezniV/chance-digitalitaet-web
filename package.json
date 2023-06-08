@@ -18,6 +18,7 @@
         "htmx-progress": "github:jorisnoo/htmx-progress",
         "htmx.org": "^1.9.2",
         "lazysizes": "^5.3.2",
+        "sass-mq": "^6.0.0",
         "swup": "^3.0.6"
     },
     "devDependencies": {

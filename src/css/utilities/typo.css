@@ -1,9 +1,0 @@
-@layer utilities {
-    .typo-title {
-        @apply font-bold text-title;
-    }
-
-    .typo-body {
-        @apply font-normal text-base;
-    }
-}
