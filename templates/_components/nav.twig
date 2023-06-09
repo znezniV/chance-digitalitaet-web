@@ -5,11 +5,19 @@
 <div class="nav">
     <div class="nav__inner">
         <div class="nav__navs">
+            <input class="nav__burger-checkbox sr-only" id="nav-checkbox" type="checkbox" title="Menu"/>
+            <label class="nav__burger-label" for="nav-checkbox">
+                <span class="nav__burger-title">{{ siteName }}</span>
+                <div class="nav__burger-burger"></div>
+            </label>
+            <label for="nav-checkbox" class="nav__backdrop"></label>
             <nav class="nav__main">
                 <ul class="nav__list">
                     <li class="nav__logo">
                         <a href="{{ siteUrl }}">
-                            {% include "_components/logo" %}
+                            <div class="nav__logo-icon">
+                                {% include "_components/logo" %}
+                            </div>
                             <div class="nav__logo-type">{{ siteName }}</div>
                         </a>
                     </li>

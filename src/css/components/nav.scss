@@ -5,9 +5,18 @@
     right: 0;
     background-color: var(--color-background);
     padding: 0 var(--spacing-small) 0 var(--spacing-medium);
+    @include mq($until: tablet) {
+        padding: 0 18px;
+    }
 
     &__inner {
 
+    }
+
+    &__burger-burger {
+        @include mq($from: phone, $until: tablet) {
+            @include burger($width: 24px, $gutter: 6px, $height: 3px, $color: var(--color-text));
+        }
     }
 
     &__main {
@@ -16,10 +25,31 @@
     &__list {
         display: flex;
         list-style: none;
+        transition: all 0.2s ease-in-out;
+        @include mq($until: tablet) {
+            flex-direction: column;
+            max-height: 0;
+            overflow: hidden;
+        }
     }
 
     &__logo {
         display: flex;
+        @include mq($until: tablet) {
+            display: none;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__logo-icon {
+        display: flex;
+        @include mq($until: tablet) {
+            display: none;
+        }
 
         a {
             display: flex;
@@ -35,6 +65,12 @@
 
     &__item {
         padding: 0 0.8333em;
+        @include mq($until: desktop) {
+            padding: 0 0.4166em;
+        }
+        @include mq($until: tablet) {
+            padding: 0 0;
+        }
 
         &:first-child {
             padding-left: 0
@@ -44,6 +80,9 @@
             @include typo-heading-small();
             display: flex;
             padding: 0.5126em;;
+            @include mq($until: tablet) {
+                padding: 0.333em 0;
+            }
         }
 
         &--active {
@@ -61,5 +100,87 @@
             }
 
         }
+    }
+
+    &__burger-title {
+        @include typo-heading-small();
+        font-weight: bold;
+    }
+
+    &__burger-label {
+        padding: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        order: 1;
+
+        @include mq($from: tablet) {
+            display: none;
+        }
+    }
+
+    &__burger-checkbox {
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        right: 0px;
+        z-index: 20;
+        @include mq($from: desktop) {
+            display: none;
+        }
+
+        &:checked {
+            position: fixed;
+
+            & ~ .nav {
+                &__main {
+                    .nav__list {
+                        @include mq($until: tablet) {
+                            max-height: 800px;
+                            opacity: 1;
+                            pointer-events: auto;
+                        }
+                    }
+
+                    .nav__lang-list {
+                        @include mq($until: tablet) {
+                            max-height: 800px;
+                            opacity: 1;
+                            pointer-events: auto;
+                        }
+                    }
+                }
+            }
+
+            & ~ .nav-burger {
+                position: fixed;
+            }
+            & ~ .nav__burger-label .nav__burger-burger {
+                @include mq($from: phone, $until: tablet) {
+                    @include burger-to-logo($gutter: 6px, $height: 3px);
+                }
+            }
+
+            & ~ .nav__burger-label .nav__burger-text {
+                &-o {
+                    display: inline;
+                }
+
+                &-c {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    .nav__burger-text-o,
+    .nav__burger-text-c {
+        @include typo-heading-small();
+        margin-left: 0.63em;
+    }
+
+    .nav__burger-text-o {
+        display: none;
     }
 }
