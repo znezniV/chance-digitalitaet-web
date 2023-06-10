@@ -1,7 +1,13 @@
 .team {
+    position: relative;
     padding: 0 var(--spacing-medium);
     @include mq($until: phablet) {
         padding: 0 0;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 1;
     }
 
     &__list {
@@ -40,5 +46,16 @@
     &__text {
         @include typo-small();
         margin-top: var(--spacing-tiny);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 50%;
+        top: 25%;
+        left: 0;
+        right: 0;
+        background-color: $color-light-grey;
+        z-index: 0;
     }
 }
