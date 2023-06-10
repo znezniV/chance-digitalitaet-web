@@ -79,6 +79,7 @@
 
         a {
             @include typo-heading-small();
+            font-weight: normal;
             display: flex;
             padding: 0.5126em;;
             @include mq($until: tablet) {
