@@ -1,0 +1,37 @@
+.homeHero {
+    @include container($page-container);
+
+    &__inner {
+        @include grid();
+
+    }
+
+    &__logo {
+        grid-column: 1 / span 11;
+
+        svg {
+            max-width: 100%;
+        }
+
+    }
+
+    &__lead {
+        grid-column: 3 / span 11;
+        grid-row: 2;
+        @include mq($until: tablet) {
+            grid-column: 1 / span 11;
+        }
+    }
+
+    &__button {
+        grid-column: 3 / span 4;
+        grid-row: 3;
+        @include mq($until: tablet) {
+            grid-column: 1 / span 11;
+        }
+
+        a {
+            @include button();
+        }
+    }
+}

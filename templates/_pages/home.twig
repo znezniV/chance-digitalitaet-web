@@ -1,5 +1,5 @@
 {% extends "_layouts/layout.twig" %}
 
 {% block main %}
-    {% include "_components/homeHero" with { logo: branding.logoGerman.one, lead: entry.lead, button: entry.buttonHome } %}
+    {% include "_components/homeHero" with { logo: currentSite.language == "de-CH" ? branding.logoGerman.one : branding.logoFrench.one, lead: entry.lead, button: entry.buttonHome } %}
 {% endblock %}

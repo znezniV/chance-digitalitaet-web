@@ -16,6 +16,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ff8ce56-e1cc-448f-8f64-b75caf2e1106 # Logo Französisch
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c6cec05-e26d-4463-92fb-a2e2fc754ff4
+            userCondition: null
+            warning: null
+            width: 100
         name: Branding
         uid: 311df809-7b75-47f0-9fe4-766d144a591a
         userCondition: null
