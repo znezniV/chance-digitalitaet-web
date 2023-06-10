@@ -1,0 +1,44 @@
+.team {
+    padding: 0 var(--spacing-medium);
+    @include mq($until: phablet) {
+        padding: 0 0;
+    }
+
+    &__list {
+        @include grid($columns: 4);
+        @include mq($until: desktop) {
+            @include grid($columns: 3);
+        }
+        @include mq($until: tablet) {
+            @include grid($columns: 2);
+        }
+        @include mq($until: phablet) {
+            @include grid($columns: 1);
+        }
+    }
+
+    &__item {
+        color: $color-white;
+        background-color: $color-red;
+        padding: var(--spacing-tiny) var(--spacing-tiny) var(--spacing-very-small);
+    }
+
+    &__portrait {
+        margin-bottom: var(--spacing-tiny);
+    }
+
+    &__full-name {
+        @include typo-heading-small();
+    }
+
+    &__role {
+        @include typo-small();
+        font-weight: bold;
+        margin-top: var(--spacing-tiny);
+    }
+
+    &__text {
+        @include typo-small();
+        margin-top: var(--spacing-tiny);
+    }
+}

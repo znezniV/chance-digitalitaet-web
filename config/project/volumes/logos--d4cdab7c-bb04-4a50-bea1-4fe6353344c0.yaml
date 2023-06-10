@@ -1,0 +1,43 @@
+fieldLayouts:
+  57444909-18ec-40c6-a007-daccd2889398:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 2b539291-ac57-48d7-b1df-2cd5f44501b5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: fde52e42-559b-424c-9187-53f60d0bf274
+        userCondition: null
+fs: logos
+handle: logos
+name: Logos
+sortOrder: 3
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

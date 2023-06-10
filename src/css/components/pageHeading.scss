@@ -1,7 +1,8 @@
 .pageHeading {
     @include container($page-container);
     @include grid();
-    padding-bottom: var(--spacing-medium-big);
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
 
     &__inner {
         grid-column: 2 / span 9;
@@ -9,5 +10,9 @@
         @include mq($until: desktop) {
             grid-column: 1 / span 12;
         }
+    }
+
+    &--top-page {
+        padding-bottom: var(--spacing-medium-big);
     }
 }

@@ -1,0 +1,46 @@
+field: 969890a0-f328-43b4-b8f6-8d1d6724eead # Content Blocks
+fieldLayouts:
+  57ca186d-d5a7-48dc-b309-93b18d8b4b98:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 428bdfbf-b057-4247-a055-e16ff5d4fb65 # Kopfzeile
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31215651-d421-4c24-bdf6-a0a51da52ba3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d376a6a6-08c1-4de5-a9cf-da8adfb19b2c
+        userCondition: null
+fields:
+  428bdfbf-b057-4247-a055-e16ff5d4fb65: # Kopfzeile
+    columnSuffix: dfifxxki
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Kopfzeile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: pageHeading
+name: Kopfzeile
+sortOrder: 3

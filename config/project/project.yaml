@@ -1,4 +1,4 @@
-dateModified: 1686390118
+dateModified: 1686396810
 elementSources:
   craft\elements\Entry:
     -
@@ -71,6 +71,34 @@ fs:
       path: '@imagerBasePath/about'
     type: craft\fs\Local
     url: '@imagerBaseUrl/about'
+  documents:
+    hasUrls: true
+    name: Documents
+    settings:
+      path: '@webroot/assets/documents'
+    type: craft\fs\Local
+    url: '@web/assets/documents'
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/assets/images'
+    type: craft\fs\Local
+    url: '@web/assets/images'
+  logos:
+    hasUrls: true
+    name: Logos
+    settings:
+      path: '@webroot/assets/logos'
+    type: craft\fs\Local
+    url: '@web/assets/logos'
+  team:
+    hasUrls: true
+    name: Team
+    settings:
+      path: '@webroot/assets/team'
+    type: craft\fs\Local
+    url: '@web/assets/team'
   transforms:
     hasUrls: true
     name: 'Craft Transforms'
@@ -91,15 +119,21 @@ meta:
     4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
     4fb7a10c-8ca0-4b40-bacf-0d021e2a11f3: Global # Global
     5ce50460-65ec-4a90-ad2e-ea2530dc6f36: Text # Text
+    6c5bbb5d-f9df-487d-b208-0da13af9ed0f: Team # Team
     6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color' # Dominant Color
     07ba58ba-9d1a-4bca-90e6-83bcd333d140: Farbe # Farbe
     9ca0bdb2-223c-4190-af5d-2da06fd7b81a: Footer # Footer
+    9ca19677-e719-49d3-89b3-42a8b5a512ad: Rolle # Rolle
+    044c08de-f4c2-44a8-bbce-920a115e395c: Menschen # Menschen
+    62da8c6a-1d1f-4762-ba90-a699f1dcd85c: 'Voller Name' # Voller Name
     85e7b218-d803-45ff-92b4-7fc6e3454d22: About # About
     95beaae5-ee36-42b5-ba23-79a7af3c6f5f: 'Main Nav' # Main Nav
+    428bdfbf-b057-4247-a055-e16ff5d4fb65: Kopfzeile # Kopfzeile
     555abebb-6f53-497f-a4c0-36f3340c4885: Lead # Lead
     2640cf14-838a-4394-b21e-84c409715053: Branding # Branding
     3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
     4060c4c7-4027-46a0-8ca3-ddb1b0d5000d: Standard # Standard
+    8865d165-e772-40a6-96ea-5b9e64c3271c: Team # Team
     35853a03-a023-42a1-a246-59b04b4a1433: 'Logo Deutsch' # Logo Deutsch
     51397ab5-d808-46bf-9838-74f0956f9fa1: Assets # Assets
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
@@ -107,15 +141,21 @@ meta:
     68733552-34d0-4fff-9ec4-f01c7c954ec2: 'Farb Block' # Farb Block
     a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile
     ac1d573d-4c9a-4de1-a431-172e73f30817: 'Opportunité  Numérique' # Opportunité  Numérique
+    b1e08073-fffd-49f6-8e83-61051641e3ba: Portrait # Portrait
     b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
     b942e978-82d9-4bb8-9ebb-bc68a15f73e1: Blog # Blog
     bdb05953-d641-435c-902f-560ac427d667: Text # Text
     bfe046fa-2f8c-4bd6-8502-924a0171cc1a: SEO # SEO
     c0316fa8-d510-429a-8e98-9994a6bc7e1f: Common # Common
+    c5e90cc1-dc82-4470-8eb6-b462dbb75259: Images # Images
     c475d313-1872-49dd-b290-85ab508126b2: 'Site Name' # Site Name
     ca240dbb-2270-468b-a5aa-d4dbc0fc7d91: SEO # SEO
+    d4cdab7c-bb04-4a50-bea1-4fe6353344c0: Logos # Logos
+    d9aa901b-ac49-4ac2-a9a5-e1c159229f7b: Kopfzeile # Kopfzeile
     e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead
     e6d6312f-5bfe-4933-80d2-be986487da24: 'Chance Digitalität' # Chance Digitalität
+    e4948830-ad0f-40a8-9b39-550b2bdcbbd9: Documents # Documents
+    fc289545-b4d5-43c1-b6b0-80656b5b0bad: Text # Text
     fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Chance Digitalität' # Chance Digitalität
 plugins:
   assetusage:
@@ -171,6 +211,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
+  matrixmate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: true
@@ -201,6 +245,10 @@ plugins:
     enabled: true
     licenseKey: 2NVSJRBQN94079H3DRISAZZG
     schemaVersion: 3.0.12
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
   typedlinkfield:
     edition: standard
     enabled: true

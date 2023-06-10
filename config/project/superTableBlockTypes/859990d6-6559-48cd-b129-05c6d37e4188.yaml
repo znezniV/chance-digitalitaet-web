@@ -1,0 +1,170 @@
+changedFieldIndicator: 768656297
+field: 044c08de-f4c2-44a8-bbce-920a115e395c # Menschen
+fieldLayouts:
+  6d38fb99-80e1-4b8b-a347-61faa3d8b1ee:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b1e08073-fffd-49f6-8e83-61051641e3ba # Portrait
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f2fb970a-8afa-41b8-966c-72adb77e96a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 62da8c6a-1d1f-4762-ba90-a699f1dcd85c # Voller Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 290ffed4-abf0-4076-a188-d990b29eb43d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9ca19677-e719-49d3-89b3-42a8b5a512ad # Rolle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb2f75e9-e693-4aff-81ac-76efa7af332a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fc289545-b4d5-43c1-b6b0-80656b5b0bad # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba2f1677-4670-4d1c-9196-c7d7c08c64cb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 84d63190-9c5e-4ee7-b14b-ac86c892ae58
+        userCondition: null
+fields:
+  9ca19677-e719-49d3-89b3-42a8b5a512ad: # Rolle
+    columnSuffix: mfotxjxw
+    contentColumnType: text
+    fieldGroup: null
+    handle: role
+    instructions: null
+    name: Rolle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  62da8c6a-1d1f-4762-ba90-a699f1dcd85c: # Voller Name
+    columnSuffix: vtmapdsf
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: null
+    name: 'Voller Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b1e08073-fffd-49f6-8e83-61051641e3ba: # Portrait
+    columnSuffix: qgquwyks
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Portrait
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:6c5bbb5d-f9df-487d-b208-0da13af9ed0f' # Team
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:85e7b218-d803-45ff-92b4-7fc6e3454d22' # About
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:6c5bbb5d-f9df-487d-b208-0da13af9ed0f' # Team
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  fc289545-b4d5-43c1-b6b0-80656b5b0bad: # Text
+    columnSuffix: gkgiihsc
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText

@@ -13,10 +13,14 @@
     --spacing-medium-big: 68px;
     --spacing-medium: 48px;
     --spacing-small: 40px;
+    --spacing-very-small: 16px;
+    --spacing-tiny: 8px;
     @include mq($until: tablet) {
         --spacing-large: 56px;
         --spacing-medium-big: 32px;
         --spacing-medium: 25px;
         --spacing-small: 18px;
+        --spacing-very-small: 12px;
+        --spacing-tiny: 8px;
     }
 }

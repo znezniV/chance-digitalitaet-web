@@ -1,0 +1,78 @@
+field: 969890a0-f328-43b4-b8f6-8d1d6724eead # Content Blocks
+fieldLayouts:
+  4aec097d-b434-4f74-957b-94258671dd81:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 044c08de-f4c2-44a8-bbce-920a115e395c # Menschen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a46cb90-4eac-45c1-bb9c-5fde8de0aef7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 190f7cfc-da03-4016-b11d-100bba0f7b05
+        userCondition: null
+fields:
+  044c08de-f4c2-44a8-bbce-920a115e395c: # Menschen
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: people
+    instructions: null
+    name: Menschen
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1155958041
+      columns:
+        __assoc__:
+          -
+            - b1e08073-fffd-49f6-8e83-61051641e3ba # Portrait
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 62da8c6a-1d1f-4762-ba90-a699f1dcd85c # Voller Name
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 9ca19677-e719-49d3-89b3-42a8b5a512ad # Rolle
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - fc289545-b4d5-43c1-b6b0-80656b5b0bad # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_4_people}}'
+      fieldLayout: matrix
+      maxRows: null
+      minRows: 1
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: team
+name: Team
+sortOrder: 4
