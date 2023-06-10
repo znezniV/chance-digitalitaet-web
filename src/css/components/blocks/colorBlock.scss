@@ -39,6 +39,27 @@
         margin-top: var(--spacing-medium);
     }
 
+    &__grid-list {
+        @include grid(3);
+        row-gap: var(--spacing-medium);
+        margin-top: var(--spacing-medium);
+        @include mq($until: desktop) {
+            @include grid(2);
+        }
+        @include mq($until: phablet) {
+            @include grid(1);
+        }
+    }
+
+    &__grid-heading {
+        @include typo-heading-small();
+    }
+
+    &__grid-text {
+        @include typo-small();
+        margin-top: 0.5714em;
+    }
+
     &__button {
         margin-top: var(--spacing-medium);
 
@@ -123,6 +144,21 @@
                 color: $color-green;
                 a {
                     @include button($background-color: $color-white, $color: $color-green, $color-shadow: var(--color-shadow-green));
+                }
+            }
+        }
+    }
+
+    &--white {
+        .colorBlock {
+            &__inner {
+                background-color: $color-white;
+                color: var(--color-text);
+            }
+            &__button {
+                color: var(--color-text);
+                a {
+                    @include button($background-color: $color-green, $color: $color-black, $color-shadow: var(--color-shadow-green));
                 }
             }
         }

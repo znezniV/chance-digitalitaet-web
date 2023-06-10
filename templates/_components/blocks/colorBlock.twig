@@ -10,7 +10,40 @@
                  </div>
             {% endif %}
 
-            {% if block.button is defined and block.button|length %}
+            {% if block.grid|length %}
+                <div class="colorBlock__grid-list">
+                    {% for item in block.grid.all() %}
+                        <div class="colorBlock__grid-item">
+                            <div class="colorBlock__grid-image">
+                                {% set image = item.image.one %}
+                                {% set transformedImages = craft.imager.transformImage(image, [
+                                    { width: 1080 },
+                                    { width: 720 },
+                                    { width: 540 },
+                                    { width: 360 },
+                                    { width: 290 },
+                                    ], {
+                                        position: '100% 100%',
+                                        jpegQuality: 75 },
+                                    { fillTransforms: true })
+                                %}
+                                <img src="{{ craft.imager.placeholder({ width: 360 }) }}"
+                                    sizes="360, 100vw"
+                                    srcset="{{ craft.imager.srcset(transformedImages) }}"
+                                >
+                            </div>
+                            <div class="colorBlock__grid-heading">
+                                {{ item.heading }}
+                            </div>
+                            <div class="colorBlock__grid-text">
+                                {{ item.text }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% if block.button is defined and block.button.isEmpty == false %}
                  <div class="colorBlock__button">
                      <a href="{{ block.button }}">
                          {{ block.button.getCustomText('Zum Eintrag') }}

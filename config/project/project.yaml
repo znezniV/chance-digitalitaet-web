@@ -1,4 +1,4 @@
-dateModified: 1686396810
+dateModified: 1686401795
 elementSources:
   craft\elements\Entry:
     -
@@ -119,8 +119,10 @@ meta:
     4a8d2762-9460-4882-a033-0e12f54d164b: Home # Home
     4fb7a10c-8ca0-4b40-bacf-0d021e2a11f3: Global # Global
     5ce50460-65ec-4a90-ad2e-ea2530dc6f36: Text # Text
+    05d06e7e-2c5c-4332-8ae4-d93af318dadf: Bild # Bild
     6c5bbb5d-f9df-487d-b208-0da13af9ed0f: Team # Team
     6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color' # Dominant Color
+    6efa6df0-066e-4613-806f-9beddaf00eca: Raster # Raster
     07ba58ba-9d1a-4bca-90e6-83bcd333d140: Farbe # Farbe
     9ca0bdb2-223c-4190-af5d-2da06fd7b81a: Footer # Footer
     9ca19677-e719-49d3-89b3-42a8b5a512ad: Rolle # Rolle
@@ -137,6 +139,7 @@ meta:
     35853a03-a023-42a1-a246-59b04b4a1433: 'Logo Deutsch' # Logo Deutsch
     51397ab5-d808-46bf-9838-74f0956f9fa1: Assets # Assets
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
+    723399b6-47d6-4bd9-b59a-c61c56cdaa44: Kopfzeile # Kopfzeile
     969890a0-f328-43b4-b8f6-8d1d6724eead: 'Content Blocks' # Content Blocks
     68733552-34d0-4fff-9ec4-f01c7c954ec2: 'Farb Block' # Farb Block
     a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile
@@ -155,6 +158,7 @@ meta:
     e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead
     e6d6312f-5bfe-4933-80d2-be986487da24: 'Chance Digitalität' # Chance Digitalität
     e4948830-ad0f-40a8-9b39-550b2bdcbbd9: Documents # Documents
+    f7c1d3c4-fb65-4ead-83b4-ee3cf63d98e3: Text # Text
     fc289545-b4d5-43c1-b6b0-80656b5b0bad: Text # Text
     fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Chance Digitalität' # Chance Digitalität
 plugins:
