@@ -152,13 +152,13 @@ $sass-burger-add-vendor-prefixes: true !default;
     }
 
     &{
-        transform: translateX(- $width / 4);
+        transform: translateX(calc($width / -4));
     }
 
     &::before {
-        transform: translateX($width / 4);
+        transform: translateX(calc($width / 4));
     }
     &::after {
-        transform: translateX(-($width / 4));
+        transform: translateX(calc(($width / -4)));
     }
 }

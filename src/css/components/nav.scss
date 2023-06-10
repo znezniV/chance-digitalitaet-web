@@ -1,4 +1,5 @@
 .nav {
+    @include z-index(nav);
     position: fixed;
     top: 0;
     left: 0;
