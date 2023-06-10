@@ -4,7 +4,7 @@
 
 {% block main %}
 
-    {% include "_components/pageHeading" with { heading: entry.title, lead: entry.lead } %}
+    {% include "_components/blocks/pageHeading" with { heading: entry.title, lead: entry.lead, modifier: "top-page" } %}
     {% include "_components/contentBlocks" %}
 
 {% endblock %}

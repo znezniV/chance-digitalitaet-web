@@ -30,8 +30,11 @@ $font-heading: "Adaptive Mono", Helvetica, Arial, sans-serif;
 // Example Typography definitions
 @mixin typo-small() {
     font-family: $font-default;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
+    @include mq($until: tablet) {
+        font-size: 12px;
+    }
 }
 
 @mixin typo-body() {

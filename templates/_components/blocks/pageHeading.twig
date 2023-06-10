@@ -1,0 +1,12 @@
+<div class="pageHeading {{ modifier is defined ? "pageHeading--" ~ modifier : "" }}">
+    <div class="pageHeading__inner">
+        {% if heading is defined and heading|length %}
+            <h1 class="pageHeading__heading">{{ heading }}</h1>
+        {% elseif block.heading is defined and block.heading|length  %}
+            <h2 class="pageHeading__heading">{{ block.heading }}</h2>
+        {% endif %}
+        {% if lead is defined and lead|length %}
+            <p class="pageHeading__lead">{{ lead }}</p>
+        {% endif %}
+    </div>
+</div>
