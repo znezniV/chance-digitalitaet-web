@@ -1,4 +1,4 @@
-dateModified: 1686250756
+dateModified: 1686390118
 elementSources:
   craft\elements\Entry:
     -
@@ -178,6 +178,7 @@ plugins:
   navigation:
     edition: standard
     enabled: true
+    licenseKey: 508V2LJ4CZK5FS8CAK002MBG
     schemaVersion: 2.0.7
   nocache:
     edition: standard
@@ -198,6 +199,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
+    licenseKey: 2NVSJRBQN94079H3DRISAZZG
     schemaVersion: 3.0.12
   typedlinkfield:
     edition: standard

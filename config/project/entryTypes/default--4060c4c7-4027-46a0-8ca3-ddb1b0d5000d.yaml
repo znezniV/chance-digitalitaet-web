@@ -32,6 +32,23 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: e1bcf984-ae8b-43db-a36b-783d963dd6be # Lead
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9fa8633-02e0-4458-810d-35f9d7418d1d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b7894625-6281-4ee7-a486-97495f09e4b9
+            userCondition: null
+          -
+            elementCondition: null
             fieldUid: 969890a0-f328-43b4-b8f6-8d1d6724eead # Content Blocks
             instructions: null
             label: null

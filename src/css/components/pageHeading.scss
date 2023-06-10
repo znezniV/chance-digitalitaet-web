@@ -1,6 +1,7 @@
 .pageHeading {
     @include container($page-container);
     @include grid();
+    padding-bottom: var(--spacing-medium-big);
 
     &__inner {
         grid-column: 2 / span 9;
