@@ -26,7 +26,7 @@
 {#    {{ block('meta') ?? null }}#}
 
     {% cache %}
-        {% include '_helpers/seo.twig' %}
+        {# {% include '_helpers/seo.twig' %} #}
     {% endcache %}
 
     {{ craft.vite.script('src/js/app.js') }}
