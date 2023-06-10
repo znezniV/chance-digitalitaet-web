@@ -1,4 +1,4 @@
-<div class="colorBlock">
+<div class="colorBlock colorBlock--{{ block.color }}">
     <div class="colorBlock__inner">
         <div class="colorBlock__content">
             <h2 class="colorBlock__heading">
@@ -11,9 +11,11 @@
             {% endif %}
 
             {% if block.button is defined and block.button|length %}
-                <a href="{{ block.button }}">
-                    {{ block.button.getCustomText('Zum Eintrag') }}
-                </a>
+                 <div class="colorBlock__button">
+                     <a href="{{ block.button }}">
+                         {{ block.button.getCustomText('Zum Eintrag') }}
+                     </a>
+                 </div>
             {% endif %}
 
             {% if block.text %}

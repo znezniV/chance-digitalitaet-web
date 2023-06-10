@@ -35,6 +35,18 @@
 
     }
 
+    &__text {
+        margin-top: var(--spacing-medium);
+    }
+
+    &__button {
+        margin-top: var(--spacing-medium);
+
+        a {
+            @include button($background-color: $color-white);
+        }
+    }
+
     &:nth-child(even) {
         .colorBlock {
             &__inner {
@@ -67,6 +79,51 @@
             &__inner {
                 --block-background: #{$color-green};
                 --block-text: #{$color-black};
+            }
+        }
+    }
+
+    &--blue {
+        .colorBlock {
+            &__inner {
+                background-color: $color-blue;
+                color: $color-white;
+            }
+            &__button {
+                color: $color-blue;
+                a {
+                    @include button($background-color: $color-white, $color: $color-blue, $color-shadow: var(--color-shadow-blue));
+                }
+            }
+        }
+    }
+
+    &--red {
+        .colorBlock {
+            &__inner {
+                background-color: $color-red;
+                color: $color-white;
+            }
+            &__button {
+                color: $color-red;
+                a {
+                    @include button($background-color: $color-white, $color: $color-red, $color-shadow: var(--color-shadow-red));
+                }
+            }
+        }
+    }
+
+    &--green {
+        .colorBlock {
+            &__inner {
+                background-color: $color-green;
+                color: var(--color-text);
+            }
+            &__button {
+                color: $color-green;
+                a {
+                    @include button($background-color: $color-white, $color: $color-green, $color-shadow: var(--color-shadow-green));
+                }
             }
         }
     }
