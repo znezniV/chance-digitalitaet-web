@@ -1,0 +1,77 @@
+.blogPosts {
+    position: relative;
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+        @include mq($from: tablet) {
+            overflow-x: scroll;
+        }
+    }
+
+    &__list {
+        @include container($page-container);
+        @include mq($from: tablet) {
+            display: flex;
+            align-items: flex-start;
+        }
+        @include mq($until: tablet) {
+            @include grid(3);
+        }
+        @include mq($until: phablet) {
+            @include grid(1);
+        }
+    }
+
+    &__item {
+        background-color: $color-green;
+        padding: var(--spacing-tiny);
+        padding-bottom: var(--spacing-very-small);
+        @include mq($from: tablet) {
+            margin-right: 20px;
+            width: 33.333%;
+            min-width: 33.333%;
+        }
+    }
+
+    &__heading {
+        @include typo-heading-small();
+        margin-top: var(--spacing-tiny);
+    }
+
+    &__author {
+        @include typo-small();
+        margin-top: var(--spacing-tiny);
+        font-weight: bold;
+    }
+
+    &__date {
+        @include typo-small();
+        margin-top: var(--spacing-tiny);
+    }
+
+    &__lead {
+        @include typo-small();
+        margin-top: var(--spacing-tiny);
+        @include mq($until: tablet) {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 50%;
+        top: 25%;
+        left: 0;
+        right: 0;
+        background-color: $color-grey;
+        z-index: 0;
+    }
+}
+
+.blocks--blog {
+    & + .blogPosts {
+        margin-top: var(--spacing-very-small);
+    }
+}

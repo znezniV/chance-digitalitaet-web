@@ -1,0 +1,45 @@
+{% set allBlogPosts = craft.entries.section('blog')|sort((a, b) => a.postDate <=> b.postDate) %}
+
+<div class="blogPosts">
+    <div class="blogPosts__inner">
+        <div class="blogPosts__list">
+            {% for post in allBlogPosts %}
+                <a href="{{ post.url }}" class="blogPosts__item">
+                    <div class="blogPosts__cover">
+                        {% set image = post.coverImage.one %}
+                        {% set transformedImages = craft.imager.transformImage(image, [
+                            { width: 1080 },
+                            { width: 720 },
+                            { width: 540 },
+                            { width: 360 },
+                            { width: 290 },
+                            ], {
+                                ratio: 4/3,
+                                position: '100% 100%',
+                                jpegQuality: 75 },
+                            { fillTransforms: true })
+                        %}
+                        <img src="{{ craft.imager.placeholder({ width: 360 }) }}"
+                            sizes="360, 100vw"
+                            srcset="{{ craft.imager.srcset(transformedImages) }}"
+                        >
+                    </div>
+                    <div class="blogPosts__meta">
+                        <h3 class="blogPosts__heading">
+                            {{ post.title }}
+                        </h3>
+                        <div class="blogPosts__author">
+                            {{ post.author }}
+                        </div>
+                        <div class="blogPosts__date">
+                            {{ post.postDate|date("d. M Y") }}
+                        </div>
+                        <div class="blogPosts__lead">
+                            {{ post.lead }}
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
