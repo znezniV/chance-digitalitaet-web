@@ -1,0 +1,84 @@
+fieldLayouts:
+  73f230d6-8aff-4f0d-9611-695ba1434b1f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: de69cdf3-1181-4b9a-aebc-455ba086b8e3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 67427430-310e-45a1-8180-33700c73afbc # Cover Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 619405df-1969-4920-b660-701d4e12efcf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1bcf984-ae8b-43db-a36b-783d963dd6be # Lead
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 646e7f9b-ad6a-4da2-9641-82c5fc0ab186
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 5b0ad7c2-14a2-44cb-aac8-957ab2589dbc
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 71a1c640-eded-4fcb-917a-fdca9a7bdc89 # Content Blocks Blog
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba78a27a-7ef9-444c-8a6d-aae0c881e775
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: cca5d14a-d84f-47a1-b308-4cb1080fe7d9
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Standard
+section: 1bb84bf2-1659-4634-b35c-3745b425263d # Blog
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

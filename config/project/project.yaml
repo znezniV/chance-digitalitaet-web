@@ -1,4 +1,4 @@
-dateModified: 1686401795
+dateModified: 1686510744
 elementSources:
   craft\elements\Entry:
     -
@@ -110,6 +110,7 @@ meta:
   __names__:
     0f4f23be-0b8a-4ac4-94f0-8f934ce349c8: Home # Home
     1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
+    1bb84bf2-1659-4634-b35c-3745b425263d: Blog # Blog
     2b5e4669-d25f-418f-9e87-45105720f1d4: Button # Button
     2ff8ce56-e1cc-448f-8f64-b75caf2e1106: 'Logo Französisch' # Logo Französisch
     3a722f01-9577-4609-b667-62e72d7f4ad4: Text # Text
@@ -122,15 +123,19 @@ meta:
     05d06e7e-2c5c-4332-8ae4-d93af318dadf: Bild # Bild
     6c5bbb5d-f9df-487d-b208-0da13af9ed0f: Team # Team
     6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color' # Dominant Color
+    6e194455-b072-42c1-9a84-06408c25fd84: Bild # Bild
     6efa6df0-066e-4613-806f-9beddaf00eca: Raster # Raster
     07ba58ba-9d1a-4bca-90e6-83bcd333d140: Farbe # Farbe
     9ca0bdb2-223c-4190-af5d-2da06fd7b81a: Footer # Footer
     9ca19677-e719-49d3-89b3-42a8b5a512ad: Rolle # Rolle
     044c08de-f4c2-44a8-bbce-920a115e395c: Menschen # Menschen
     62da8c6a-1d1f-4762-ba90-a699f1dcd85c: 'Voller Name' # Voller Name
+    68e31d77-5370-47f1-85e1-5de1ce19a00b: Standard # Standard
+    71a1c640-eded-4fcb-917a-fdca9a7bdc89: 'Content Blocks Blog' # Content Blocks Blog
     85e7b218-d803-45ff-92b4-7fc6e3454d22: About # About
     95beaae5-ee36-42b5-ba23-79a7af3c6f5f: 'Main Nav' # Main Nav
     428bdfbf-b057-4247-a055-e16ff5d4fb65: Kopfzeile # Kopfzeile
+    506fe366-ed75-4cca-a6ef-1bd14af8fd6c: Blog # Blog
     555abebb-6f53-497f-a4c0-36f3340c4885: Lead # Lead
     2640cf14-838a-4394-b21e-84c409715053: Branding # Branding
     3278af5a-02d3-4147-994d-27f78cca028e: 'Meta Description' # Meta Description
@@ -139,10 +144,13 @@ meta:
     35853a03-a023-42a1-a246-59b04b4a1433: 'Logo Deutsch' # Logo Deutsch
     51397ab5-d808-46bf-9838-74f0956f9fa1: Assets # Assets
     57595d99-8143-4762-aa58-bca70fac4fe4: Home # Home
+    186149ed-f119-4982-994b-28eb4c6a17fd: Bildbeschrieb # Bildbeschrieb
     723399b6-47d6-4bd9-b59a-c61c56cdaa44: Kopfzeile # Kopfzeile
     969890a0-f328-43b4-b8f6-8d1d6724eead: 'Content Blocks' # Content Blocks
+    67427430-310e-45a1-8180-33700c73afbc: 'Cover Bild' # Cover Bild
     68733552-34d0-4fff-9ec4-f01c7c954ec2: 'Farb Block' # Farb Block
     a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile
+    a4143828-2a6c-4d9e-b6bd-644c015d3fd3: Text # Text
     ac1d573d-4c9a-4de1-a431-172e73f30817: 'Opportunité  Numérique' # Opportunité  Numérique
     b1e08073-fffd-49f6-8e83-61051641e3ba: Portrait # Portrait
     b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
@@ -154,11 +162,13 @@ meta:
     c475d313-1872-49dd-b290-85ab508126b2: 'Site Name' # Site Name
     ca240dbb-2270-468b-a5aa-d4dbc0fc7d91: SEO # SEO
     d4cdab7c-bb04-4a50-bea1-4fe6353344c0: Logos # Logos
+    d7e9b5a8-c17f-44a1-a5cb-4dd33b9b3e81: Text # Text
     d9aa901b-ac49-4ac2-a9a5-e1c159229f7b: Kopfzeile # Kopfzeile
     e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead
     e6d6312f-5bfe-4933-80d2-be986487da24: 'Chance Digitalität' # Chance Digitalität
     e4948830-ad0f-40a8-9b39-550b2bdcbbd9: Documents # Documents
     f7c1d3c4-fb65-4ead-83b4-ee3cf63d98e3: Text # Text
+    f278dc74-0b58-4a96-8d64-f463cefc4d19: Bild # Bild
     fc289545-b4d5-43c1-b6b0-80656b5b0bad: Text # Text
     fe794aba-5bf0-44ef-a823-0fc9cc8fb93e: 'Chance Digitalität' # Chance Digitalität
 plugins:

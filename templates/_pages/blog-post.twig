@@ -1,0 +1,12 @@
+{% extends "_layouts/layout.twig" %}
+
+{% block namespace %}blog{% endblock %}
+
+{% block main %}
+
+    {% include "_components/blocks/pageHeading" with { heading: entry.title, lead: entry.lead, meta: (entry.author  ~ " – " ~ entry.postDate|date("d. M Y")), modifier: "blog" } %}
+    {% include "_components/contentBlocksBlog" %}
+    {% include "_components/blogPosts" %}
+
+{% endblock %}
+

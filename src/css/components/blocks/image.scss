@@ -1,0 +1,45 @@
+.image {
+    @include container($page-container);
+    @include grid();
+    padding: var(--spacing-medium) 0;
+
+    &__inner {
+        @include mq($from: desktop) {
+            grid-column: 3 / span 7;
+        }
+        @include mq($from: tablet) {
+            grid-column: 2 / span 9;
+        }
+        @include mq($until: tablet) {
+            grid-column: 1 / span 12;
+        }
+    }
+
+    &__caption {
+        @include typo-small();
+        margin-top: 0.714em;
+    }
+
+    &--portrait {
+        .image {
+            &__inner {
+                grid-column: 4 / span 4;
+
+                @include mq($from: tablet) {
+                    grid-column: 3 / span 6;
+                }
+                @include mq($until: tablet) {
+                    grid-column: 2 / span 8;
+                }
+            }
+        }
+    }
+}
+
+.blocks--blog {
+    .image {
+        @include mq($from: desktop) {
+            background-color: $color-light-grey;
+        }
+    }
+}

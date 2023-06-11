@@ -1,0 +1,5 @@
+<div class="blocks blocks--blog">
+{% for block in entry.contentBlocksBlog.all() %}
+    {% include "_components/blocks/" ~ block.type %}
+{% endfor %}
+</div>

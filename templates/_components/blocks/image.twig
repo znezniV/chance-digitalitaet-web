@@ -1,0 +1,27 @@
+{% set image = block.image.one %}
+{% set transformedImages = craft.imager.transformImage(image, [
+    { width: 1080 },
+    { width: 720 },
+    { width: 540 },
+    { width: 360 },
+    { width: 290 },
+    ], {
+        position: '100% 100%',
+        jpegQuality: 75 },
+    { fillTransforms: true })
+%}
+
+<div class="image {{ image.width / image.height < 1 ? "image--portrait" : "" }}">
+    <div class="image__inner">
+        <figure class="image__image">
+            {# {{ image.width / image.height }} #}
+            <img src="{{ craft.imager.placeholder({ width: 360 }) }}"
+            sizes="360, 100vw"
+            srcset="{{ craft.imager.srcset(transformedImages) }}"
+            >
+            <figcaption class="image__caption">
+                {{ block.caption }}
+            </figcaption>
+        </figure>
+    </div>
+</div>

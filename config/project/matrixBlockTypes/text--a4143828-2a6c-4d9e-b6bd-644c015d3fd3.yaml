@@ -1,0 +1,55 @@
+field: 71a1c640-eded-4fcb-917a-fdca9a7bdc89 # Content Blocks Blog
+fieldLayouts:
+  d2f6041d-5919-41e5-a51d-45246c7399ad:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d7e9b5a8-c17f-44a1-a5cb-4dd33b9b3e81 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a801b944-5309-4c3d-b369-eed3dfdb82c3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 239fac3b-20a1-4855-982d-9a986316e54d
+        userCondition: null
+fields:
+  d7e9b5a8-c17f-44a1-a5cb-4dd33b9b3e81: # Text
+    columnSuffix: ykakcpre
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes:
+        - c5e90cc1-dc82-4470-8eb6-b462dbb75259 # Images
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: BoldLink.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: text
+name: Text
+sortOrder: 1

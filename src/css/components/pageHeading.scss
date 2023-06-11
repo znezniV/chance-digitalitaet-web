@@ -12,7 +12,16 @@
         }
     }
 
-    &--top-page {
+    &--top-page,
+    &--blog {
         padding-bottom: var(--spacing-medium-big);
+    }
+
+    &--blog {
+        margin-top: var(--spacing-large);
+        grid-column: 2 / span 10;
+        @include mq($from: desktop) {
+            background-color: $color-light-grey;
+        }
     }
 }

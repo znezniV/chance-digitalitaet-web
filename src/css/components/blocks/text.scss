@@ -9,4 +9,16 @@
             grid-column: 1 / span 12;
         }
     }
+
+    p + p{
+        margin-top: 1em;
+    }
+}
+
+.blocks--blog {
+    .text {
+        @include mq($from: desktop) {
+            background-color: $color-light-grey;
+        }
+    }
 }

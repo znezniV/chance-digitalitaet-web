@@ -1,0 +1,108 @@
+field: 71a1c640-eded-4fcb-917a-fdca9a7bdc89 # Content Blocks Blog
+fieldLayouts:
+  febecdcf-e827-403a-bbcd-ccca1fa697fe:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f278dc74-0b58-4a96-8d64-f463cefc4d19 # Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 697679d4-670c-4ec3-ae8b-2d9ead36c20a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 186149ed-f119-4982-994b-28eb4c6a17fd # Bildbeschrieb
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 008f35af-2b6e-4859-9c6a-598a1f8cd280
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 36731cf6-75d3-4546-b051-659a1f370ea1
+        userCondition: null
+fields:
+  186149ed-f119-4982-994b-28eb4c6a17fd: # Bildbeschrieb
+    columnSuffix: icgbnqlt
+    contentColumnType: text
+    fieldGroup: null
+    handle: caption
+    instructions: null
+    name: Bildbeschrieb
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  f278dc74-0b58-4a96-8d64-f463cefc4d19: # Bild
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Bild
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:c5e90cc1-dc82-4470-8eb6-b462dbb75259' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:85e7b218-d803-45ff-92b4-7fc6e3454d22' # About
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:c5e90cc1-dc82-4470-8eb6-b462dbb75259' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: image
+name: Bild
+sortOrder: 2
