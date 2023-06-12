@@ -12,7 +12,7 @@ import lottie from './components/lottie';
 window.Alpine = Alpine;
 // Alpine.plugin(collapse);
 // Alpine.plugin(focus);
-Alpine.plugin(intersect);
+// Alpine.plugin(intersect);
 //
 document.addEventListener('alpine:init', () => {
     Alpine.data('lottie', lottie);
