@@ -3,6 +3,10 @@
     color: var(--color-background);
     margin-top: var(--spacing-large);
 
+    &__newsletter {
+
+    }
+
     &__inner {
         @include container($page-container);
         padding: var(--spacing-medium) 0;
@@ -44,7 +48,7 @@
         margin-right: 40px;
     }
 
-    &__newsletter {
+    &__action {
         display: flex;
         grid-column: 10 / span 3;
         justify-content: flex-end;

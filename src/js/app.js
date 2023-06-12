@@ -8,6 +8,7 @@ import Alpine from 'alpinejs';
 // import intersect from '@alpinejs/intersect'
 
 import lottie from './components/lottie';
+import footer from './components/footer';
 //
 window.Alpine = Alpine;
 // Alpine.plugin(collapse);
@@ -16,6 +17,7 @@ window.Alpine = Alpine;
 //
 document.addEventListener('alpine:init', () => {
     Alpine.data('lottie', lottie);
+    Alpine.data('footer', footer);
 });
 //
 Alpine.start();
