@@ -2,20 +2,20 @@ import './bootstrap.js';
 import './swup.js'
 // import './htmx.js'
 
-// import Alpine from 'alpinejs';
+import Alpine from 'alpinejs';
 // import focus from '@alpinejs/focus';
 // import collapse from '@alpinejs/collapse';
 // import intersect from '@alpinejs/intersect'
 
-// import alpineComponent from './components/alpineComponent';
+import lottie from './components/lottie';
 //
-// window.Alpine = Alpine;
+window.Alpine = Alpine;
 // Alpine.plugin(collapse);
 // Alpine.plugin(focus);
-// Alpine.plugin(intersect);
+Alpine.plugin(intersect);
 //
-// document.addEventListener('alpine:init', () => {
-//     Alpine.data('alpineComponent', alpineComponent);
-// });
+document.addEventListener('alpine:init', () => {
+    Alpine.data('lottie', lottie);
+});
 //
-// Alpine.start();
+Alpine.start();

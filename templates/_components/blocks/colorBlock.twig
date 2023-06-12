@@ -1,6 +1,10 @@
 <div class="colorBlock colorBlock--{{ block.color }}">
     <div class="colorBlock__inner">
         <div class="colorBlock__content">
+            {% if block.animation.one %}
+                {% set animation = block.animation.one() %}
+                {% include "_components/lottie.twig" with { path: animation } %}
+            {% endif %}
             <h2 class="colorBlock__heading">
                 {{ block.heading }}
             </h2>

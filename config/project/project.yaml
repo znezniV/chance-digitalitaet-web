@@ -1,4 +1,4 @@
-dateModified: 1686510744
+dateModified: 1686577694
 elementSources:
   craft\elements\Entry:
     -
@@ -133,6 +133,7 @@ meta:
     68e31d77-5370-47f1-85e1-5de1ce19a00b: Standard # Standard
     71a1c640-eded-4fcb-917a-fdca9a7bdc89: 'Content Blocks Blog' # Content Blocks Blog
     85e7b218-d803-45ff-92b4-7fc6e3454d22: About # About
+    87f44536-fdbf-48a2-b2dd-c86468e8f431: Animation # Animation
     95beaae5-ee36-42b5-ba23-79a7af3c6f5f: 'Main Nav' # Main Nav
     428bdfbf-b057-4247-a055-e16ff5d4fb65: Kopfzeile # Kopfzeile
     506fe366-ed75-4cca-a6ef-1bd14af8fd6c: Blog # Blog

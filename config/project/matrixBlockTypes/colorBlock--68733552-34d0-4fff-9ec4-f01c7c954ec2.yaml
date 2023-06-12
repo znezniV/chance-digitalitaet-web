@@ -19,6 +19,18 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
+            fieldUid: 87f44536-fdbf-48a2-b2dd-c86468e8f431 # Animation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e399f2e0-acb8-4ba3-b1eb-3419950f81a7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: a5695d25-1fd0-4a09-97df-a36a83119620 # Kopfzeile
             instructions: null
             label: null
@@ -182,7 +194,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 504456250
+      changedFieldIndicator: 1381828705
       columns:
         __assoc__:
           -
@@ -274,6 +286,56 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons
+  87f44536-fdbf-48a2-b2dd-c86468e8f431: # Animation
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: animation
+    instructions: null
+    name: Animation
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - json
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:e4948830-ad0f-40a8-9b39-550b2bdcbbd9' # Documents
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:85e7b218-d803-45ff-92b4-7fc6e3454d22' # About
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:e4948830-ad0f-40a8-9b39-550b2bdcbbd9' # Documents
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   555abebb-6f53-497f-a4c0-36f3340c4885: # Lead
     columnSuffix: siklcgnb
     contentColumnType: text

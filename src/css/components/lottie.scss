@@ -1,0 +1,15 @@
+.lottie {
+    margin-bottom: var(--spacing-medium);
+    &__animation {
+        width: 130px;
+        height: 130px;
+        @include mq($until: tablet) {
+            width: 100px;
+            height: 100px;
+        }
+        @include mq($until: phablet) {
+            width: 82px;
+            height: 82px;
+        }
+    }
+}
