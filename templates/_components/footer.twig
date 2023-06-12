@@ -1,6 +1,7 @@
 {% set footerNav = craft.navigation.nodes().handle('footer').all() %}
 
 <footer class="footer">
+    {% include "_components/newsletter.twig" %}
     <div class="footer__inner">
         <div class="footer__contact">
             <div class="footer__contact-list">
@@ -26,7 +27,7 @@
 
             </div>
             <div class="footer__newsletter">
-                <div class="footer__button">{{ "Newsletter"|t }}</div>
+                <div class="footer__button">{{ "newsletter"|t }}</div>
             </div>
         </div>
         <div class="footer__nav">

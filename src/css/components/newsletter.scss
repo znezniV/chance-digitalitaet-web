@@ -1,0 +1,26 @@
+.newsletter {
+    background-color: $color-green;
+    padding: var(--spacing-small) 0;
+
+    &__inner {
+        @include container($page-container);
+    }
+
+    &__form {
+        @include grid(2);
+        @include mq($until: tablet) {
+            @include grid(1);
+        }
+    }
+
+    &__input-group {
+        @include form-group-text();
+    }
+
+    &__button {
+    }
+
+    &__submit {
+        @include button($background-color: $color-white, $color: $color-green, $color-shadow: var(--color-shadow-green));
+    }
+}

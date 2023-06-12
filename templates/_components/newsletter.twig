@@ -1,0 +1,21 @@
+<div x-data="newsletter" class="newsletter">
+    <div class="newsletter__inner">
+        <form class="newsletter__form" @submit.prevent="sendData()">
+            <div class="newsletter__input-group">
+                <input type="text" x-model="firstName" placeholder="{{ "first_name"|t }}" required>
+            </div>
+            <div class="newsletter__input-group">
+                <input type="text" x-model="lastName" placeholder="{{ "last_name"|t }}" required>
+            </div>
+            <div class="newsletter__input-group">
+                <input type="email" x-model="email" placeholder="{{ "email"|t }}" required>
+            </div>
+            <div class="newsletter__input-group">
+                <input type="text" x-model="location" placeholder="{{ "location"|t }} {{ "(" ~ "optional"|t ~ ")" }}">
+            </div>
+            <div class="newsletter__button">
+                <input type="submit" value="{{ "subscribe"|t }}" class="newsletter__submit">
+            </div>
+        </form>
+    </div>
+</div>

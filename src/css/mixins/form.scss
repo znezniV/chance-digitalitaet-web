@@ -1,0 +1,385 @@
+/**
+ * -----------------------------------------------------------------------
+ * Forms
+ * -----------------------------------------------------------------------
+ *
+ * Mixin to build form styles
+ * Each individual element is styled as a mixing first such as inputs and labels. These Elements are then connected into a group.
+ * A group applies the styling of the individual elements.
+ *
+ * Examples:
+ * .input-text {
+ *   @include form-field-text ();
+ * }
+ *
+ * .input-group-text {
+ *   @include form-group-text();
+ * }
+ *
+ * @link      https://ting.community
+ * @licence   MIT
+ * @version   1.0.0
+ */
+
+@mixin form-label-text() {
+    @include typo-small();
+
+    a {
+        // @include link();
+    }
+}
+
+@mixin form-label-text-big() {
+    @include typo-heading-subtitle();
+
+    a {
+        // @include link();
+    }
+}
+
+@mixin form-label-checkbox() {
+    @include typo-body();
+
+    a {
+        // @include link();
+    }
+}
+
+@mixin form-description() {
+    @include typo-small();
+    margin-top: 1em;
+    color: var(--color-text);
+}
+
+@mixin form-error-message() {
+    @include form-description();
+    color: var(--color-danger);
+}
+
+@mixin form-field-text() {
+    @include typo-body();
+    display: flex;
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid $color-white;
+    background-color: rgba($color-white, 0.6);
+    transition: border-color 0.1s ease-in-out;
+    appearance: none;
+    border-radius: 0;
+
+    &:focus,
+    &:active {
+        // border: 1px solid $color-white;
+    }
+
+    &::placeholder {
+        color: rgba($color-medium-grey, 0.5);
+    }
+
+    &:disabled {
+        color: var(--color-text);
+        background-color: #f7f7f7;
+        cursor: not-allowed;
+    }
+}
+
+@mixin form-group-text() {
+    // @include spacing(top, form);
+    // @include spacing(bottom, form);
+    position: relative;
+
+    label {
+        @include form-label-text();
+        position: absolute;
+        top: 18px;
+        margin: 0 10px;
+        padding: 0 10px;
+    }
+
+    label.form-required:after { // stylelint-disable-line
+        content: '*';
+    }
+
+    input[type='text'],
+    input[type='number'],
+    input[type='email'],
+    input[type='date'],
+    input[type='datetime'],
+    input[type='datetime-local'],
+    input[type='time'],
+    input[type='month'],
+    input[type='week'],
+    input[type='url'],
+    input[type='tel'],
+    input[type='password'],
+    textarea {
+        @include form-field-text();
+    }
+
+    &--error {
+        input[type='text'],
+        input[type='number'],
+        input[type='email'],
+        input[type='date'],
+        input[type='datetime'],
+        input[type='datetime-local'],
+        input[type='time'],
+        input[type='month'],
+        input[type='week'],
+        input[type='url'],
+        input[type='tel'],
+        input[type='password'],
+        textarea {
+            border-color: var(--color-danger);
+            color: var(--color-danger);
+        }
+    }
+
+    textarea {
+        resize: vertical;
+
+        label {
+            border-radius: 21px;
+            background-color: var(--color-background);
+        }
+
+        // textarea in details elements.
+        details & {
+            width: 90%;
+        }
+    }
+}
+
+@mixin form-group-textarea-outside-label() {
+    @include form-label-text-big();
+
+    label {
+        @include typo-heading-subtitle();
+        position: static;
+        display: block;
+        margin: 0;
+        margin-bottom: 1em;
+        padding: 0;
+    }
+
+    textarea {
+        @include form-field-text();
+        padding-top: 10px;
+        resize: vertical;
+    }
+}
+
+@mixin form-group-checkbox() {
+    input[type='checkbox'] {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+
+        &:checked {
+            ~ label {
+                &:before {
+                    background-color: $color-text;
+                }
+
+                &:after {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    label {
+        @include form-label-checkbox();
+        position: static;
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+        padding-left: 48px;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+        }
+
+        &:before {
+            top: 0px;
+            left: 0;
+            width: 28px;
+            height: 28px;
+            border: 2px solid $color-text;
+            background-color: var(--color-background);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        &:after {
+            content: none;
+            top: 0px;
+            left: 0px;
+            width: 28px;
+            height: 28px;
+            color: var(--color-background);
+            background-image: url('data:image/svg+xml; utf8, <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 15L2 9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M19.8975 1.99999L7.49997 15" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center center;
+            // transition: all 0.1s ease-in-out;
+        }
+    }
+}
+
+@mixin form-group-toggle() {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    input[type='checkbox'] {
+        position: relative;
+        align-items: center;
+        display: flex;
+        padding: 8px;
+        border: 2px solid var(--color-border);
+        background-color: var(--color-background);
+        appearance: none;
+        border-radius: 50em;
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
+        order: 1;
+
+        &:after {
+            cursor: pointer;
+            content: '';
+            width: 15px;
+            height: 15px;
+            margin-right: 25px;
+            background-color: var(--color-border);
+            border-radius: 50%;
+            transition: all 0.2s ease-out;
+        }
+
+        &:before {
+            @include typo-small();
+            position: absolute;
+            left: 55px;
+            content: 'Off';
+            order: 1;
+            align-self: center;
+            margin-left: 0.75em;
+        }
+
+        &:checked {
+            &:after {
+                margin-left: 25px;
+                margin-right: 0;
+                background-color: $color-text;
+            }
+
+            &:before {
+                @include typo-small();
+                content: 'On';
+            }
+        }
+
+        & ~ label { // stylelint-disable-line
+            &:after {
+                content: none;
+            }
+        }
+    }
+
+    label {
+        @include typo-heading-small();
+        width: 100%;
+        padding: 0;
+
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+
+    .toggle-state {
+        @include typo-small();
+        display: inline-block;
+        margin-left: 1em;
+
+        &--on {
+            display: none;
+        }
+    }
+}
+
+@mixin form-group-radio() {
+    input[type='radio'] {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+
+        &:checked {
+            ~ label {
+                &:before {
+                    background-color: $color-text;
+                }
+
+                &:after {
+                    top: 13px;
+                    left: 11px;
+                    width: 7px;
+                    height: 7px;
+                }
+            }
+        }
+    }
+
+    label {
+        @include form-label-checkbox();
+        position: static;
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+        padding-left: 48px;
+        cursor: pointer;
+
+        @include mq($until: desktop) {
+            padding-top: 0.26em;
+        }
+
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+        }
+
+        &:before {
+            top: 2px;
+            left: 0;
+            width: 29px;
+            height: 29px;
+            border: 2px solid $color-text;
+            background-color: var(--color-background);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        &:after {
+            top: 4px;
+            left: 2px;
+            width: 24px;
+            height: 24px;
+            color: var(--color-background);
+            border-radius: 50%;
+            background-color: #fff;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+
+    .description {
+        position: static;
+        margin-top: 0.75em;
+    }
+}

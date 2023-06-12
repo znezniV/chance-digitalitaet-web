@@ -5,7 +5,10 @@
 
     &__inner {
         @include container($page-container);
-        padding: var(--spacing-medium) var(--spacing-small);
+        padding: var(--spacing-medium) 0;
+        @include mq($until: tablet) {
+            padding: var(--spacing-medium) var(--spacing-small);
+        }
     }
 
     &__contact {
