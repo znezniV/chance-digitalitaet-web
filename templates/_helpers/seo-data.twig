@@ -1,0 +1,24 @@
+ {#
+ # SEO Data
+ # ---------------
+ #
+ # This Helper adds SEO tags to the head
+ #
+ # – Meta tags (title, desc etc.)
+ # – Social Media tags (Open Graph etc.)
+ # – Structured Data (Schema.org)
+ #
+ # If the "SEO" plugin is disabled, only the default title gets added
+ #
+ #}
+
+
+{% if not craft.app.plugins.getPlugin('seomatic') %}
+
+    <title>{% if entry is defined %}{{ entry }} - {% endif %}Chance Digitalität</title>
+
+{% endif %}
+
+{% if craft.app.config.env != 'production' %}
+    <meta name="robots" content="noindex,nofollow">
+{% endif %}

@@ -17,6 +17,10 @@
         <meta name="robots" content="noindex, nofollow">
     {% endif %}
 
+    {% block seo_data %}
+        {% include '_helpers/seo-data' %}
+    {% endblock %}
+
    {% set favicon = craft.app.config.env == 'production' ? 'icon' : 'icon' %}
    <link rel="icon" href="/assets/meta/favicon.ico" sizes="any">
    <link rel="icon" type="image/svg+xml" href="/assets/meta/favicon.svg">
