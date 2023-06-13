@@ -1,6 +1,6 @@
 baseUrl: $FRENCH_SITE_URL
 enabled: '1'
-handle: fr
+handle: french
 hasUrls: true
 language: fr-CH
 name: 'Opportunité  Numérique'

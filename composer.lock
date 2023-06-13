@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7274f568b6271d9d17910cfe240b7f3c",
+    "content-hash": "61a2d4fffc509cb6b2af62f2eb100ac0",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2674,6 +2674,58 @@
             "time": "2021-01-22T15:08:35+00:00"
         },
         {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.115",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+                "reference": "4531e4a70d55d10cbe7d41ac1ff0d75a5fe2ef1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/4531e4a70d55d10cbe7d41ac1ff0d75a5fe2ef1e",
+                "reference": "4531e4a70d55d10cbe7d41ac1ff0d75a5fe2ef1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.5|^6.5|^9.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "support": {
+                "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
+                "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.2.115"
+            },
+            "time": "2023-06-05T21:32:18+00:00"
+        },
+        {
             "name": "jorisnoo/craft-modules",
             "version": "dev-main",
             "source": {
@@ -4658,6 +4710,67 @@
                 "source": "https://github.com/phpstan/phpdoc-parser/tree/1.22.0"
             },
             "time": "2023-06-01T12:35:21+00:00"
+        },
+        {
+            "name": "pierrestoffe/craft-language-redirector",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pierrestoffe/craft-language-redirector.git",
+                "reference": "a2bd8afde4cf203be83a06cd34cfd24c05d95d3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pierrestoffe/craft-language-redirector/zipball/a2bd8afde4cf203be83a06cd34cfd24c05d95d3c",
+                "reference": "a2bd8afde4cf203be83a06cd34cfd24c05d95d3c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0|^4.0.0",
+                "jaybizzle/crawler-detect": "^1.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Language Redirector",
+                "handle": "language-redirector",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/pierrestoffe/craft-language-redirector/master/CHANGELOG.md",
+                "components": {
+                    "languageRedirectorService": "pierrestoffe\\languageredirector\\services\\LanguageRedirectorService"
+                },
+                "class": "pierrestoffe\\languageredirector\\LanguageRedirector"
+            },
+            "autoload": {
+                "psr-4": {
+                    "pierrestoffe\\languageredirector\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Stoffe",
+                    "homepage": "https://pierrestoffe.be"
+                }
+            ],
+            "description": "Automatically redirect visitors to their preferred language",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "language redirector"
+            ],
+            "support": {
+                "docs": "https://github.com/pierrestoffe/craft-language-redirector/blob/master/README.md",
+                "issues": "https://github.com/pierrestoffe/craft-language-redirector/issues",
+                "source": "https://github.com/pierrestoffe/craft-language-redirector/tree/2.0.1"
+            },
+            "time": "2022-06-10T18:18:32+00:00"
         },
         {
             "name": "pimple/pimple",

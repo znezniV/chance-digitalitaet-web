@@ -1,4 +1,4 @@
-dateModified: 1686595452
+dateModified: 1686648646
 elementSources:
   craft\elements\Entry:
     -
@@ -226,6 +226,11 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
+  language-redirector:
+    edition: standard
+    enabled: true
+    licenseKey: 15C77SQK29J8GDDNV70OGS7U
+    schemaVersion: 1.0.0
   matrixmate:
     edition: standard
     enabled: true

@@ -19,6 +19,7 @@
         "nystudio107/craft-vite": "4.0.6",
         "oofbar/craft-twig-toolbox": "^1.0.3",
         "percipioglobal/craft-colour-swatches": "4.2.0.1",
+        "pierrestoffe/craft-language-redirector": "^2.0",
         "putyourlightson/craft-blitz-recommendations": "^2.1.1",
         "putyourlightson/craft-dashboard-begone": "^2.0",
         "sebastianlenz/linkfield": "^2.1",

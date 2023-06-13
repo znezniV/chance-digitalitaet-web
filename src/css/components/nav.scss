@@ -10,10 +10,6 @@
         padding: 0 18px;
     }
 
-    &__inner {
-
-    }
-
     &__burger-burger {
         @include mq($from: phone, $until: tablet) {
             @include burger($width: 24px, $gutter: 6px, $height: 3px, $color: var(--color-text));
@@ -21,6 +17,13 @@
     }
 
     &__main {
+        display: flex;
+        @include mq($from: tablet) {
+            justify-content: space-between;
+        }
+        @include mq($until: tablet) {
+            flex-direction: column;
+        }
     }
 
     &__list {
@@ -81,7 +84,8 @@
             @include typo-heading-small();
             font-weight: normal;
             display: flex;
-            padding: 0.5126em;;
+            padding: 0.62em 0.5126em;;
+            line-height: 1.3;
             @include mq($until: tablet) {
                 padding: 0.333em 0;
             }
@@ -98,6 +102,10 @@
                     right: 0.4166em;
                     bottom: 0;
                     background-color: $color-blue;
+                    @include mq($until: tablet) {
+                        left: 0;
+                        right: 0;
+                    }
                 }
             }
 
@@ -184,5 +192,31 @@
 
     .nav__burger-text-o {
         display: none;
+    }
+
+    &__lang-switcher {
+        display: flex;
+        align-items: center;
+    }
+
+    &__lang-list {
+        @include typo-heading-small();
+        font-family: $font-default;
+        display: flex;
+        list-style: none;
+
+        @include mq($until: tablet) {
+            max-height: 0;
+            overflow: hidden;
+            margin-left: -0.5em;
+        }
+    }
+
+    &__lang-item {
+        color: $color-blue;
+        padding: 0.35em 0.5em;
+        &--active {
+            opacity: 0.11;
+        }
     }
 }

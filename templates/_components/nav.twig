@@ -1,5 +1,5 @@
 {% set nodes = craft.navigation.nodes('mainNav').all() %}
-{# {% set allLanguages = craft.languageSwitcher.getUrls() %} #}
+{% set allLanguages = craft.languageSwitcher.getUrls() %}
 {% set currentLocale = craft.app.locale %}
 
 <div class="nav">
@@ -34,23 +34,23 @@
                         </li>
                     {% endnav %}
                 </ul>
+                <div class="nav__lang-switcher">
+                    <nav aria-label="{{'Switch language'|t}}" aria-role="navigation">
+                        <ul class="nav__lang-list">
+                            {% for item in allLanguages %}
+                                {% set isActive = item.id == currentLocale.id|slice(0, 2) %}
+                                <li class="nav__lang-item {{ isActive ? 'nav__lang-item--active'}}">
+                                    <a href="{{ item.url }}" hreflang="{{ item.id }}" lang="{{ item.id }}" title="{{ 'Switch to {language}'|translate({
+                                        language: item.name
+                                    }) }}" class="no-barba" data-barba-prevent="self">
+                                        {{ item.id|slice(0, 1)|upper }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
             </nav>
-            {# <div class="nav__lang-switcher">
-                <nav aria-label="{{'Switch language'|t}}" aria-role="navigation">
-                    <ul class="nav__lang-list">
-                        {% for item in allLanguages %}
-                            {% set isActive = item.id == currentLocale.id|slice(0, 2) %}
-                            <li class="nav__lang-item {{ isActive ? 'nav__lang-item--active'}}">
-                                <a href="{{ item.url }}" hreflang="{{ item.id }}" lang="{{ item.id }}" title="{{ 'Switch to {language}'|translate({
-                                    language: item.name
-                                }) }}" class="no-barba" data-barba-prevent="self">
-                                    {{ item.id|slice(0, 2)|upper }}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-            </div> #}
         </div>
     </div>
 </div>

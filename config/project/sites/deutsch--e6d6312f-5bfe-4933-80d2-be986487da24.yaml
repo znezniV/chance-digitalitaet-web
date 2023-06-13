@@ -1,6 +1,6 @@
 baseUrl: $PRIMARY_SITE_URL
 enabled: true
-handle: de
+handle: deutsch
 hasUrls: true
 language: de-CH
 name: 'Chance Digitalität'
