@@ -45,6 +45,7 @@ return GeneralConfig::create()
 
     ->aliases([
         '@web' => rtrim(App::env('PRIMARY_SITE_URL'), '/'),
+        '@french' => rtrim(App::env('FRENCH_SITE_URL'), '/'),
         '@webroot' => dirname(__DIR__).'/web',
 
         '@assetBaseUrl' => '@web/storage',

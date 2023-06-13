@@ -1,4 +1,4 @@
-changedFieldIndicator: 917591254
+changedFieldIndicator: 633429415
 field: 044c08de-f4c2-44a8-bbce-920a115e395c # Menschen
 fieldLayouts:
   6d38fb99-80e1-4b8b-a347-61faa3d8b1ee:
@@ -76,7 +76,7 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: language
     type: craft\fields\PlainText
   62da8c6a-1d1f-4762-ba90-a699f1dcd85c: # Voller Name
     columnSuffix: vtmapdsf

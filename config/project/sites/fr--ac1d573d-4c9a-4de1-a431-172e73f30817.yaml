@@ -1,4 +1,4 @@
-baseUrl: '@web/fr'
+baseUrl: $FRENCH_SITE_URL
 enabled: '1'
 handle: fr
 hasUrls: true
