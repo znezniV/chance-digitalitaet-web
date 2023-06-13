@@ -2,8 +2,8 @@
 
 {% block page %}
     <a href="#main" class="sr-only">Jump directly to main content</a>
-    {% include "_components/nav" %}
     <div id="swup">
+        {% include "_components/nav" %}
         <main class="page-transition-main">
             {{ block('main') }}
         </main>
