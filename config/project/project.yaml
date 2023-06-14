@@ -1,4 +1,4 @@
-dateModified: 1686755448
+dateModified: 1686757934
 elementSources:
   craft\elements\Entry:
     -
@@ -13,11 +13,35 @@ elementSources:
       type: native
     -
       defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:3f6076cf-bc5d-4907-914e-41369bb3676b' # Page
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      defaultSort:
         - title
         - asc
       disabled: false
       key: 'single:4a8d2762-9460-4882-a033-0e12f54d164b' # Home
       tableAttributes:
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:1bb84bf2-1659-4634-b35c-3745b425263d' # Blog
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
         - link
       type: native
     -
@@ -27,7 +51,7 @@ elementSources:
       defaultSort:
         - title
         - asc
-      disabled: false
+      disabled: true
       key: 'single:b23ca107-96dc-4de7-9910-d43cb4e97208' # SEO
       tableAttributes:
         - postDate
@@ -36,24 +60,8 @@ elementSources:
         - link
       type: native
     -
-      condition:
-        class: craft\elements\conditions\entries\EntryCondition
-        conditionRules:
-          -
-            class: craft\elements\conditions\entries\SectionConditionRule
-            operator: in
-            uid: 1bf35e37-0494-423d-8628-e4de241dd0d7
-            values:
-              - b23ca107-96dc-4de7-9910-d43cb4e97208 # SEO
-        elementType: craft\elements\Entry
-        fieldContext: global
-      defaultSort:
-        - title
-        - asc
-      key: 'custom:f9b3f327-f1bd-4b4d-818a-83513e85fd56'
-      label: 'Globale Inhalte'
-      tableAttributes: '-'
-      type: custom
+      heading: ''
+      type: heading
 email:
   fromEmail: $MAIL_FROM
   fromName: 'Craft CMS'
