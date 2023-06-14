@@ -39,5 +39,5 @@ name: Documents
 sortOrder: 5
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-transformFs: ''
+transformFs: documents
 transformSubpath: ''
