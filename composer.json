@@ -27,6 +27,7 @@
         "spacecatninja/imager-x-imageboss-transformer": "dev-local-paths",
         "spatie/craft-ray": "^2.0",
         "spicyweb/craft-embedded-assets": "^3.1.5",
+        "symfony/dotenv": "^6.3",
         "topshelfcraft/environment-label": "^4.0.3",
         "ttempleton/craft-nocache": "^3.0",
         "vaersaagod/matrixmate": "^2.1",
@@ -44,6 +45,7 @@
         "yiisoft/yii2-redis": "^2.0.18"
     },
     "require-dev": {
+        "deployer/deployer": "^6.4",
         "nystudio107/craft-autocomplete": "^1.11",
         "roave/security-advisories": "dev-latest",
         "yiisoft/yii2-shell": "^2.0.5"
@@ -74,6 +76,10 @@
         "storage:link": [
             "ln -s ../storage/app/public web/storage",
             "ln -s ../storage/imager web/imager"
+        ],
+        "deploy": [
+            "@php vendor/bin/dep deploy",
+            "@composer run post-deploy-cmd"
         ],
         "post-deploy-cmd": [
             "@php craft migrate/all --interactive=0",
