@@ -149,7 +149,7 @@ fieldLayouts:
         uid: 01b03af3-89b5-4417-ba94-234b4ba40c8f
         userCondition: null
 handle: mainNav
-instructions: ''
+instructions: null
 maxNodes: null
 name: 'Main Nav'
 permissions:
