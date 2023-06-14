@@ -25,10 +25,10 @@ set('git_tty', true);
 
 // Shared files/dirs between deploys
 set('shared_files', ['.env', 'config/license.key']);
-set('shared_dirs', ['public/assets', 'public/imager', 'public/cpresources', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', ]);
+set('shared_dirs', ['public/assets', 'public/imager', 'public/cpresources', 'storage/app', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', ]);
 
 // Writable dirs by web server
-set('writable_dirs', ['public/assets', 'public/imager', 'public/cpresources', 'storage', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', 'storage/runtime']);
+set('writable_dirs', ['public/assets', 'public/imager', 'public/cpresources', 'storage', 'storage/app', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', 'storage/runtime']);
 
 // Do not share anonymous data
 set('allow_anonymous_stats', false);
