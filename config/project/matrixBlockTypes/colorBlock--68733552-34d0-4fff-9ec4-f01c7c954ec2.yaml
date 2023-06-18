@@ -16,6 +16,18 @@ fieldLayouts:
             uid: 1bac5c59-294a-4d28-a12c-67eace3b1b1c
             userCondition: null
             warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 32afc21d-086d-46c2-a2d5-a900507f8990 # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb07eaaf-0b3f-4cb5-94bf-c3d340e9be45
+            userCondition: null
+            warning: null
             width: 50
           -
             elementCondition: null
@@ -28,7 +40,7 @@ fieldLayouts:
             uid: e399f2e0-acb8-4ba3-b1eb-3419950f81a7
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: a5695d25-1fd0-4a09-97df-a36a83119620 # Kopfzeile
@@ -194,7 +206,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1795086991
+      changedFieldIndicator: 705467266
       columns:
         __assoc__:
           -
@@ -297,12 +309,62 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons
+  32afc21d-086d-46c2-a2d5-a900507f8990: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: 'Entweder Icon, Animation oder leer lassen.'
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - svg
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:c5e90cc1-dc82-4470-8eb6-b462dbb75259' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:85e7b218-d803-45ff-92b4-7fc6e3454d22' # About
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:c5e90cc1-dc82-4470-8eb6-b462dbb75259' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   87f44536-fdbf-48a2-b2dd-c86468e8f431: # Animation
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: animation
-    instructions: null
+    instructions: 'Entweder Icon, Animation oder leer lassen.'
     name: Animation
     searchable: false
     settings:

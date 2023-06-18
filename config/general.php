@@ -14,6 +14,7 @@ use craft\helpers\App;
 $isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
 $isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
 
+
 return GeneralConfig::create()
     ->omitScriptNameInUrls()
     ->defaultWeekStartDay(1)
@@ -36,6 +37,14 @@ return GeneralConfig::create()
     ->errorTemplatePrefix('_errors/')
     ->userSessionDuration($isDev ? false : 3600 * 4) // 4 Hours
     ->maxSlugIncrement(9999)
+
+    ->extraFileKinds([
+        // merge .psb into list of Photoshop file kinds
+        'svg' => [
+            'label' => 'SVG',
+            'extensions' => ['svg'],
+        ]
+    ])
 
     // ->imageEditorRatios([
     //     'Ohne Einschränkung' => 'none',

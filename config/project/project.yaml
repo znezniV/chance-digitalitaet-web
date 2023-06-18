@@ -1,4 +1,4 @@
-dateModified: 1687124915
+dateModified: 1687125723
 elementSources:
   craft\elements\Entry:
     -
@@ -141,6 +141,7 @@ meta:
     9a9c46ce-98d3-4898-9a23-e755d1810c40: Test # Test
     9ca0bdb2-223c-4190-af5d-2da06fd7b81a: Footer # Footer
     9ca19677-e719-49d3-89b3-42a8b5a512ad: Rolle # Rolle
+    32afc21d-086d-46c2-a2d5-a900507f8990: Icon # Icon
     044c08de-f4c2-44a8-bbce-920a115e395c: Menschen # Menschen
     56b356cf-8376-40ae-ae3a-2e2399db0c52: 'Public Schema' # Public Schema
     62da8c6a-1d1f-4762-ba90-a699f1dcd85c: 'Voller Name' # Voller Name

@@ -5,6 +5,11 @@
                 {% set animation = block.animation.one() %}
                 {% include "_components/lottie.twig" with { path: animation } %}
             {% endif %}
+            {% if block.icon.one %}
+                <div class="colorBlock__icon">
+                    {{ svg(block.icon.one) }}
+                </div>
+            {% endif %}
             <h2 class="colorBlock__heading">
                 {{ block.heading }}
             </h2>
