@@ -9,6 +9,7 @@ import Alpine from 'alpinejs';
 
 import lottie from './components/lottie';
 import footer from './components/footer';
+import newsletter from './components/newsletter';
 //
 window.Alpine = Alpine;
 // Alpine.plugin(collapse);
@@ -18,6 +19,7 @@ window.Alpine = Alpine;
 document.addEventListener('alpine:init', () => {
     Alpine.data('lottie', lottie);
     Alpine.data('footer', footer);
+    Alpine.data('newsletter', newsletter);
 });
 //
 Alpine.start();

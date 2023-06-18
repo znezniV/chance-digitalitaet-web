@@ -8,4 +8,5 @@ return [
     "optional" => "optionnel",
     "subscribe" => "abonner",
     "newsletter" => "Newsletter",
+    "newsletter_success" => "Inscrit à la newsletter !",
 ];

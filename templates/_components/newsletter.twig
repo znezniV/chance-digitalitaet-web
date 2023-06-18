@@ -1,6 +1,6 @@
 <div x-data="newsletter" class="newsletter">
     <div class="newsletter__inner">
-        <form class="newsletter__form" @submit.prevent="sendData()">
+        <form class="newsletter__form" @submit.prevent="sendData()" x-show="!formSuccess">
             <div class="newsletter__input-group">
                 <input type="text" x-model="firstName" placeholder="{{ "first_name"|t }}" required>
             </div>
@@ -17,5 +17,8 @@
                 <input type="submit" value="{{ "subscribe"|t }}" class="newsletter__submit">
             </div>
         </form>
+        <div class="newsletter__success" x-show="formSuccess">
+            {{ 'newsletter_success'|t }}
+        </div>
     </div>
 </div>
