@@ -1,4 +1,4 @@
-dateModified: 1686757934
+dateModified: 1687119470
 elementSources:
   craft\elements\Entry:
     -
@@ -138,6 +138,7 @@ meta:
     6e194455-b072-42c1-9a84-06408c25fd84: Bild # Bild
     6efa6df0-066e-4613-806f-9beddaf00eca: Raster # Raster
     07ba58ba-9d1a-4bca-90e6-83bcd333d140: Farbe # Farbe
+    9a9c46ce-98d3-4898-9a23-e755d1810c40: Test # Test
     9ca0bdb2-223c-4190-af5d-2da06fd7b81a: Footer # Footer
     9ca19677-e719-49d3-89b3-42a8b5a512ad: Rolle # Rolle
     044c08de-f4c2-44a8-bbce-920a115e395c: Menschen # Menschen
@@ -165,7 +166,7 @@ meta:
     68733552-34d0-4fff-9ec4-f01c7c954ec2: 'Farb Block' # Farb Block
     a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile
     a4143828-2a6c-4d9e-b6bd-644c015d3fd3: Text # Text
-    ac1d573d-4c9a-4de1-a431-172e73f30817: 'Opportunité  Numérique' # Opportunité  Numérique
+    ac1d573d-4c9a-4de1-a431-172e73f30817: Französisch # Französisch
     b1e08073-fffd-49f6-8e83-61051641e3ba: Portrait # Portrait
     b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
     b942e978-82d9-4bb8-9ebb-bc68a15f73e1: Blog # Blog
@@ -179,7 +180,7 @@ meta:
     d7e9b5a8-c17f-44a1-a5cb-4dd33b9b3e81: Text # Text
     d9aa901b-ac49-4ac2-a9a5-e1c159229f7b: Kopfzeile # Kopfzeile
     e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead
-    e6d6312f-5bfe-4933-80d2-be986487da24: 'Chance Digitalität' # Chance Digitalität
+    e6d6312f-5bfe-4933-80d2-be986487da24: Deutsch # Deutsch
     e4948830-ad0f-40a8-9b39-550b2bdcbbd9: Documents # Documents
     f7c1d3c4-fb65-4ead-83b4-ee3cf63d98e3: Text # Text
     f278dc74-0b58-4a96-8d64-f463cefc4d19: Bild # Bild

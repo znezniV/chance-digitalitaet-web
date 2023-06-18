@@ -4,7 +4,7 @@ handle: globalSeo
 name: SEO
 propagationMethod: all
 siteSettings:
-  e6d6312f-5bfe-4933-80d2-be986487da24: # Chance Digitalität
+  e6d6312f-5bfe-4933-80d2-be986487da24: # Deutsch
     enabledByDefault: true
     hasUrls: true
     template: null
