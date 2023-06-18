@@ -194,7 +194,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 2047556300
+      changedFieldIndicator: 1795086991
       columns:
         __assoc__:
           -
@@ -280,6 +280,17 @@ fields:
             -
               - value
               - white
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Weiss (mit blauer Schrift)'
+            -
+              - value
+              - white-blue-text
             -
               - default
               - ''

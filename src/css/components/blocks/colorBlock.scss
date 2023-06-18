@@ -163,4 +163,19 @@
             }
         }
     }
+
+    &--white-blue-text {
+        .colorBlock {
+            &__inner {
+                background-color: $color-white;
+                color: $color-blue;
+            }
+            &__button {
+                color: $color-blue;
+                a {
+                    @include button($background-color: $color-black, $color: $color-white, $color-shadow: var(--color-shadow-blue));
+                }
+            }
+        }
+    }
 }
