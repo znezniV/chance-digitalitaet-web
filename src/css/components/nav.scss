@@ -39,6 +39,9 @@
 
     &__logo {
         display: flex;
+        @include mq($from: desktop) {
+            margin-right: 55px;
+        }
         @include mq($until: tablet) {
             display: none;
         }

@@ -3,6 +3,7 @@
 
     &__inner {
         @include grid();
+        row-gap: 3.5555em !important;
         padding: 20vh 0;
 
     }
