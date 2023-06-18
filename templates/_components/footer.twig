@@ -1,7 +1,7 @@
 {% set footerNav = craft.navigation.nodes().handle('footer').all() %}
 
 <footer class="footer" x-data="footer">
-    <div class="footer__newsletter" x-show="open || isMobile" x-transition>
+    <div id="newsletter-footer" class="footer__newsletter" x-show="open || isMobile" x-transition>
         {% include "_components/newsletter.twig" %}
     </div>
     <div class="footer__inner">
