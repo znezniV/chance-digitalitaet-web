@@ -16,7 +16,19 @@ fieldLayouts:
             uid: 1bac5c59-294a-4d28-a12c-67eace3b1b1c
             userCondition: null
             warning: null
-            width: 100
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 62871875-286e-43c4-8dae-630aa4d183de # Anker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e11fc17b-a8d4-4af5-89c6-fe7e071f73f3
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 32afc21d-086d-46c2-a2d5-a900507f8990 # Icon
@@ -28,7 +40,7 @@ fieldLayouts:
             uid: bb07eaaf-0b3f-4cb5-94bf-c3d340e9be45
             userCondition: null
             warning: null
-            width: 50
+            width: 25
           -
             elementCondition: null
             fieldUid: 87f44536-fdbf-48a2-b2dd-c86468e8f431 # Animation
@@ -40,7 +52,7 @@ fieldLayouts:
             uid: e399f2e0-acb8-4ba3-b1eb-3419950f81a7
             userCondition: null
             warning: null
-            width: 50
+            width: 25
           -
             elementCondition: null
             fieldUid: a5695d25-1fd0-4a09-97df-a36a83119620 # Kopfzeile
@@ -206,7 +218,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 705467266
+      changedFieldIndicator: 520122608
       columns:
         __assoc__:
           -
@@ -437,6 +449,26 @@ fields:
     translationKeyFormat: null
     translationMethod: language
     type: craft\redactor\Field
+  62871875-286e-43c4-8dae-630aa4d183de: # Anker
+    columnSuffix: sqbparjh
+    contentColumnType: text
+    fieldGroup: null
+    handle: anchor
+    instructions: 'Wird gebraucht für die Subnavigation. Beispiel ''team'' springt zum Team-Block auf dieser Seite. Diese muss dann in der Navigation mit ''#team'' erfasst werden. Wichtig: für beide Sprachen gleich und klein geschrieben, ist aber nicht auf der Website sichtbar.'
+    name: Anker
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   a5695d25-1fd0-4a09-97df-a36a83119620: # Kopfzeile
     columnSuffix: qotyykmf
     contentColumnType: text

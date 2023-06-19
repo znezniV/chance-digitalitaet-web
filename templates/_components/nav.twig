@@ -1,4 +1,4 @@
-{% set nodes = craft.navigation.nodes('mainNav').all() %}
+{% set nodes = craft.navigation.nodes('mainNav').level(1).all() %}
 {% set allLanguages = craft.languageSwitcher.getUrls() %}
 {% set currentLocale = craft.app.locale %}
 
@@ -26,15 +26,20 @@
                         </a>
                     </li>
                     {% nav node in nodes %}
-                        <li class="nav__item {{node.active ? "nav__item--active" : ""}} {{ node.hasDescendants ? "nav__item--hasChildren" : ""}}">
+                        <li class="nav__item {{node.active ? "nav__item--active" : ""}} {{ node.hasDescendants ? "nav__item--hasChildren" : ""}}" x-data="{ open: false }" @click="open = ! open" @mouseover="open = true" @mouseout="open = false">
                             <a href="{{ node.url }}">{{ node.title }}</a>
-                            {% ifchildren %}
-                                <ul class="nav__sublist">
-                                    <div class="nav__sublist-inner">
-                                        {% children %}
-                                    </div>
+
+                            {% if node.children|length %}
+                                <ul class="nav__sublist" x-show="open">
+                                    {% for subnode in node.children.all() %}
+                                        <li class="nav__sublist-item">
+                                            <a href="{{ node.url ~ '/' ~ subnode.url }} ">
+                                                {{ subnode.title }}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
-                            {% endifchildren %}
+                            {% endif %}
                         </li>
                     {% endnav %}
                 </ul>

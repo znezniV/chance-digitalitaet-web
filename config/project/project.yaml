@@ -1,4 +1,4 @@
-dateModified: 1687125723
+dateModified: 1687187532
 elementSources:
   craft\elements\Entry:
     -
@@ -163,6 +163,7 @@ meta:
     186149ed-f119-4982-994b-28eb4c6a17fd: Bildbeschrieb # Bildbeschrieb
     723399b6-47d6-4bd9-b59a-c61c56cdaa44: Kopfzeile # Kopfzeile
     969890a0-f328-43b4-b8f6-8d1d6724eead: 'Content Blocks' # Content Blocks
+    62871875-286e-43c4-8dae-630aa4d183de: Anker # Anker
     67427430-310e-45a1-8180-33700c73afbc: 'Cover Bild' # Cover Bild
     68733552-34d0-4fff-9ec4-f01c7c954ec2: 'Farb Block' # Farb Block
     a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile

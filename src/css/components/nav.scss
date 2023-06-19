@@ -8,6 +8,8 @@
     padding: 0 var(--spacing-small) 0 var(--spacing-medium);
     @include mq($until: tablet) {
         padding: 0 18px;
+        max-height: 100vh;
+        overflow-y: scroll;
     }
 
     &__burger-burger {
@@ -95,7 +97,7 @@
         }
 
         &--active {
-            a {
+            > a {
                 position: relative;
                 &::after {
                     position: absolute;
@@ -112,6 +114,25 @@
                 }
             }
 
+        }
+    }
+
+    &__sublist {
+        list-style: none;
+        background-color: var(--color-background);
+        @include mq($from: tablet) {
+            position: fixed;
+        }
+    }
+
+    &__sublist-item {
+
+        a {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            @include mq($until: tablet) {
+                background-color: $color-light-blue;
+            }
         }
     }
 

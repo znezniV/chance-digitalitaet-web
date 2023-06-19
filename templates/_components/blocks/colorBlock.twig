@@ -1,4 +1,4 @@
-<div class="colorBlock colorBlock--{{ block.color }}">
+<div class="colorBlock colorBlock--{{ block.color }}" {{ block.anchor ? 'id=' ~ block.anchor : '' }}>
     <div class="colorBlock__inner">
         <div class="colorBlock__content">
             {% if block.animation.one %}
