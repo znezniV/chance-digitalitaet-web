@@ -25,10 +25,11 @@ set('git_tty', true);
 
 // Shared files/dirs between deploys
 set('shared_files', ['.env', 'config/license.key']);
-set('shared_dirs', ['public/assets', 'public/imager', 'public/cpresources', 'storage/app', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', ]);
+
+set('shared_dirs', ['web/assets', 'web/cpresources', 'storage/app', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', ]);
 
 // Writable dirs by web server
-set('writable_dirs', ['public/assets', 'public/imager', 'public/cpresources', 'storage', 'storage/app', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', 'storage/runtime']);
+set('writable_dirs', ['web/assets', 'web/cpresources', 'storage', 'storage/app', 'storage/logs', 'storage/backups', 'storage/rebrand', 'storage/userphotos', 'storage/runtime']);
 
 // Do not share anonymous data
 set('allow_anonymous_stats', false);
@@ -84,6 +85,11 @@ task('db:backup', function () {
 desc('Craft CMS: Install Default');
 task('craft:install', './craft install --interactive=0 --email="dev+craft-admin@dezentrum.ch" --username="admin" --password="secret" --siteName="{{application}}"');
 
+// link storage
+task('craft:storage-link', function () {
+    run("cd {{release_path}} && composer run storage:link");
+});
+
 // Build NPM
 task('build:install', function () {
     runLocally('npm install');
@@ -115,6 +121,7 @@ task('deploy', [
     'deploy:vendors',
     'deploy:clear_paths',
     'deploy:symlink',
+    'craft:storage-link',
     'craft:install',
     'craft:migrate',
     'deploy:unlock',
