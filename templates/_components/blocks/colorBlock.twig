@@ -20,9 +20,14 @@
             {% endif %}
 
             {% if block.grid|length %}
+
                 <div class="colorBlock__grid-list">
                     {% for item in block.grid.all() %}
-                        <div class="colorBlock__grid-item">
+                        {% if item.website|length %}
+                            <a href="{{ item.website }}" class="colorBlock__grid-item">
+                        {% else %}
+                            <div class="colorBlock__grid-item">
+                        {% endif %}
                             <div class="colorBlock__grid-image">
                                 {% set image = item.image.one %}
                                 {% set transformedImages = craft.imager.transformImage(image, [
@@ -47,7 +52,11 @@
                             <div class="colorBlock__grid-text">
                                 {{ item.text }}
                             </div>
-                        </div>
+                        {% if item.website|length %}
+                            </a>
+                        {% else %}
+                            </div>
+                        {% endif %}
                     {% endfor %}
                 </div>
             {% endif %}
@@ -64,10 +73,7 @@
                 <div class="colorBlock__text">
                     {{ block.text }}
                 </div>
-
             {% endif %}
-
-
         </div>
     </div>
 </div>
