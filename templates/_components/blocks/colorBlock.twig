@@ -10,6 +10,13 @@
                     {{ svg(block.icon.one) }}
                 </div>
             {% endif %}
+
+            {% if block.topHeading|length %}
+                <span class="colorBlock__top-heading">
+                    {{ block.topHeading }}
+                </span>
+            {% endif %}
+
             <h2 class="colorBlock__heading">
                 {{ block.heading }}
             </h2>

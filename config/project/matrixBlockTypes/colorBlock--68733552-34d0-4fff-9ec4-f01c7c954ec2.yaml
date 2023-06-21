@@ -55,6 +55,18 @@ fieldLayouts:
             width: 25
           -
             elementCondition: null
+            fieldUid: 8b601432-f4fd-4569-84b1-3ec1b996e470 # Übertitel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 208543ec-5160-443e-8a13-714211a4909c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: a5695d25-1fd0-4a09-97df-a36a83119620 # Kopfzeile
             instructions: null
             label: null
@@ -218,7 +230,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1860629845
+      changedFieldIndicator: 556357039
       columns:
         __assoc__:
           -
@@ -237,6 +249,13 @@ fields:
                   - ''
           -
             - f7c1d3c4-fb65-4ead-83b4-ee3cf63d98e3 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 3dd695cd-937f-432b-a962-8697fc5a70bf # Website
             -
               __assoc__:
                 -
@@ -321,6 +340,26 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons
+  8b601432-f4fd-4569-84b1-3ec1b996e470: # Übertitel
+    columnSuffix: ebdyvtjx
+    contentColumnType: text
+    fieldGroup: null
+    handle: topHeading
+    instructions: null
+    name: Übertitel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
   32afc21d-086d-46c2-a2d5-a900507f8990: # Icon
     columnSuffix: null
     contentColumnType: string
