@@ -1,10 +1,12 @@
 <div class="colorBlock colorBlock--{{ block.color }}" {{ block.anchor ? 'id=' ~ block.anchor : '' }}>
     <div class="colorBlock__inner">
         <div class="colorBlock__content">
+
             {% if block.animation.one %}
                 {% set animation = block.animation.one() %}
                 {% include "_components/lottie.twig" with { path: animation } %}
             {% endif %}
+
             {% if block.icon.one %}
                 <div class="colorBlock__icon">
                     {{ svg(block.icon.one) }}
@@ -20,6 +22,7 @@
             <h2 class="colorBlock__heading">
                 {{ block.heading }}
             </h2>
+
             {% if block.lead|length %}
                  <div class="colorBlock__text">
                     {{ block.lead }}
@@ -30,11 +33,13 @@
 
                 <div class="colorBlock__grid-list">
                     {% for item in block.grid.all() %}
+
                         {% if item.website|length %}
                             <a href="{{ item.website }}" class="colorBlock__grid-item">
                         {% else %}
                             <div class="colorBlock__grid-item">
                         {% endif %}
+
                             <div class="colorBlock__grid-image">
                                 {% set image = item.image.one %}
                                 {% set transformedImages = craft.imager.transformImage(image, [
@@ -59,11 +64,14 @@
                             <div class="colorBlock__grid-text">
                                 {{ item.text }}
                             </div>
+
                         {% if item.website|length %}
                             </a>
                         {% else %}
+
                             </div>
                         {% endif %}
+
                     {% endfor %}
                 </div>
             {% endif %}
@@ -81,6 +89,7 @@
                     {{ block.text }}
                 </div>
             {% endif %}
+
         </div>
     </div>
 </div>
