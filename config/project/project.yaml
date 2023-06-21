@@ -1,4 +1,4 @@
-dateModified: 1687187532
+dateModified: 1687382906
 elementSources:
   craft\elements\Entry:
     -
@@ -123,6 +123,7 @@ meta:
     0f4f23be-0b8a-4ac4-94f0-8f934ce349c8: Home # Home
     1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
     1bb84bf2-1659-4634-b35c-3745b425263d: Blog # Blog
+    2ae5d2b3-577a-4914-9d60-0e8294bc5301: 'Logo Jacobsfundation' # Logo Jacobsfundation
     2b5e4669-d25f-418f-9e87-45105720f1d4: Button # Button
     2ff8ce56-e1cc-448f-8f64-b75caf2e1106: 'Logo Französisch' # Logo Französisch
     3a722f01-9577-4609-b667-62e72d7f4ad4: Text # Text

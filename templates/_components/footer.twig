@@ -39,6 +39,11 @@
                         <a href="{{ entry.url }}">{{ entry.title }}</a>
                     </li>
                 {% endnav %}
+                {% if branding.logoJacobsfundation.one %}
+                    <li class="footer__nav-item">
+                        {{ svg(branding.logoJacobsfundation.one) }}
+                    </li>
+                {% endif %}
             </ul>
         </div>
     </div>

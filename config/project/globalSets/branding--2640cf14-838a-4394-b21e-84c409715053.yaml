@@ -28,6 +28,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ae5d2b3-577a-4914-9d60-0e8294bc5301 # Logo Jacobsfundation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be4800fe-2793-4afe-9300-bd99537f3994
+            userCondition: null
+            warning: null
+            width: 100
         name: Branding
         uid: 311df809-7b75-47f0-9fe4-766d144a591a
         userCondition: null
