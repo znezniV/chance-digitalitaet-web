@@ -36,6 +36,7 @@
     &__icon {
         width: 130px;
         height: 130px;
+        margin-bottom: var(--spacing-medium);
         @include mq($until: tablet) {
             width: 100px;
             height: 100px;
