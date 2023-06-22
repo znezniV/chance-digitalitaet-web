@@ -192,9 +192,9 @@
                 color: $color-blue;
             }
             &__button {
-                color: $color-blue;
+                color: $color-white;
                 a {
-                    @include button($background-color: $color-black, $color: $color-white, $color-shadow: var(--color-shadow-blue));
+                    @include button($background-color: var(--color-blue), $color: $color-white, $color-shadow: var(--color-shadow-blue));
                 }
             }
         }
