@@ -58,5 +58,5 @@ settings:
       enabled: false
       sources: '*'
 translationKeyFormat: null
-translationMethod: none
+translationMethod: language
 type: lenz\linkfield\fields\LinkField
