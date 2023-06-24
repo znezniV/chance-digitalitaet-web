@@ -194,7 +194,7 @@
             &__button {
                 color: $color-white;
                 a {
-                    @include button($background-color: var(--color-blue), $color: $color-white, $color-shadow: var(--color-shadow-blue));
+                    @include button($background-color: $color-blue, $color: $color-white, $color-shadow: var(--color-shadow-blue));
                 }
             }
         }
