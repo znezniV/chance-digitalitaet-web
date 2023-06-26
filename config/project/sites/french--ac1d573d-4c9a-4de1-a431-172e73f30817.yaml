@@ -1,5 +1,5 @@
 baseUrl: $FRENCH_SITE_URL
-enabled: '1'
+enabled: true
 handle: french
 hasUrls: true
 language: fr-CH
