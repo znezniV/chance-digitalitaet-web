@@ -51,7 +51,7 @@
                                 <li class="nav__lang-item {{ isActive ? 'nav__lang-item--active'}}">
                                     <a href="{{ item.url }}" hreflang="{{ item.id }}" lang="{{ item.id }}" title="{{ 'Switch to {language}'|translate({
                                         language: item.name
-                                    }) }}" class="no-barba" data-barba-prevent="self">
+                                    }) }}" data-no-swup>
                                         {{ item.id|slice(0, 1)|upper }}
                                     </a>
                                 </li>
