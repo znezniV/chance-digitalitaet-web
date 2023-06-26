@@ -8,7 +8,7 @@ return [
     'useDevServer' => $isDev,
     'manifestPath' => '@webroot/dist/manifest.json',
     'devServerPublic' => 'http://localhost:5173/',
-    'serverPublic' => App::env('PRIMARY_SITE_URL') . '/dist/',
+    'serverPublic' => '/dist/',
     'errorEntry' => '',
     'cacheKeySuffix' => '',
     'devServerInternal' => 'http://localhost:5173',
