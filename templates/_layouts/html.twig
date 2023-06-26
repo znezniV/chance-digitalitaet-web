@@ -24,7 +24,7 @@
    {% set favicon = craft.app.config.env == 'production' ? 'icon' : 'icon' %}
    <link rel="icon" href="/assets/meta/favicon.ico" sizes="any">
    <link rel="icon" type="image/svg+xml" href="/assets/meta/favicon.svg">
-   <link rel="manifest" href="/assets/meta/site.webmanifest">
+   <link rel="manifest" href="/dist/manifest.json">
    <link rel="apple-touch-icon" sizes="180x180" href="/assets/meta/apple-touch-icon.png">
    <meta name="theme-color" content="#ffffff">
 {#    {{ block('meta') ?? null }}#}
