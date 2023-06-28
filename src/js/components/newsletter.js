@@ -40,7 +40,7 @@ export default () => ({
     },
 
     sendData() {
-        jsonp(`https://staatslabor.us14.list-manage.com/subscribe/post-json?u=7b20cde35ddc978526642606a&id=e9ae0c0f25&f_id=00d498e0f0&EMAIL=${this.email}&FNAME=${this.firstName}&LNAME=${this.lastName}&ADDRESS=${this.location}`, { param: "c", name: "jsonpFunc" }, (err, data) => {
+        jsonp(`https://staatslabor.us14.list-manage.com/subscribe/post-json?u=7b20cde35ddc978526642606a&id=e9ae0c0f25&f_id=00d498e0f0&EMAIL=${this.email}&FNAME=${this.firstName}&LNAME=${this.lastName}&ADDRESS=${this.location}&tags=11291543`, { param: "c", name: "jsonpFunc" }, (err, data) => {
             if(data.result === 'success') {
                 this.formSuccess = true,
                 this.formMessage = data.msg
