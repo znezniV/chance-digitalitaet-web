@@ -1,4 +1,4 @@
-{% set allBlogPosts = craft.entries.section('blog')|sort((a, b) => a.postDate <=> b.postDate) %}
+{% set allBlogPosts = craft.entries.section('blog')|sort((a, b) => b.postDate <=> a.postDate ) %}
 
 <div class="blogPosts">
     <div class="blogPosts__inner">
