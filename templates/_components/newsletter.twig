@@ -18,7 +18,8 @@
             </div>
         </form>
         <div class="newsletter__success" x-show="formSuccess">
-            {{ 'newsletter_success'|t }}
+            <p x-text="formMessage"></p>
+            {# {{ 'newsletter_success'|t }} #}
         </div>
     </div>
 </div>
