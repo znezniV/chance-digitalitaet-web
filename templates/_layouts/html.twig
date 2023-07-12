@@ -42,7 +42,7 @@
     </style>
 
     {% if craft.app.config.env == 'production' and not currentUser %}
-        <script defer data-api="/api/event" data-domain="{{ craft.app.request.hostName }}" src="/js/script.js"></script>
+        {# <script defer data-api="/api/event" data-domain="{{ craft.app.request.hostName }}" src="/js/script.js"></script> #}
     {% endif %}
 </head>
 <body
