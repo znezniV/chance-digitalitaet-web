@@ -38,6 +38,13 @@ host('hera.metanet.ch')
     ->user('chancedigi')
     ->forwardAgent(true)
     ->port(2121)
+    ->stage('develop')
+    ->set('deploy_path', '/www/develop');
+
+host('hera.metanet.ch')
+    ->user('chancedigi')
+    ->forwardAgent(true)
+    ->port(2121)
     ->stage('staging')
     ->set('deploy_path', '/www/staging');
 
