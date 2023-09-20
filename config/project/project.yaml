@@ -1,4 +1,4 @@
-dateModified: 1687897392
+dateModified: 1695200884
 elementSources:
   craft\elements\Entry:
     -
@@ -300,5 +300,5 @@ system:
   live: true
   name: 'Chance Digitalität'
   retryDuration: null
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.3.0
   timeZone: Europe/Zurich
