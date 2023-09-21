@@ -1,4 +1,4 @@
-dateModified: 1695284785
+dateModified: 1695304968
 elementSources:
   craft\elements\Entry:
     -
@@ -188,7 +188,7 @@ meta:
     d4cdab7c-bb04-4a50-bea1-4fe6353344c0: Logos # Logos
     d7e9b5a8-c17f-44a1-a5cb-4dd33b9b3e81: Text # Text
     d9aa901b-ac49-4ac2-a9a5-e1c159229f7b: Kopfzeile # Kopfzeile
-    d359e17c-5377-4597-83c7-93e14b83eefd: Gallerie # Gallerie
+    d359e17c-5377-4597-83c7-93e14b83eefd: Galerie # Galerie
     d7933ec4-213c-4fa5-89cb-b99b86384608: 'Autor*in' # Autor*in
     de2dfc2c-b7f5-4022-8d06-fb4219681066: Text # Text
     e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead

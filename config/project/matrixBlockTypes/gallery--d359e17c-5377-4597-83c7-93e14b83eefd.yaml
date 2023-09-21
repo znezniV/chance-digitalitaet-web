@@ -72,5 +72,5 @@ fields:
     translationMethod: site
     type: craft\fields\Assets
 handle: gallery
-name: Gallerie
+name: Galerie
 sortOrder: 3
