@@ -1,4 +1,4 @@
-dateModified: 1695200884
+dateModified: 1695281288
 elementSources:
   craft\elements\Entry:
     -
@@ -120,6 +120,7 @@ graphql:
     expiryDate: null
 meta:
   __names__:
+    0d083c3e-5c16-4e8a-abd5-d14c4cd0d32d: Quote # Quote
     0f4f23be-0b8a-4ac4-94f0-8f934ce349c8: Home # Home
     1b60bd15-9216-41b6-bfee-146d0c8ffe44: Editor # Editor
     1bb84bf2-1659-4634-b35c-3745b425263d: Blog # Blog
@@ -145,6 +146,7 @@ meta:
     9ca19677-e719-49d3-89b3-42a8b5a512ad: Rolle # Rolle
     32afc21d-086d-46c2-a2d5-a900507f8990: Icon # Icon
     044c08de-f4c2-44a8-bbce-920a115e395c: Menschen # Menschen
+    44e3bb89-db3e-413d-8a67-b18cdf043efe: Rolle # Rolle
     56b356cf-8376-40ae-ae3a-2e2399db0c52: 'Public Schema' # Public Schema
     62da8c6a-1d1f-4762-ba90-a699f1dcd85c: 'Voller Name' # Voller Name
     68e31d77-5370-47f1-85e1-5de1ce19a00b: Standard # Standard
@@ -183,6 +185,8 @@ meta:
     d4cdab7c-bb04-4a50-bea1-4fe6353344c0: Logos # Logos
     d7e9b5a8-c17f-44a1-a5cb-4dd33b9b3e81: Text # Text
     d9aa901b-ac49-4ac2-a9a5-e1c159229f7b: Kopfzeile # Kopfzeile
+    d7933ec4-213c-4fa5-89cb-b99b86384608: 'Autor*in' # Autor*in
+    de2dfc2c-b7f5-4022-8d06-fb4219681066: Text # Text
     e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead
     e6d6312f-5bfe-4933-80d2-be986487da24: Deutsch # Deutsch
     e4948830-ad0f-40a8-9b39-550b2bdcbbd9: Documents # Documents
