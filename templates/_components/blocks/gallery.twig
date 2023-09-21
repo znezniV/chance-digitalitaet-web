@@ -1,0 +1,57 @@
+<div class="gallery" x-data="gallery" >
+    <div class="gallery__inner">
+        {% if block.images|length %}
+        {% endif %}
+        <div class="gallery__grid" x-ref="container">
+            {% for galleryImage in block.images %}
+                {% set image = galleryImage %}
+                {% set transformedImages = craft.imager.transformImage(image, [
+                    { width: 1080, ratio: 16/9 },
+                    { width: 720, ratio: 16/9 },
+                    { width: 540, ratio: 16/9 },
+                    { width: 360, ratio: 16/9 },
+                    { width: 290, ratio: 16/9 },
+                    ], {
+                        position: '100% 100%',
+                        jpegQuality: 75 },
+                    { fillTransforms: true })
+                %}
+                {% set transformedImagesCover = craft.imager.transformImage(image, [
+                    { width: 2000, ratio: 16/9 },
+                    { width: 1600, ratio: 16/9 },
+                    { width: 1240, ratio: 16/9 },
+                    { width: 1080, ratio: 16/9 },
+                    { width: 720, ratio: 16/9 },
+                    { width: 540, ratio: 16/9 },
+                    { width: 360, ratio: 16/9 },
+                    { width: 290, ratio: 16/9 },
+                    ], {
+                        position: '100% 100%',
+                        jpegQuality: 75 },
+                    { fillTransforms: true })
+                %}
+                <a class="gallery__image {{ loop.index == 1 ? 'gallery__image--cover' : '' }}"
+                    data-pswp-src="{{ image.url}}"
+                    data-pswp-width="{{ image.width }}"
+                    data-pswp-height="{{ image.height }}"
+                    target="_blank"
+                    href="{{ image.url}}"
+                >
+                    {% if loop.index == 1 %}
+                        <img src="{{ craft.imager.placeholder({ width: 360 }) }}"
+                            sizes="360, 100vw"
+                            srcset="{{ craft.imager.srcset(transformedImagesCover) }}"
+                        >
+                    {% else %}
+                        <img src="{{ craft.imager.placeholder({ width: 360 }) }}"
+                            sizes="360, 100vw"
+                            srcset="{{ craft.imager.srcset(transformedImages) }}"
+                        >
+                    {% endif %}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+

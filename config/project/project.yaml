@@ -1,4 +1,4 @@
-dateModified: 1695283684
+dateModified: 1695284785
 elementSources:
   craft\elements\Entry:
     -
@@ -175,6 +175,7 @@ meta:
     a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile
     a4143828-2a6c-4d9e-b6bd-644c015d3fd3: Text # Text
     ac1d573d-4c9a-4de1-a431-172e73f30817: Französisch # Französisch
+    aea27cd2-23fc-4d64-9e50-47b1d1345e72: Bilder # Bilder
     b1e08073-fffd-49f6-8e83-61051641e3ba: Portrait # Portrait
     b23ca107-96dc-4de7-9910-d43cb4e97208: SEO # SEO
     b942e978-82d9-4bb8-9ebb-bc68a15f73e1: Blog # Blog
@@ -187,6 +188,7 @@ meta:
     d4cdab7c-bb04-4a50-bea1-4fe6353344c0: Logos # Logos
     d7e9b5a8-c17f-44a1-a5cb-4dd33b9b3e81: Text # Text
     d9aa901b-ac49-4ac2-a9a5-e1c159229f7b: Kopfzeile # Kopfzeile
+    d359e17c-5377-4597-83c7-93e14b83eefd: Gallerie # Gallerie
     d7933ec4-213c-4fa5-89cb-b99b86384608: 'Autor*in' # Autor*in
     de2dfc2c-b7f5-4022-8d06-fb4219681066: Text # Text
     e1bcf984-ae8b-43db-a36b-783d963dd6be: Lead # Lead

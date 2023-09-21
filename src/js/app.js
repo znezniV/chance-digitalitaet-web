@@ -10,6 +10,7 @@ import Alpine from 'alpinejs';
 import lottie from './components/lottie';
 import footer from './components/footer';
 import newsletter from './components/newsletter';
+import gallery from './components/gallery';
 //
 window.Alpine = Alpine;
 // Alpine.plugin(collapse);
@@ -20,6 +21,7 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('lottie', lottie);
     Alpine.data('footer', footer);
     Alpine.data('newsletter', newsletter);
+    Alpine.data('gallery', gallery);
 });
 //
 Alpine.start();
