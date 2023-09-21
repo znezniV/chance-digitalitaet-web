@@ -1,0 +1,19 @@
+<div class="quote">
+    <blockquote class="quote__inner">
+        <p class="quote__text">
+            {{ block.text }}
+        </p>
+        {% if block.author|length %}
+            <footer class="quote__author">
+                <p class="quote__author-name">
+                    {{ block.author }}
+                </p>
+                {% if block.role %}
+                    <p class="quote__author-role">
+                        {{ block.role }}
+                    </p>
+                {% endif %}
+            </footer>
+        {% endif %}
+    </blockquote>
+</div>
