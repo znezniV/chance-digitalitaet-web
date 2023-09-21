@@ -1,0 +1,35 @@
+.quote {
+    @include container($page-container);
+    @include grid();
+    padding: var(--spacing-medium) 0;
+
+    &__inner {
+        grid-column: 3 / span 8;
+
+        @include mq($until: desktop) {
+            grid-column: 1 / span 12;
+        }
+    }
+
+    &__text {
+        @include typo-quote();
+        color: var(--color-hightlight);
+    }
+
+    &__author {
+        @include typo-small();
+        margin-top: 0.714em;
+    }
+
+    &__author-name {
+        font-weight: bold;
+    }
+}
+
+.blocks--blog {
+    .quote {
+        @include mq($from: desktop) {
+            background-color: $color-light-grey;
+        }
+    }
+}

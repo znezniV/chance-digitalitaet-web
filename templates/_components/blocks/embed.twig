@@ -1,0 +1,8 @@
+<div class="embed">
+    <div class="embed__inner">
+        {% set ratio = (block.embed.media.height|default(9) / block.embed.media.width|default(16)) %}
+        <div class="embed__responsive" style="padding-bottom: {{ ratio * 100 }}%;">
+            {{ block.embed.render }}
+        </div>
+    </div>
+</div>

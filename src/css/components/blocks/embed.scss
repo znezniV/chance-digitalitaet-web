@@ -1,0 +1,78 @@
+.embed {
+    @include container($page-container);
+    @include grid();
+    padding: var(--spacing-medium) 0;
+
+    &__inner {
+        grid-column: 2 / span 9;
+
+        @include mq($until: desktop) {
+            grid-column: 1 / span 12;
+        }
+    }
+
+    &__responsive {
+        position: relative;
+        padding-bottom: 56.25%; // 16:9 default
+        grid-column: 3 / span 8;
+        padding: var(--space-box-big) 0;
+
+        @include mq($until: desktop) {
+            grid-column: 2 / span 11;
+        }
+
+        @include mq($until: tablet) {
+            grid-column: 1 / span 12;
+            padding-left: var(--space-box-outer);
+            padding-right: var(--space-box-outer);
+        }
+
+        @include mq($until: phablet) {
+            @include grid($columns: 1);
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__responsive > * {
+        position: absolute;
+        top: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .blocks--post &--fullwidth.embed,
+    // &--fullwidth.embed {
+    //     width: 100%;
+    //     max-width: 100%;
+    // }
+
+    &--fullwidth {
+        .embed__responsive {
+            grid-column: 1 / span 12;
+            padding: var(--space-box-big) 0;
+
+            @include mq($until: desktop) {
+                grid-column: 1 / span 12;
+            }
+
+            @include mq($until: tablet) {
+                grid-column: 1 / span 12;
+                padding-left: var(--space-box-outer);
+                padding-right: var(--space-box-outer);
+            }
+
+            @include mq($until: phablet) {
+                @include grid($columns: 1);
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+.blocks--blog {
+    .embed {
+        @include mq($from: desktop) {
+            background-color: $color-light-grey;
+        }
+    }
+}
