@@ -230,7 +230,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 145709361
+      changedFieldIndicator: 1676465482
       columns:
         __assoc__:
           -
@@ -281,6 +281,7 @@ fields:
     name: Farbe
     searchable: false
     settings:
+      columnType: string
       options:
         -
           __assoc__:

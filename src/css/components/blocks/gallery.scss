@@ -1,0 +1,38 @@
+.gallery {
+    @include container($page-container);
+    @include grid();
+    padding: var(--spacing-medium) 0;
+
+    &__inner {
+        grid-column: 3 / span 8;
+
+        @include mq($until: desktop) {
+            grid-column: 1 / span 12;
+        }
+    }
+
+    &__grid {
+        @include grid(4, $gutters-horizontal: $grid-small);
+        @include mq($until: phablet) {
+            @include grid(3, $gutters-horizontal: $grid-small);
+        }
+    }
+
+    &__image {
+        &--cover {
+            grid-column: 1 / span 4;
+            @include mq($until: phablet) {
+                grid-column: 1 / span 3;
+            }
+        }
+    }
+}
+
+.blocks--blog {
+    .gallery {
+        @include mq($from: desktop) {
+            background-color: $color-light-grey;
+        }
+    }
+}
+

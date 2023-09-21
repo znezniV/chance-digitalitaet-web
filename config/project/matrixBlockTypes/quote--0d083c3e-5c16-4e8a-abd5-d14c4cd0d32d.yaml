@@ -1,0 +1,110 @@
+field: 71a1c640-eded-4fcb-917a-fdca9a7bdc89 # Content Blocks Blog
+fieldLayouts:
+  403e1e5e-59f2-48a1-b743-c80a9d5b5007:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: de2dfc2c-b7f5-4022-8d06-fb4219681066 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b2781c0-74f5-4313-bf28-86f7ea44b5a1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7933ec4-213c-4fa5-89cb-b99b86384608 # Autor*in
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c588029-8f7d-446a-941c-a8617e23ed70
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 44e3bb89-db3e-413d-8a67-b18cdf043efe # Rolle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eaef865c-1271-4355-ae30-b131d944896b
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 0f196542-2f5a-4266-a6c4-54be71fbdc3c
+        userCondition: null
+fields:
+  44e3bb89-db3e-413d-8a67-b18cdf043efe: # Rolle
+    columnSuffix: favrknpw
+    contentColumnType: text
+    fieldGroup: null
+    handle: role
+    instructions: null
+    name: Rolle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  d7933ec4-213c-4fa5-89cb-b99b86384608: # Autor*in
+    columnSuffix: pzyqkyhq
+    contentColumnType: text
+    fieldGroup: null
+    handle: author
+    instructions: null
+    name: 'Autor*in'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  de2dfc2c-b7f5-4022-8d06-fb4219681066: # Text
+    columnSuffix: rjbyrlog
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 3
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: quote
+name: Quote
+sortOrder: 3

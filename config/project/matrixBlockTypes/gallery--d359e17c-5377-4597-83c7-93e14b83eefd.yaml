@@ -1,0 +1,76 @@
+field: 71a1c640-eded-4fcb-917a-fdca9a7bdc89 # Content Blocks Blog
+fieldLayouts:
+  a056a5aa-cfb9-40f8-9a5d-d4cfc9ad7363:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: aea27cd2-23fc-4d64-9e50-47b1d1345e72 # Bilder
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a542ff21-77ec-4de7-8ba5-47321e3e7035
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4298875e-9cfe-44d5-b4de-c21bb743bbdf
+        userCondition: null
+fields:
+  aea27cd2-23fc-4d64-9e50-47b1d1345e72: # Bilder
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: images
+    instructions: 'Das erste Bild wird gross angezeigt.'
+    name: Bilder
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:c5e90cc1-dc82-4470-8eb6-b462dbb75259' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:85e7b218-d803-45ff-92b4-7fc6e3454d22' # About
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: 'Bild hinzufügen'
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:c5e90cc1-dc82-4470-8eb6-b462dbb75259' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: gallery
+name: Gallerie
+sortOrder: 3
