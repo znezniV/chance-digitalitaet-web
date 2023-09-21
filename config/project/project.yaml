@@ -1,4 +1,4 @@
-dateModified: 1695281288
+dateModified: 1695283684
 elementSources:
   craft\elements\Entry:
     -
@@ -136,6 +136,7 @@ meta:
     4fb7a10c-8ca0-4b40-bacf-0d021e2a11f3: Global # Global
     5ce50460-65ec-4a90-ad2e-ea2530dc6f36: Text # Text
     05d06e7e-2c5c-4332-8ae4-d93af318dadf: Bild # Bild
+    6bfd84bc-3bf1-4fcc-9321-ba5aad895ea2: Embed # Embed
     6c5bbb5d-f9df-487d-b208-0da13af9ed0f: Team # Team
     6d58ef4a-0a77-4a65-8df8-41f9f7a7483a: 'Dominant Color' # Dominant Color
     6e194455-b072-42c1-9a84-06408c25fd84: Bild # Bild
@@ -170,6 +171,7 @@ meta:
     62871875-286e-43c4-8dae-630aa4d183de: Anker # Anker
     67427430-310e-45a1-8180-33700c73afbc: 'Cover Bild' # Cover Bild
     68733552-34d0-4fff-9ec4-f01c7c954ec2: 'Farb Block' # Farb Block
+    a1ed18fd-2e33-45ef-928e-5e7909ab810a: Embed # Embed
     a5695d25-1fd0-4a09-97df-a36a83119620: Kopfzeile # Kopfzeile
     a4143828-2a6c-4d9e-b6bd-644c015d3fd3: Text # Text
     ac1d573d-4c9a-4de1-a431-172e73f30817: Französisch # Französisch
@@ -270,6 +272,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
   postmark:
     edition: standard
     enabled: true

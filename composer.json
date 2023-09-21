@@ -42,6 +42,7 @@
         "verbb/super-table": "^3.0",
         "vlucas/phpdotenv": "^5.5.0",
         "webhubworks/craft-ohdear": "^4.1.0",
+        "wrav/oembed": "^2.3",
         "yiisoft/yii2-redis": "^2.0.18"
     },
     "require-dev": {

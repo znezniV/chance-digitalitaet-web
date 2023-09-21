@@ -1,0 +1,39 @@
+field: 71a1c640-eded-4fcb-917a-fdca9a7bdc89 # Content Blocks Blog
+fieldLayouts:
+  00eebd94-cfdd-4b51-b951-3b140274d377:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a1ed18fd-2e33-45ef-928e-5e7909ab810a # Embed
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e505a0a-299e-4f81-bbd4-47435574607b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 256b7565-d3b2-475b-9227-922c2e1a60c8
+        userCondition: null
+fields:
+  a1ed18fd-2e33-45ef-928e-5e7909ab810a: # Embed
+    columnSuffix: illqmsfk
+    contentColumnType: text
+    fieldGroup: null
+    handle: embed
+    instructions: null
+    name: Embed
+    searchable: false
+    settings:
+      url: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: wrav\oembed\fields\OembedField
+handle: embed
+name: Embed
+sortOrder: 4
