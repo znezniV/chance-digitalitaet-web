@@ -37,6 +37,9 @@ handle: globalSeo
 hasTitleField: false
 name: SEO
 section: b23ca107-96dc-4de7-9910-d43cb4e97208 # SEO
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

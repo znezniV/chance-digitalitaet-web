@@ -23,17 +23,23 @@ fieldLayouts:
 fields:
   a1ed18fd-2e33-45ef-928e-5e7909ab810a: # Embed
     columnSuffix: illqmsfk
-    contentColumnType: text
+    contentColumnType: string
     fieldGroup: null
     handle: embed
     instructions: null
     name: Embed
     searchable: false
     settings:
-      url: ''
+      errorMessage: 'Component class ''wrav\oembed\fields\OembedField'' belongs to an uninstalled plugin (oEmbed).'
+      expectedType: wrav\oembed\fields\OembedField
+      settings:
+        __assoc__:
+          -
+            - url
+            - ''
     translationKeyFormat: null
     translationMethod: none
-    type: wrav\oembed\fields\OembedField
+    type: craft\fields\MissingField
 handle: embed
 name: Embed
 sortOrder: 4

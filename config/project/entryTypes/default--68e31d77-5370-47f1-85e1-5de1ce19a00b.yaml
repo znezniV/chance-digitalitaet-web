@@ -78,6 +78,9 @@ handle: default
 hasTitleField: true
 name: Standard
 section: 1bb84bf2-1659-4634-b35c-3745b425263d # Blog
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
