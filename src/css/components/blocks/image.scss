@@ -1,7 +1,6 @@
 .image {
-    @include container($page-container);
     @include grid();
-    padding: var(--spacing-medium) 0;
+    margin: var(--spacing-medium) 0;
 
     &__inner {
         @include mq($from: desktop) {
@@ -38,8 +37,5 @@
 
 .blocks--blog {
     .image {
-        @include mq($from: desktop) {
-            background-color: $color-light-grey;
-        }
     }
 }

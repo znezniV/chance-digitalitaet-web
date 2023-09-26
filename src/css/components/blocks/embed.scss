@@ -1,7 +1,6 @@
 .embed {
-    @include container($page-container);
     @include grid();
-    padding: var(--spacing-medium) 0;
+    margin: var(--spacing-medium) 0;
 
     &__inner {
         grid-column: 2 / span 9;
@@ -71,8 +70,5 @@
 
 .blocks--blog {
     .embed {
-        @include mq($from: desktop) {
-            background-color: $color-light-grey;
-        }
     }
 }

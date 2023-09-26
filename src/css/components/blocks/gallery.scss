@@ -1,7 +1,6 @@
 .gallery {
-    @include container($page-container);
     @include grid();
-    padding: var(--spacing-medium) 0;
+    margin: var(--spacing-medium) 0;
 
     &__inner {
         grid-column: 3 / span 8;
@@ -30,9 +29,6 @@
 
 .blocks--blog {
     .gallery {
-        @include mq($from: desktop) {
-            background-color: $color-light-grey;
-        }
     }
 }
 

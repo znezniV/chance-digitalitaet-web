@@ -1,0 +1,9 @@
+.blocks {
+    &--blog {
+        @include container($page-container);
+        padding-bottom: var(--spacing-medium-big);
+        @include mq($from: desktop) {
+            background-color: $color-light-grey;
+        }
+    }
+}

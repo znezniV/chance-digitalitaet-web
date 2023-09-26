@@ -1,5 +1,4 @@
 .text {
-    @include container($page-container);
     @include grid();
 
     &__inner {
@@ -21,8 +20,5 @@
 
 .blocks--blog {
     .text {
-        @include mq($from: desktop) {
-            background-color: $color-light-grey;
-        }
     }
 }

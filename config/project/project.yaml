@@ -114,10 +114,6 @@ fs:
       path: '@assetBasePath/craft-transforms'
     type: craft\fs\Local
     url: '@assetBaseUrl/craft-transforms'
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 meta:
   __names__:
     0d083c3e-5c16-4e8a-abd5-d14c4cd0d32d: Quote # Quote
