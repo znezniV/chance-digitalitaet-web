@@ -6,25 +6,25 @@
             {% for galleryImage in block.images %}
                 {% set image = galleryImage %}
                 {% set transformedImages = craft.imager.transformImage(image, [
-                    { width: 1080, ratio: 16/9 },
-                    { width: 720, ratio: 16/9 },
-                    { width: 540, ratio: 16/9 },
-                    { width: 360, ratio: 16/9 },
-                    { width: 290, ratio: 16/9 },
+                    { width: 1080 },
+                    { width: 720 },
+                    { width: 540 },
+                    { width: 360 },
+                    { width: 290 },
                     ], {
                         position: '100% 100%',
                         jpegQuality: 75 },
                     { fillTransforms: true })
                 %}
                 {% set transformedImagesCover = craft.imager.transformImage(image, [
-                    { width: 2000, ratio: 16/9 },
-                    { width: 1600, ratio: 16/9 },
-                    { width: 1240, ratio: 16/9 },
-                    { width: 1080, ratio: 16/9 },
-                    { width: 720, ratio: 16/9 },
-                    { width: 540, ratio: 16/9 },
-                    { width: 360, ratio: 16/9 },
-                    { width: 290, ratio: 16/9 },
+                    { width: 2000 },
+                    { width: 1600 },
+                    { width: 1240 },
+                    { width: 1080 },
+                    { width: 720 },
+                    { width: 540 },
+                    { width: 360 },
+                    { width: 290 },
                     ], {
                         position: '100% 100%',
                         jpegQuality: 75 },

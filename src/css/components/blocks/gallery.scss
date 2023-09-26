@@ -11,7 +11,7 @@
     }
 
     &__grid {
-        @include grid(4, $gutters-horizontal: $grid-small);
+        @include grid(5, $gutters-horizontal: $grid-small);
         @include mq($until: phablet) {
             @include grid(3, $gutters-horizontal: $grid-small);
         }
@@ -19,7 +19,7 @@
 
     &__image {
         &--cover {
-            grid-column: 1 / span 4;
+            grid-column: 1 / span 5;
             @include mq($until: phablet) {
                 grid-column: 1 / span 3;
             }
