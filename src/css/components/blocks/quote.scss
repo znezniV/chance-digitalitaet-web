@@ -11,14 +11,14 @@
 
     &__text {
         @include typo-quote();
-        padding: 0 var(--spacing-medium-big);
+        // padding: 0 var(--spacing-medium-big);
         width: 80%;
         color: var(--color-hightlight);
     }
 
     &__author {
         @include typo-small();
-        padding: 0 var(--spacing-medium-big);
+        // padding: 0 var(--spacing-medium-big);
         width: 80%;
         margin-top: 0.714em;
     }
