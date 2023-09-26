@@ -11,17 +11,24 @@
     }
 
     &__grid {
-        @include grid(5, $gutters-horizontal: $grid-small);
-        @include mq($until: phablet) {
-            @include grid(3, $gutters-horizontal: $grid-small);
-        }
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__image {
+        img {
+            height: 96px;
+            width: auto;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
         &--cover {
-            grid-column: 1 / span 5;
-            @include mq($until: phablet) {
-                grid-column: 1 / span 3;
+            img {
+                width: 100%;
+                height: auto;
+                margin-top: 0;
+                margin-right: 0;
             }
         }
     }
