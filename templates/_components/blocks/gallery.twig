@@ -6,11 +6,11 @@
             {% for galleryImage in block.images %}
                 {% set image = galleryImage %}
                 {% set transformedImages = craft.imager.transformImage(image, [
-                    { width: 1080 },
-                    { width: 720 },
-                    { width: 540 },
-                    { width: 360 },
-                    { width: 290 },
+                    { width: 1080, ratio: 1/1},
+                    { width: 720, ratio: 1/1 },
+                    { width: 540, ratio: 1/1 },
+                    { width: 360, ratio: 1/1 },
+                    { width: 290, ratio: 1/1 },
                     ], {
                         position: '100% 100%',
                         jpegQuality: 75 },
