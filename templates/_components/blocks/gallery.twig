@@ -1,3 +1,8 @@
+{% set fullImage = {
+  width: 2880,
+  quality: 75,
+} %}
+
 <div class="gallery" x-data="gallery" >
     <div class="gallery__inner">
         {% if block.images|length %}
@@ -35,7 +40,7 @@
                     data-pswp-width="{{ image.width }}"
                     data-pswp-height="{{ image.height }}"
                     target="_blank"
-                    href="{{ image.url }}"
+                    href="{{ image.getUrl(fullImage) }}"
                 >
                     {% if loop.index == 1 %}
                         <img src="{{ craft.imager.placeholder({ width: 360 }) }}"
