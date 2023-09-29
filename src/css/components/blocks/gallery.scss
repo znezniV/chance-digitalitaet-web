@@ -1,12 +1,14 @@
 .gallery {
-    @include grid();
     margin: var(--spacing-medium) 0;
+    display: flex;
+    justify-content: center;
 
     &__inner {
-        grid-column: 3 / span 8;
-
-        @include mq($until: desktop) {
-            grid-column: 1 / span 12;
+        display: flex;
+        flex-direction: column;
+        width: 69.76%;
+        @include mq($until: tablet) {
+            width: 100%
         }
     }
 
