@@ -18,6 +18,8 @@
     }
 
     &--blog {
+        @include container($page-container-blog);
+        @include grid(11);
         margin-top: var(--spacing-large);
         grid-column: 2 / span 10;
         @include mq($from: desktop) {

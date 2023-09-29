@@ -18,6 +18,15 @@
  * @version   1.0.0
  */
 
+$page-container-blog: (
+    phone: (margin: 18px),
+    phone-plus: (margin: 18px),
+    phablet: (margin: 40px),
+    tablet: (margin: 50px),
+    desktop: (width: 860px),
+    big-desktop: (width: 860px),
+);
+
 $page-container: (
     phone: (margin: 18px),
     phone-plus: (margin: 18px),

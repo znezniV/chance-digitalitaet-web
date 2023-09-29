@@ -70,5 +70,6 @@
 
 .blocks--blog {
     .embed {
+        @include grid(11);
     }
 }

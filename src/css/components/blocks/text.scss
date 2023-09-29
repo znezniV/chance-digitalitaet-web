@@ -20,5 +20,6 @@
 
 .blocks--blog {
     .text {
+        @include grid(11);
     }
 }
