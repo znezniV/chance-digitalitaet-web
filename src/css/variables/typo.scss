@@ -72,6 +72,6 @@ $font-heading: "Adaptive Mono", Helvetica, Arial, sans-serif;
     line-height: 1;
     font-weight: bold;
     @include mq($until: tablet) {
-        font-size: 23px;
+        font-size: 28px;
     }
 }
