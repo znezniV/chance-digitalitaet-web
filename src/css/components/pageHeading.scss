@@ -20,7 +20,7 @@
     &--blog {
         @include container($page-container-blog);
         @include grid(11);
-        margin-top: var(--spacing-large);
+        margin-top: var(--spacing-large) !important;
         grid-column: 2 / span 10;
         @include mq($from: desktop) {
             background-color: $color-light-grey;
