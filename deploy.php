@@ -41,20 +41,12 @@ host('vinze.nz')
     ->stage('develop')
     ->set('deploy_path', '/www/develop');
 
-host('hera.metanet.ch')
+host('chancedigitalitaet.ch')
     ->user('chancedigi')
     ->forwardAgent(true)
     ->port(2121)
     ->stage('staging')
     ->set('deploy_path', '/www/staging');
-
-host('stationx.ch')
-    ->user('stationxch')
-    ->forwardAgent(true)
-    ->port(2121)
-    ->stage('production')
-    ->set('branch', 'main')
-    ->set('deploy_path', '/www/production');
 
 set('mysql', function () {
     return array(
