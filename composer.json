@@ -31,7 +31,6 @@
         "topshelfcraft/environment-label": "^4.0.3",
         "ttempleton/craft-nocache": "^3.0",
         "vaersaagod/matrixmate": "^2.1",
-        "vaersaagod/redirectmate": "1.0.0-beta.9",
         "vaersaagod/seomate": "^2.1.1",
         "verbb/cp-nav": "^4.0.10",
         "verbb/expanded-singles": "2.0.5",
@@ -48,7 +47,6 @@
     "require-dev": {
         "deployer/deployer": "^6.4",
         "nystudio107/craft-autocomplete": "^1.11",
-        "roave/security-advisories": "dev-latest",
         "yiisoft/yii2-shell": "^2.0.5"
     },
     "autoload": {
@@ -99,6 +97,11 @@
         {
             "type": "vcs",
             "url": "git@github.com:jorisnoo/craft-modules.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
         }
     ]
 }

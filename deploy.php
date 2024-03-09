@@ -34,7 +34,7 @@ set('writable_dirs', ['web/assets', 'web/cpresources', 'storage', 'storage/app',
 // Do not share anonymous data
 set('allow_anonymous_stats', false);
 
-host('vinze.nz')
+host('chancedigitalitaet.ch')
     ->user('chancedigi')
     ->forwardAgent(true)
     ->port(2121)
